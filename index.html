@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Access-Control-Allow-Origin:*" content="text/html; charset=utf-8" />
+    <title>带有飞线的地图</title>
+    
+    <!-- 引入 echarts.js -->
+    <script src="./static/js/echarts.js"></script>
+    <script src="./static/js/world.js"></script>  
+    <!-- <link href="./static/chosen/chosen.css" rel="stylesheet">   -->
+    <link rel="stylesheet" href="./static/css/main.css">   
+    <script type="text/javascript" src="./static/js/jquery-3.4.1.min.js"></script> 
+    <!-- <script src="./static/chosen/chosen.jquery.js"> </script> -->
+</head>
+
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div class="left">
+        <div id="main" style=" height:600px;"></div>
+        <div>
+            <div class="layer parallel">
+                <div class="layerTitle">
+                    <i class="arrow" onclick="hideAndShow(this)"></i>平行坐标
+                </div>
+                <div class=" sencondLayer inputSlider">
+                    <div id="parallel" style="width:100%;height:300px;"></div>
+                </div>
+            </div>
+            <div class="layer BubbleChart">
+                <div class="layerTitle">
+                    <i class="arrow" onclick="hideAndShow(this)"></i>平行坐标
+                </div>
+                <div class=" sencondLayer inputSlider">
+                    <div id="BubbleChart" style="width:100%; height:800px;"></div>
+                </div>
+            </div>
+        </div>
+        <div id="filter">
+            <select id="customerId1" name="customer.id" class="j-chosen" data-live-search="true" multiple="multiple">
+            </select>
+        </div>
+            
+    </div>
+    <br />
+    <div id='barchart' style="height:1000px;width:20%"></div>
+
+</body>
+
+<script src="./static/js/drawMap.js"></script>
+<script src="./static/js/BubbleChart.js"></script>
+<script type="text/javascript">
+    initMap();
+    var pathList = {}
+    var GDPList = {}
+    var ContinentList = null;
+    function country_coord(res) {
+        initMapData(res)
+    }
+    function Get_export(res) {
+        res.forEach((r) => {
+            if (pathList.hasOwnProperty(r.source)) {
+                pathList[r.source].path.push({ name: r.target, value: Number(r.value) })
+            }
+            else {
+                pathList[r.source] = { path: [{ name: r.target, value: Number(r.value) }] }
+            }
+        })
+    }
+    //各个国家的各类商品的进口数据
+    //[国家名，各项的值...]
+    var dataIm = null;
+    //各个国家的各类商品的出口数据
+    var dataEx = null;
+
+    var balance = {}
+    function WtoData_imports(res) {
+        dataIm = res
+    }
+    function WtoData_exports(res) {
+        dataEx = res
+    }
+    function WtoData_balance(res) {
+        balance = res
+    }
+    function GDP_Population_gini(res) {
+        GDPList = res
+    }
+    function Get_continent(res) {
+        ContinentList = res
+    }
+
+</script>
+<script src="./static/data/country_coord.json?callback=country_coord"></script>
+<script src="./static/data/2018_export.json?callback=Get_export"></script>
+<script src="./static/data/WtoData_imports.json?callback=WtoData_imports"></script>
+<script src="./static/data/WtoData_exports.json?callback=WtoData_exports"></script>
+<script src="./static/data/2017_trade_balance_percent_of_gdp.json?callback=WtoData_balance"></script>
+<script src="./static/data/GDP_Population_gini.json?callback=GDP_Population_gini"></script>
+<script src="./static/data/continent.json?callback=Get_continent"></script>
+<script src="./static/js/parallel_export.js"></script>
+<script>
+    function hideAndShow(e) {
+        // console.log(e)
+        let className = e.parentNode.parentNode.classList
+        if (className.contains("active")) {
+            className.remove("active")
+        } else {
+            className.add("active")
+            if (className.contains('parallel'))
+                paral();
+            if (className.contains('BubbleChart'))
+                GDPBubbleChart();
+        }
+        // console.log(p)
+    }
+</script>
+
+</html>

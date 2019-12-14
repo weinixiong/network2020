@@ -1,0 +1,98 @@
+body{
+	display: flex;
+	display:-webkit-flex;
+	flex-direction: row;
+
+}
+
+@media screen and (max-width: 1800px) {
+    #main{
+		position: relative;
+		width: 1000px;
+	}
+	.left {
+		display: flex;
+		display:-webkit-flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		widows: 1000px;;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+    #main{
+		position: relative;
+		width: 1200px;
+	}
+	.left {
+		display: flex;
+		display:-webkit-flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		widows: 1200px;
+	}
+}
+
+
+
+.layerTitle{
+	color: rgb(90, 90, 90);
+	  padding: 6px;
+	  text-align: center;
+	  font-size: 15px;
+  }
+  .layerTitle input{
+	margin:1px;
+  }
+  /* 次级标题的样式*/
+  .sencondLayer{
+	display: flex;
+	margin:8px 0 0 20px;
+  }
+  .layer {
+    border-bottom: dashed 1px rgb(238,238,238);
+    padding: 5px 5px 5px 5px;
+    margin: 0px;
+ }
+
+ .arrow{
+	width: 20px;
+	  height: 20px;
+	  display: inline-block;
+	  position: absolute;
+	  left: 0px;
+	  top: 0px;
+	}
+.layerTitle{
+position: relative;
+}
+
+.active .arrow{
+transform: rotate(90deg);
+/* transform-origin: 50% 50%; */
+}
+.arrow::before{
+	float: left;
+	content: " ";
+	height: 6px;
+	width: 6px;
+	border-width: 2px 2px 0 0;
+	border-color:#808088;
+	border-style: solid;
+	transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+	position: relative;
+	top: 25%;
+	left: 25%;
+	}
+.layer .sencondLayer{
+display: none
+}
+.active .sencondLayer{
+/* display: none */
+display: flex
+}
+
+.sencondLayer .info{
+	width: 100%;
+	background: aliceblue;
+}
