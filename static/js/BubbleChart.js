@@ -21,11 +21,12 @@ function GDPBubbleChart(){
     }
     var itemStyle = {
         normal: {
-            opacity: 0.8,
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowOffsetY: 0,
-            shadowColor: 'rgba(0, 0, 0, 0.5)'
+            color:'black'
+            // opacity: 0.8,
+            // shadowBlur: 10,
+            // shadowOffsetX: 0,
+            // shadowOffsetY: 0,
+            // shadowColor: 'rgba(0, 0, 0, 0.5)'
         }
     };
 
@@ -74,12 +75,12 @@ function GDPBubbleChart(){
                 label: {
                     normal: {
                         textStyle: {
-                            color: '#999'
+                            color: 'black'
                         }
                     },
                     emphasis: {
                         textStyle: {
-                            color: '#fff'
+                            color: '#999'
                         }
                     }
                 },
@@ -106,22 +107,22 @@ function GDPBubbleChart(){
                 },
                 data: []
             },
-            backgroundColor: '#404a59',
+            backgroundColor:'rgba(255, 255, 255, 0)',
             title: [{
                 text: GDPList.timeline[0],
-                textAlign: 'center',
-                left: '63%',
-                top: '55%',
+                textAlign: 'top',
+                left: '60%',
+                top: '20%',
                 textStyle: {
                     fontSize: 100,
-                    color: 'rgba(255, 255, 255, 0.7)'
+                    color: '#ccc'
                 }
             }, {
                 text: '各国人均GDP、人口、基尼指数随时间的演变',
                 left: 'center',
                 top: 10,
                 textStyle: {
-                    color: '#aaa',
+                    color: 'black',
                     fontWeight: 'normal',
                     fontSize: 20
                 }
@@ -160,11 +161,12 @@ function GDPBubbleChart(){
                 },
                 axisLine: {
                     lineStyle: {
-                        color: '#ccc'
+                        color: 'black'
                     }
                 },
                 axisLabel: {
-                    formatter: '{value}美元'
+                    formatter: '{value}美元',
+                    color:'black'
                 }
             },
             yAxis: {
@@ -173,19 +175,20 @@ function GDPBubbleChart(){
                 max: GDPList.giniInf.max,
                 min:GDPList.giniInf.min,
                 nameTextStyle: {
-                    color: '#ccc',
+                    color: 'black',
                     fontSize: 18
                 },
                 axisLine: {
                     lineStyle: {
-                        color: '#ccc'
+                        color: 'black'
                     }
                 },
                 splitLine: {
                     show: false
                 },
                 axisLabel: {
-                    formatter: '{value}'
+                    formatter: '{value}',
+                    color:'black'
                 }
             },
             visualMap: [
@@ -197,7 +200,7 @@ function GDPBubbleChart(){
                     precision: 0.1,
                     textGap: 30,
                     textStyle: {
-                        color: '#ccc'
+                        color: 'black'
                     },
                     inRange: {
                         // color:function(val){

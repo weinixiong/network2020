@@ -22,8 +22,8 @@
         <select id="countries" data-placeholder="Choose a Country..."  multiple="multiple=" ></select>
     </div>
     <div class="left">
-        <div id="main" style=" height:600px;"></div>
-        <div>
+        <div id="main" style='height:600px'></div>
+        <div id='statisticP'>
             <div class="layer parallel">
                 <div class="layerTitle">
                     <i class="arrow" onclick="hideAndShow(this)"></i>产品进/出口量
@@ -45,13 +45,14 @@
                     <i class="arrow" onclick="hideAndShow(this)"></i>人均GDP、人口、基尼指数
                 </div>
                 <div class=" sencondLayer inputSlider">
-                    <div id="BubbleChart" style="width:100%; height:800px;"></div>
+                    <div id="BubbleChart" style="width:100%; height:600px;border: 1px solid #ccc;"></div>
                 </div>
             </div>
         </div>
     </div>
     <div class='right'>
-        <div id='Cpie' style="height:50%;width:100%"></div>
+        <div id='Cpie' style="height:45%;width:100%;border: 1px solid #ccc;margin: 3px;"></div>
+        <div id='Lchart' style="height:45%;width:100%;border: 1px solid #ccc;margin: 3px;bottom: 5px;"></div>
     </div>
     
 
@@ -100,17 +101,6 @@
     function Get_continent(res) {
         ContinentList = res
     }
-    let data = [
-        {value:335, name:'广东'},
-        {value:310, name:'江苏'},
-        {value:234, name:'广西'},
-        {value:135, name:'浙江'},
-        {value:1048, name:'黑龙江'},
-        {value:251, name:'其他'},
-        ]
-    let name ='中国'
-    var Pchart = echarts.init(document.getElementById('Cpie'));
-    // pie(Pchart,name,data)
 </script>
 <script src="./static/data/countries.js"></script>
 <script src="./static/data/country_coord.json?callback=country_coord"></script>
@@ -138,6 +128,36 @@
         }
         // console.log(p)
     }
+    function renderLchart(country){
+        //{ name: r.target, value: Number(r.value) }
+        let path = pathList[country].path
+        let top5 = []
+        path.sort(function(a,b){
+            return b.value - a.value
+        })
+        let data = [path[0],path[1],path[2],path[3],path[4]]
+        let ldata = []
+        let l_label = []
+        for(let k of data){
+            ldata.push(k.value)
+            l_label.push(k.name)
+        }
+        pie(l_label,ldata)
+    }
+    let data = [
+        {value:335, name:'广东'},
+        {value:310, name:'江苏'},
+        {value:234, name:'广西'},
+        {value:135, name:'浙江'},
+        {value:1048, name:'黑龙江'},
+        {value:251, name:'其他'},
+        ]
+    let name ='中国'
+    var Pchart = echarts.init(document.getElementById('Cpie'));
+    var Lchart = echarts.init(document.getElementById('Lchart'));
+    
+    let rrr = renderLchart('China')
+    console.log(rrr)
 </script>
 
 </html>

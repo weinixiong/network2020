@@ -12,6 +12,13 @@ body{
 	width:80%;
 	margin-left: 0;
 }
+#main{
+	border: 1px solid #ccc;
+	margin: 3px;
+}
+#statisticP{
+	height:10%
+}
 .right {
 	display: flex;
 	display:-webkit-flex;
