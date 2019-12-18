@@ -224,22 +224,9 @@ Mapchart.on('click', function (params) {
             series = series.concat(s)
         }
     }
-    initMap({series,max:maxV,min:minV})
+    freshMap({series,max:maxV,min:minV})
 });
-// function Freshlabel(series){
-    
-//     // let option = Mapchart.getOption();
-//     // // delete(option.series)
-//     // option.series = series
-//     // Mapchart.setOption(option,true)
-//     // option.visualMap[0].min = minV
-//     // option.visualMap[0].max = maxV
-//     // Mapchart.setOption({
-//     //     visualMap:{
-//     //         min:minV,
-//     //         max:maxV
-//     //     }})
-// }
+
 function initMap(data){
     let series = [],
         min = 1000,
@@ -255,18 +242,6 @@ function initMap(data){
     }
    let option = {
         backgroundColor:"#E6EDF3",
-        // color: ['#ccc'],//fc5353', '#f4fc6c', '#e68b55', '#9a68ff', '#ff60c5'],
-        // visualMap: {
-        //     min,
-        //     max,
-        //     calculable: true,
-        //     right: '2%',
-        //     top: '6%',
-        //     zlevel: 10,
-        //     textStyle: {
-        //         color: '#fff'
-        //     }
-        // },
         tooltip: {
             trigger: 'item',
             formatter: function (params) {
@@ -277,16 +252,6 @@ function initMap(data){
                 }
             }
         },
-        // legend: {
-        //     orient: 'horizontal',
-        //     left: '27%',
-        //     top: '5%',
-        //     data: ['高线'],
-        //     textStyle: {
-        //         color: '#ffffff'
-        //     },
-        //     icon: 'circle'
-        // },
         geo: {
             map: 'world',
             zlevel: 10,
@@ -319,8 +284,26 @@ function initMap(data){
         },
         series
         };
-    Mapchart.setOption(option,true);
+    
+    Mapchart.setOption(option,true)
 };
+function freshMap(data){
+    let series = [],
+        min = 1000,
+        max = 5000
+    if(data!=null)
+    {
+        if(data.hasOwnProperty('series'))
+            series = data.series
+        if(data.hasOwnProperty('max'))
+            max = data.max
+        if(data.hasOwnProperty('min'))
+            min = data.min
+    }
+    let option = Mapchart.getOption()
+    option.series=series
+    Mapchart.setOption(option,true)
+}
 function initMapData(countries_coord){
     geoCoordMap = countries_coord
 }
