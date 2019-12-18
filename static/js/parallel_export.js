@@ -1,8 +1,10 @@
+var selected = [];
+
 function paral() {
     // Schema:
-    // 各类商品的import/export值
-    var chart = echarts.init(document.getElementById('parallel'));
+    var chartParal = echarts.init(document.getElementById('parallel'));
 
+    // 各类商品的import/export值
     var itemStyle = {
         normal: {
         },
@@ -33,9 +35,9 @@ function paral() {
         }
     };
 
-    option = {
+    var optionParal = {
+        brush: { brushLink: "all", toolbox: ['rect', 'keep', 'clear'] },
         backgroundColor: 'gray',
-
         legend: {
             bottom: 30,
             data: ['import', 'export'],
@@ -151,15 +153,23 @@ function paral() {
             },
         ]
     };
-    chart.setOption(option);
+
+    chartParal.setOption(optionParal);
+    chartParal.on('axisareaselected', function () {
+        var series0 = chartParal.getModel().getSeries()[0];
+        var series1 = chartParal.getModel().getSeries()[1];
+        var indices0 = series0.getRawIndicesByActiveState('active');
+        var indices1 = series1.getRawIndicesByActiveState('active');
+        console.log(indices0, indices1);
+    });
 }
 
-function barchart(){
-    var chart = echarts.init(document.getElementById('barchart'));
+function barchart() {
+    var chartBar = echarts.init(document.getElementById('barchart'))
     var dataBalance = Object.values(balance).reverse();
     var countryList = Object.keys(balance).reverse();
 
-    option = {
+    var optionBar = {
         title: {
             text: '进出口差值与GDP比值'
         },
@@ -183,7 +193,7 @@ function barchart(){
             }
         },
         brush: {
-            toolbox: ['rect', 'lineY', 'keep', 'clear'],
+            toolbox: ['rect', 'keep', 'clear'],
             xAxisIndex: 0
         },
         grid: {
@@ -221,14 +231,15 @@ function barchart(){
                     }
                 },
                 data: dataBalance,
+                hoverAnimation: true,
             }
         ]
     };
-    chart.setOption(option);
-    chart.on('brushSelected', renderBrushed);
+    chartBar.setOption(optionBar);
+    chartBar.on('brushSelected', renderBrushedBar);
 }
 
-function renderBrushed(params) {
+function renderBrushedBar(params) {
     var brushComponent = params.batch[0];
     //这里总共就一个series,貌似不用循环也行，以防万一
     for (var sIdx = 0; sIdx < brushComponent.selected.length; sIdx++) {
@@ -275,10 +286,28 @@ $('#countries').multipleSelect({
 
 });
 
-var selected = [];
 $("#countries").change(function () {
     selected = chose_get_value("#countries");
+    // console.log(echarts.getInstanceByDom(document.getElementById('barchart'"parallel")))
+    let chart0 = echarts.getInstanceByDom(document.getElementById('barchart'))
+
+    console.log("did")
+    chart0.dispatchAction({
+        type: 'showTip',
+        // // 可选，系列 index，可以是一个数组指定多个系列
+        seriesIndex: 0,
+        // // 可选，系列名称，可以是一个数组指定多个系列
+        // seriesName?: string|Array,
+        // // 可选，数据的 index
+        dataIndex: COUNTRY.length-1-COUNTRY.indexOf(selected[selected.length-1]),
+        // // 可选，数据的 名称
+        // name: "import"
+    })
+    
+    for(let c of selected){
+        clickCountry(c)
+    }
+
     console.log(selected)
 });
-
 

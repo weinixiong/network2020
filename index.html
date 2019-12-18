@@ -34,7 +34,7 @@
             </div>
             <div class="layer barchart">
                 <div class="layerTitle">
-                    <i class="arrow" onclick="hideAndShow(this)"></i>进出口插值与GDP比值
+                    <i class="arrow" onclick="hideAndShow(this)"></i>进出口差值与GDP比值
                 </div>
                 <div class=" sencondLayer inputSlider">
                     <div id="barchart" style="width:100%;height:300px;"></div>
@@ -110,7 +110,7 @@
         ]
     let name ='中国'
     var Pchart = echarts.init(document.getElementById('Cpie'));
-    pie(Pchart,name,data)
+    // pie(Pchart,name,data)
 </script>
 <script src="./static/data/countries.js"></script>
 <script src="./static/data/country_coord.json?callback=country_coord"></script>

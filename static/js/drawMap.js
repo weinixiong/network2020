@@ -3,12 +3,12 @@ var Mapchart = echarts.init(document.getElementById('main'));
 var stardSize = 50
 //24个省市经度纬度
 var countryInf = {}//{countryName:{value:'',data:''}},
-    maxV = 0,//全局的最大最小值
+maxV = 0,//全局的最大最小值
     minV = 0,
     // Clicked = fasle;//用于确定是否增加国家的点
     ClickedList = {}//是否已点击
 //根据起始终点名称确定经纬度坐标
-var convertData1 = function (fName,data) {
+var convertData1 = function (fName, data) {
     let d1 = [],
         values = {}
     for (let toNode of data) {
@@ -16,13 +16,13 @@ var convertData1 = function (fName,data) {
         let toCoord = geoCoordMap[toNode.name];
         if (fromCoord && toCoord) {
             d1.push({
-                fromName: fName, 
-                toName: toNode.name, 
+                fromName: fName,
+                toName: toNode.name,
                 coords: [fromCoord, toCoord],
-                name:fName+'--'+toNode.name,
-                value:toCoord.concat(toNode.value)
+                name: fName + '--' + toNode.name,
+                value: toCoord.concat(toNode.value)
             });
-            
+
         }
     }
     return d1;
@@ -55,179 +55,178 @@ function Draw(result) {
     let fName = result.city,
         path = result.path,
         d2 = convertData2(path),
-        d1 = convertData1(fName,path)
-    let series = GetSeries(fName,d1,d2)
+        d1 = convertData1(fName, path)
+    let series = GetSeries(fName, d1, d2)
 
     return series
 };
-function GetSeries(fName,d1,d2){
+function GetSeries(fName, d1, d2) {
     let series = []
     series.push(
-                {
-                    name: fName,
-                    type: 'scatter',
-                    zlevel: 20,
-                    color: '#fff',
-                    coordinateSystem: 'geo',
-                    symbolSize: 1,
-                    itemStyle: {
-                        normal: {color: '#f00'}
-                    },
-                    data: d2
-                },
-                {
-                    type: 'lines',
-                    zlevel: 15,
-                    effect: {
-                        show: true, 
-                        period: 4, 
-                        trailLength: 0, 
-                        symbolSize: 1,
-                    },
-                    lineStyle: {
-                        normal: {
-                            show: true,
-                            width: 0.5, 
-                            opacity: 1,
-                            curveness: 0.2,
-                            color: 'rgba(255,0,0,.3)'
-                        }
-                    },
-                    data: d1
-                },
-                //出发点
-                {
-                    type: 'effectScatter',
-                    coordinateSystem: 'geo',
-                    zlevel: 15,
-                    rippleEffect: {
-                        period: 4, brushType: 'stroke', scale: 4
-                    },
-                    symbol: 'circle',
-                    symbolSize: function (val) {
-                        return 4 + val[2] / 10;
-                    },
-                    itemStyle: {
-                        normal: {show: false}
-                    },
-                    tooltip: {
-                        show: false,
-                    },
-                    data: [{
-                        name: fName, value: geoCoordMap[fName].concat([100]),
-                    }],
-                },
-                    /*到达点*/
-                {
-                    type: 'effectScatter',
-                    coordinateSystem: 'geo',
-                    rippleEffect: {
-                        period: 4, brushType: 'stroke', scale: 2
-                    },
-                    zlevel: 15,
-                    label: {
-                        normal: {
-                            show: false
-                        }
-                    },
-                    tooltip: {
-                        show: false,
-                    },
-                    symbol: 'circle',
-                    symbolSize:  function (val) {
-                        return 5 + val[3];
-                    },
-                    itemStyle: {
-                        normal: {
-                            color: 'rgba(255,0,0,.5)'
-                        }
-                    },
-                    data: d1.map(function (dataItem) {
-                        let size = 0
-                        if (maxV==minV)
-                            size = stardSize
-                        else
-                            size = stardSize*(countryInf[dataItem.toName].value-minV)/(maxV-minV)
-                        return {
-                            name: dataItem.toName,
-                            value: dataItem.coords[1].concat([dataItem.toName,size]),
-                            tooltip: {
-                                formatter: dataItem.fromName + "--" + dataItem.toName + "：" + dataItem.value
-                            }
-                        };
-                    }),
+        {
+            name: fName,
+            type: 'scatter',
+            zlevel: 20,
+            color: '#fff',
+            coordinateSystem: 'geo',
+            symbolSize: 1,
+            itemStyle: {
+                normal: { color: '#f00' }
+            },
+            data: d2
+        },
+        {
+            type: 'lines',
+            zlevel: 15,
+            effect: {
+                show: true,
+                period: 4,
+                trailLength: 0,
+                symbolSize: 1,
+            },
+            lineStyle: {
+                normal: {
+                    show: true,
+                    width: 0.5,
+                    opacity: 1,
+                    curveness: 0.2,
+                    color: 'rgba(255,0,0,.3)'
                 }
-                );
+            },
+            data: d1
+        },
+        //出发点
+        {
+            type: 'effectScatter',
+            coordinateSystem: 'geo',
+            zlevel: 15,
+            rippleEffect: {
+                period: 4, brushType: 'stroke', scale: 4
+            },
+            symbol: 'circle',
+            symbolSize: function (val) {
+                return 4 + val[2] / 10;
+            },
+            itemStyle: {
+                normal: { show: false }
+            },
+            tooltip: {
+                show: false,
+            },
+            data: [{
+                name: fName, value: geoCoordMap[fName].concat([100]),
+            }],
+        },
+        /*到达点*/
+        {
+            type: 'effectScatter',
+            coordinateSystem: 'geo',
+            rippleEffect: {
+                period: 4, brushType: 'stroke', scale: 2
+            },
+            zlevel: 15,
+            label: {
+                normal: {
+                    show: false
+                }
+            },
+            tooltip: {
+                show: false,
+            },
+            symbol: 'circle',
+            symbolSize: function (val) {
+                return 5 + val[3];
+            },
+            itemStyle: {
+                normal: {
+                    color: 'rgba(255,0,0,.5)'
+                }
+            },
+            data: d1.map(function (dataItem) {
+                let size = 0
+                if (maxV == minV)
+                    size = stardSize
+                else
+                    size = stardSize * (countryInf[dataItem.toName].value - minV) / (maxV - minV)
+                return {
+                    name: dataItem.toName,
+                    value: dataItem.coords[1].concat([dataItem.toName, size]),
+                    tooltip: {
+                        formatter: dataItem.fromName + "--" + dataItem.toName + "：" + dataItem.value
+                    }
+                };
+            }),
+        }
+    );
     return series
 }
-function FreshLim(Name,IsDel){
+function FreshLim(Name, IsDel) {
     maxV = 0
     minV = 0
-    if(IsDel)
-    {
+    if (IsDel) {
         let d = countryInf[Name].data.path
-        for(let p of d){
+        for (let p of d) {
             countryInf[p.name].value -= p.value
         }
     }
-    else
-    {
+    else {
         ClickedList[Name] = true
         let d = countryInf[Name].data.path
-        for(let p of d){
-            if(countryInf.hasOwnProperty(p.name))
-            {
-               countryInf[p.name].value += p.value
+        for (let p of d) {
+            if (countryInf.hasOwnProperty(p.name)) {
+                countryInf[p.name].value += p.value
             }
-            else
-            {
-                countryInf[p.name] = {value:p.value,data:{}}
+            else {
+                countryInf[p.name] = { value: p.value, data: {} }
             }
         }
     }
-    for(let k in countryInf){
+    for (let k in countryInf) {
         // if(ClickedList[city]){
         let v = countryInf[k].value
         maxV = v > maxV ? v : maxV
-        minV = ((v !=0)&&(v < minV || minV==0)) ? v : minV
+        minV = ((v != 0) && (v < minV || minV == 0)) ? v : minV
     }
-    
+
 }
 Mapchart.on('click', function (params) {
     var city = params.name;//默认飞线原点
-    console.log('clicked',city)
-    if(ClickedList.hasOwnProperty(city) && ClickedList[city])
-    {
+    clickCountry(city);
+});
+
+function clickCountry(city) {
+    console.log('clicked', city)
+    if (ClickedList.hasOwnProperty(city) && ClickedList[city]) {
         ClickedList[city] = false
         //对各个节点的数据的value进行更新
         //删除数据之后对极值进行更新
-        FreshLim(city,true)
+        FreshLim(city, true)
     }
-    else{
-        
+    else {
+
         //初始化飞线数据
         var path = pathList[city].path
-        let data = {city,path,value:100}
-        if(countryInf.hasOwnProperty(city))
+        let data = { city, path, value: 100 }
+        if (countryInf.hasOwnProperty(city))
             countryInf[city]['data'] = data
         else
-            countryInf[city] = {data,value:0}
-        FreshLim(city,false)
+            countryInf[city] = { data, value: 0 }
+        FreshLim(city, false)
         // let s = Draw(data);
         // let series = chart.getOption().series
         // Freshlabel(series.concat(s));
     }
     let series = []
-    for(let k in ClickedList){
-        if(ClickedList[k]){
+    for (let k in ClickedList) {
+        if (ClickedList[k]) {
             let s = Draw(countryInf[k].data)
             series = series.concat(s)
         }
     }
-    initMap({series,max:maxV,min:minV})
-});
+    initMap({ series, max: maxV, min: minV })
+}
 // function Freshlabel(series){
-    
+
 //     // let option = Mapchart.getOption();
 //     // // delete(option.series)
 //     // option.series = series
@@ -240,21 +239,20 @@ Mapchart.on('click', function (params) {
 //     //         max:maxV
 //     //     }})
 // }
-function initMap(data){
+function initMap(data) {
     let series = [],
         min = 1000,
         max = 5000
-    if(data!=null)
-    {
-        if(data.hasOwnProperty('series'))
+    if (data != null) {
+        if (data.hasOwnProperty('series'))
             series = data.series
-        if(data.hasOwnProperty('max'))
+        if (data.hasOwnProperty('max'))
             max = data.max
-        if(data.hasOwnProperty('min'))
+        if (data.hasOwnProperty('min'))
             min = data.min
     }
-   let option = {
-        backgroundColor:"#E6EDF3",
+    let option = {
+        backgroundColor: "#E6EDF3",
         // color: ['#ccc'],//fc5353', '#f4fc6c', '#e68b55', '#9a68ff', '#ff60c5'],
         // visualMap: {
         //     min,
@@ -297,8 +295,8 @@ function initMap(data){
             label: {
                 normal: {
                     show: false,//地图上的省份名称是否显示
-                    textStyle:{
-                        fontSize:12,
+                    textStyle: {
+                        fontSize: 12,
                         color: '#43D0D6'
                     }
                 },
@@ -318,10 +316,10 @@ function initMap(data){
             }
         },
         series
-        };
-    Mapchart.setOption(option,true);
+    };
+    Mapchart.setOption(option, true);
 };
-function initMapData(countries_coord){
+function initMapData(countries_coord) {
     geoCoordMap = countries_coord
 }
 
