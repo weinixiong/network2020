@@ -79,10 +79,19 @@ function GetSeries(fName,d1,d2){
                     type: 'lines',
                     zlevel: 15,
                     effect: {
-                        show: true, period: 4, trailLength: 0, symbolSize: 1,
+                        show: true, 
+                        period: 4, 
+                        trailLength: 0, 
+                        symbolSize: 1,
                     },
                     lineStyle: {
-                        normal: {width: 0.5, opacity: 0.6, curveness: 0.2, color: '#fff'}
+                        normal: {
+                            show: true,
+                            width: 0.5, 
+                            opacity: 1,
+                            curveness: 0.2,
+                            color: 'rgba(255,0,0,.3)'
+                        }
                     },
                     data: d1
                 },
@@ -113,7 +122,7 @@ function GetSeries(fName,d1,d2){
                     type: 'effectScatter',
                     coordinateSystem: 'geo',
                     rippleEffect: {
-                        period: 4, brushType: 'stroke', scale: 4
+                        period: 4, brushType: 'stroke', scale: 2
                     },
                     zlevel: 15,
                     label: {
@@ -130,7 +139,7 @@ function GetSeries(fName,d1,d2){
                     },
                     itemStyle: {
                         normal: {
-                            color: '#F19000'
+                            color: 'rgba(255,0,0,.5)'
                         }
                     },
                     data: d1.map(function (dataItem) {
@@ -147,7 +156,8 @@ function GetSeries(fName,d1,d2){
                             }
                         };
                     }),
-                });
+                }
+                );
     return series
 }
 function FreshLim(Name,IsDel){
@@ -244,19 +254,19 @@ function initMap(data){
             min = data.min
     }
    let option = {
-        backgroundColor:"#123456",
-        color: ['#fc5353', '#f4fc6c', '#e68b55', '#9a68ff', '#ff60c5'],
-        visualMap: {
-            min,
-            max,
-            calculable: true,
-            right: '2%',
-            top: '6%',
-            zlevel: 10,
-            textStyle: {
-                color: '#fff'
-            }
-        },
+        backgroundColor:"#E6EDF3",
+        // color: ['#ccc'],//fc5353', '#f4fc6c', '#e68b55', '#9a68ff', '#ff60c5'],
+        // visualMap: {
+        //     min,
+        //     max,
+        //     calculable: true,
+        //     right: '2%',
+        //     top: '6%',
+        //     zlevel: 10,
+        //     textStyle: {
+        //         color: '#fff'
+        //     }
+        // },
         tooltip: {
             trigger: 'item',
             formatter: function (params) {
@@ -298,9 +308,9 @@ function initMap(data){
             },
             itemStyle: {
                 normal: {
-                    color: '#062031',
+                    color: '#F3F1EB',
                     borderWidth: 1.1,
-                    borderColor: '#516a89'
+                    // borderColor: '#516a89'
                 },
                 emphasis: {
                     areaColor: 'rgba(51, 69, 89, .5)'
