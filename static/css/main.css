@@ -4,35 +4,13 @@ body{
 	flex-direction: row;
 
 }
-
-@media screen and (max-width: 1800px) {
-    #main{
-		position: relative;
-		width: 1000px;
-	}
-	.left {
-		display: flex;
-		display:-webkit-flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		widows: 1000px;;
-	}
+.left {
+	display: flex;
+	display:-webkit-flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width:80%
 }
-
-@media screen and (min-width: 1800px) {
-    #main{
-		position: relative;
-		width: 1200px;
-	}
-	.left {
-		display: flex;
-		display:-webkit-flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		widows: 1200px;
-	}
-}
-
 
 
 .layerTitle{

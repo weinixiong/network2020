@@ -51,8 +51,8 @@ function GDPBubbleChart(){
     }
     // Schema:1，0，2人均GDP,GINI系数，人口，国家，年份
     var schema = [
-        {name: 'GINI', index: 0, text: '基尼系数', unit: ''},
         {name: 'Income', index: 1, text: '人均收入', unit: '美元'},
+        {name: 'GINI', index: 0, text: '基尼系数', unit: ''},
         {name: 'Population', index: 2, text: '总人口', unit: '万'},
         {name: 'Country', index: 3, text: '国家', unit: ''}
     ];
@@ -164,12 +164,12 @@ function GDPBubbleChart(){
                     }
                 },
                 axisLabel: {
-                    formatter: '{value} $'
+                    formatter: '{value}美元'
                 }
             },
             yAxis: {
                 type: 'value',
-                name: 'GDP',
+                name: '基尼系数',
                 max: GDPList.giniInf.max,
                 min:GDPList.giniInf.min,
                 nameTextStyle: {
@@ -185,7 +185,7 @@ function GDPBubbleChart(){
                     show: false
                 },
                 axisLabel: {
-                    formatter: '{value} 美元'
+                    formatter: '{value}'
                 }
             },
             visualMap: [
