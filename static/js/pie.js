@@ -1,4 +1,4 @@
-function pie(Pchart,name,data){
+function pie(L_labels,L_data){
 //   option = {
 //     tooltip: {
 //         trigger: 'item',
@@ -75,28 +75,26 @@ function pie(Pchart,name,data){
 //         }
 //     ]
 // };
+
 option = {
     title: {
-        text: '基础雷达图'
+        text: '基础雷达图',
+        left: 'center',
     },
-    
     radar: {
         // shape: 'circle',
         name: {
             textStyle: {
-                color: '#fff',
-                backgroundColor: '#999',
-                borderRadius: 3,
-                padding: [3, 5]
+                color: 'black',
            }
         },
         indicator: [
-           { name: '销售（sales）', max: 6500},
-           { name: '管理（Administration）', max: 16000},
-           { name: '信息技术（Information Techology）', max: 30000},
-           { name: '客服（Customer Support）', max: 38000},
-           { name: '研发（Development）', max: 52000},
-           { name: '市场（Marketing）', max: 25000}
+           { name: '销售', max: 6500},
+           { name: '管理', max: 16000},
+           { name: '信息技术', max: 30000},
+           { name: '客服', max: 38000},
+           { name: '研发', max: 52000},
+           { name: '市场', max: 25000}
         ]
     },
     series: [{
@@ -104,6 +102,10 @@ option = {
         type: 'radar',
         // areaStyle: {normal: {}},
         data : [
+            {
+                value : [4300, 10000, 28000, 35000, 50000, 19000],
+                name : '预算分配（Allocated Budget）'
+            },
              {
                 value : [5000, 14000, 28000, 31000, 42000, 21000],
                 name : '实际开销（Actual Spending）'
@@ -112,4 +114,37 @@ option = {
     }]
 };
 Pchart.setOption(option)
+
+option = {
+    title: {
+        text: '出口国 TOP5',
+        left: 'center',
+    },
+    yAxis: {
+        type: 'category',
+        axisLabel: {show: false},
+        data: L_labels//['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    xAxis: {
+        type: 'value'
+    },
+    series: [{
+        data: L_data,//[120, 200, 150, 80, 70, 110, 130],
+        type: 'bar',
+        barWidth: '60%',
+        itemStyle:{
+            normal:{
+                color:'#ccc'
+            }
+        },
+        label: {
+            normal: {
+                show: true,
+                formatter: '{b}',
+                color:'black',
+            }
+        },
+    }]
+};
+Lchart.setOption(option)
 }

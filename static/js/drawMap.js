@@ -90,7 +90,7 @@ function GetSeries(fName,d1,d2){
                             width: 0.5, 
                             opacity: 1,
                             curveness: 0.2,
-                            color: 'rgba(255,0,0,.3)'
+                            color: 'rgba(232,143,112,.5)'
                         }
                     },
                     data: d1
@@ -139,7 +139,7 @@ function GetSeries(fName,d1,d2){
                     },
                     itemStyle: {
                         normal: {
-                            color: 'rgba(255,0,0,.5)'
+                            color: 'rgba(255,0,0,0.5)'//157,197,200,1)'
                         }
                     },
                     data: d1.map(function (dataItem) {
