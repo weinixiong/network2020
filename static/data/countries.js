@@ -1,4 +1,4 @@
-[
+var COUNTRY = [
     "Albania",
     "Algeria",
     "Angola",
