@@ -31,115 +31,88 @@ function pie(Pchart,name,data){
 //         }
 //     ]
 // };
-option = {
-    tooltip: {
-        trigger: 'item',
-        formatter: "{a} <br/>{b}: {c} ({d}%)"
-    },
-    legend: {
-        // orient: 'vertical',
-        x: 'left',
-        data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
-    },
-    series: [
-        {
-            name:'访问来源',
-            type:'pie',
-            radius: ['50%', '70%'],
-            avoidLabelOverlap: false,
-            label: {
-                normal: {
-                    show: false,
-                    position: 'center'
-                },
-                emphasis: {
-                    show: true,
-                    textStyle: {
-                        fontSize: '30',
-                        fontWeight: 'bold'
-                    }
-                }
-            },
-            labelLine: {
-                normal: {
-                    show: false
-                }
-            },
-            data:[
-                {value:335, name:'直接访问'},
-                {value:310, name:'邮件营销'},
-                {value:234, name:'联盟广告'},
-                {value:135, name:'视频广告'},
-                {value:1548, name:'搜索引擎'}
-            ]
-        }
-    ]
-};
 // option = {
-//     // backgroundColor: '#ccc',
-
-//     title: {
-//         text: name+'贸易出口额',
-//         left: 'center',
-//         top: 20,
-//         textStyle: {
-//             color: 'black'
-//         }
-//     },
-
-//     tooltip : {
+//     tooltip: {
 //         trigger: 'item',
-//         formatter: "{a} <br/>{b} : {c} ({d}%)"
+//         formatter: "{a} <br/>{b}: {c} ({d}%)"
 //     },
-
-//     visualMap: {
-//         show: false,
-//         min: 80,
-//         max: 600,
-//         inRange: {
-//             colorLightness: [0, 1]
-//         }
+//     legend: {
+//         // orient: 'vertical',
+//         x: 'left',
+//         data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
 //     },
-//     series : [
+//     series: [
 //         {
-//             name:'出口额',
+//             name:'访问来源',
 //             type:'pie',
-//             radius : '55%',
-//             center: ['50%', '50%'],
-//             data:data.sort(function (a, b) { return a.value - b.value; }),
-//             roseType: 'radius',
+//             radius: ['50%', '70%'],
+//             avoidLabelOverlap: false,
 //             label: {
 //                 normal: {
+//                     show: false,
+//                     position: 'center'
+//                 },
+//                 emphasis: {
+//                     show: true,
 //                     textStyle: {
-//                         color: 'black'
+//                         fontSize: '30',
+//                         fontWeight: 'bold'
 //                     }
 //                 }
 //             },
 //             labelLine: {
 //                 normal: {
-//                     lineStyle: {
-//                         color: 'black'
-//                     },
-//                     smooth: 0.2,
-//                     length: 10,
-//                     length2: 20
+//                     show: false
 //                 }
 //             },
-//             itemStyle: {
-//                 normal: {
-//                     color: '#c23531',
-//                     shadowBlur: 200,
-//                     shadowColor: 'rgba(0, 0, 0, 0.5)'
-//                 }
-//             },
-
-//             animationType: 'scale',
-//             animationEasing: 'elasticOut',
-//             animationDelay: function (idx) {
-//                 return Math.random() * 200;
-//             }
+//             data:[
+//                 {value:335, name:'直接访问'},
+//                 {value:310, name:'邮件营销'},
+//                 {value:234, name:'联盟广告'},
+//                 {value:135, name:'视频广告'},
+//                 {value:1548, name:'搜索引擎'}
+//             ]
 //         }
 //     ]
 // };
+option = {
+    title: {
+        text: '基础雷达图'
+    },
+    tooltip: {},
+    legend: {
+        data: ['预算分配（Allocated Budget）', '实际开销（Actual Spending）']
+    },
+    radar: {
+        // shape: 'circle',
+        name: {
+            textStyle: {
+                color: '#fff',
+                backgroundColor: '#999',
+                borderRadius: 3,
+                padding: [3, 5]
+           }
+        },
+        indicator: [
+           { name: '销售（sales）', max: 6500},
+           { name: '管理（Administration）', max: 16000},
+           { name: '信息技术（Information Techology）', max: 30000},
+           { name: '客服（Customer Support）', max: 38000},
+           { name: '研发（Development）', max: 52000},
+           { name: '市场（Marketing）', max: 25000}
+        ]
+    },
+    series: [{
+        name: '预算 vs 开销（Budget vs spending）',
+        type: 'radar',
+        // areaStyle: {normal: {}},
+        data : [
+             {
+                value : [5000, 14000, 28000, 31000, 42000, 21000],
+                name : '实际开销（Actual Spending）'
+            }
+        ]
+    }]
+};
 Pchart.setOption(option)
 }

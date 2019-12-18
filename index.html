@@ -29,6 +29,14 @@
                     <i class="arrow" onclick="hideAndShow(this)"></i>产品进/出口量
                 </div>
                 <div class=" sencondLayer inputSlider">
+                    <div id="parallel" style="width:100%;height:300px;"></div>
+                </div>
+            </div>
+            <div class="layer barchart">
+                <div class="layerTitle">
+                    <i class="arrow" onclick="hideAndShow(this)"></i>进出口插值与GDP比值
+                </div>
+                <div class=" sencondLayer inputSlider">
                     <div id="barchart" style="width:100%;height:300px;"></div>
                 </div>
             </div>
@@ -38,14 +46,6 @@
                 </div>
                 <div class=" sencondLayer inputSlider">
                     <div id="BubbleChart" style="width:100%; height:800px;"></div>
-                </div>
-            </div>
-            <div class="layer barchart">
-                <div class="layerTitle">
-                    <i class="arrow" onclick="hideAndShow(this)"></i>平行坐标
-                </div>
-                <div class=" sencondLayer inputSlider">
-                    <div id="barchart" style="width:100%;height:300px;"></div>
                 </div>
             </div>
         </div>
@@ -130,9 +130,11 @@
         } else {
             className.add("active")
             if (className.contains('parallel'))
-                barchart();
+                paral();
             if (className.contains('BubbleChart'))
                 GDPBubbleChart();
+                if (className.contains('barchart'))
+                barchart();
         }
         // console.log(p)
     }
