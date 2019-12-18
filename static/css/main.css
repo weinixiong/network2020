@@ -9,7 +9,8 @@ body{
 	display:-webkit-flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	width:80%
+	width:80%;
+	margin-left: 0;
 }
 
 
