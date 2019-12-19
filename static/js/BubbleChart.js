@@ -36,11 +36,11 @@ function GDPBubbleChart(){
     };
     var colorFunction = function (x) {
         continent = {
-            'Europe':'#bcd3bb',
+            'Europe':'#bda29a',
             'Asia':'#e88f70',
-            'Africa':'#edc1a5',
+            'Africa':'#7b7c68',
             'Americas':'#9dc5c8',
-            'Oceania':'#e1e8c8'
+            'Oceania':'#f0b489'
         }
         // ['#bcd3bb', '#e88f70', '#edc1a5', '#9dc5c8', '#e1e8c8', '#7b7c68', '#e5b5b5', '#f0b489', '#928ea8', '#bda29a'];
         var y = continent[ContinentList[x]]
