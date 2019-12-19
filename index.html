@@ -146,7 +146,11 @@
             l_label.push(k.name)
         }
 
-        let radarData = dataEx[COUNTRY.length - 1 - COUNTRY.indexOf(selected[selected.length - 1])]
+        let radarData = null
+        for(let k of dataEx){
+            if (country==k[0])
+                radarData = k
+        }
         let maxV = 0
         let r_data = []
 
@@ -155,6 +159,9 @@
             if (maxV < radarData[k])
                 maxV = radarData[k]
         }
+        let t = r_data[r_data.length-1]
+        r_data[r_data.length-1] = r_data[r_data.length-2]
+        r_data[r_data.length-2] = t
         r_data = [
             {
                 value: r_data,
@@ -162,14 +169,14 @@
             }
         ]
         let r_label = [
-            { name: 'Food', max: maxV },
-            { name: 'Fuels', max: maxV },
-            { name: 'Iron', max: maxV },
-            { name: 'Chemicals', max: maxV },
-            { name: 'Machinery', max: maxV },
-            { name: 'Textiles', max: maxV },
-            { name: 'Clothing', max: maxV }]
-
+            { name: '食品', max: maxV },
+            { name: '燃料', max: maxV },
+            { name: '铁', max: maxV },
+            { name: '化学制品', max: maxV },
+            { name: '机械', max: maxV },
+            { name: '布料', max: maxV },
+            { name: '纺织品', max: maxV }]
+        console.log(radarData,r_data)
         pie(country,l_label,ldata,r_label,r_data)
    }
     let data = [
