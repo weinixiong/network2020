@@ -18,14 +18,14 @@ function paral() {
     };
     //商品种类
     var schema = [
-        { name: 'Country', index: 0, text: 'Country' },
-        { name: 'Food', index: 1, text: 'Food' },
-        { name: 'Fuels', index: 2, text: 'Fuels' },
-        { name: 'Iron', index: 3, text: 'Iron and steel' },
-        { name: 'Chemicals', index: 4, text: 'Chemicals' },
-        { name: 'Machinery', index: 5, text: ' Machinery and transport equipment' },
-        { name: 'Textiles', index: 6, text: 'Textiles' },
-        { name: 'Clothing', index: 7, text: 'Clothing' },
+        { name: 'Country', index: 0, text: '国家' },
+        { name: 'Food', index: 1, text: '食品' },
+        { name: 'Fuels', index: 2, text: '燃料' },
+        { name: 'Iron', index: 3, text: '铁' },
+        { name: 'Chemicals', index: 4, text: '化学制品' },
+        { name: 'Machinery', index: 5, text: '机械' },
+        { name: 'Textiles', index: 6, text: '纺织品' },
+        { name: 'Clothing', index: 7, text: '服装' },
     ]
 
     var lineStyle = {
