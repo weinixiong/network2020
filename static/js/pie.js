@@ -3,7 +3,7 @@ document.getElementById('countryName').innerHTML = country
 option = {
     title: {
         text: '出口商品',
-        left: 'center',
+        left: 'left',
         top:'top'
     },
     radar: {
@@ -30,7 +30,7 @@ Pchart.setOption(option)
 option = {
     title: {
         text: '出口国 TOP5',
-        left: 'center',
+        left: 'left',
     },
     yAxis: {
         type: 'category',
