@@ -36,14 +36,15 @@ function paral() {
     };
 
     var optionParal = {
-        brush: { brushLink: "all", toolbox: ['rect', 'keep', 'clear'] },
-        backgroundColor: 'gray',
+        // brush: { brushLink: "all", toolbox: ['rect', 'keep', 'clear'] },
+        color:["#c25552","#2879ff"],
+        backgroundColor: '#FFF',
         legend: {
             bottom: 30,
             data: ['import', 'export'],
             itemGap: 20,
             textStyle: {
-                color: '#fff',
+                color: 'gray',
                 fontSize: 14
             }
         },
@@ -110,19 +111,21 @@ function paral() {
             // bottom: 100,
             parallelAxisDefault: {
                 type: 'value',
-                name: 'AQI指数',
-                nameLocation: 'end',
+                // name: 'AQI指数',
+                // nameLocation: 'end',
                 nameGap: 20,
                 nameTextStyle: {
-                    color: '#fff',
-                    fontSize: 12
+                    color: 'black',
+                    fontSize: 12,
                 },
                 axisLine: {
+                    // show:false,
                     lineStyle: {
                         color: '#aaa'
                     }
                 },
                 axisTick: {
+                    show:false,
                     lineStyle: {
                         color: '#777'
                     }
@@ -131,9 +134,7 @@ function paral() {
                     show: false
                 },
                 axisLabel: {
-                    textStyle: {
-                        color: '#fff'
-                    }
+                    show: false
                 }
             }
         },
