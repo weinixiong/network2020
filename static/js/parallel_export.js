@@ -83,7 +83,8 @@ function paral() {
                 },
                 axisTick: {
                     show: false
-                }
+                },
+                parallelIndex:0
             },
             { dim: 1, name: schema[1].text },
             { dim: 2, name: schema[2].text },
@@ -142,14 +143,16 @@ function paral() {
                 type: 'parallel',
                 lineStyle: lineStyle,
                 smooth: false,
-                data: dataIm
+                data: dataIm,
+                hoverAnimation: true,
             },
             {
                 name: 'import',
                 type: 'parallel',
                 lineStyle: lineStyle,
                 smooth: false,
-                data: dataEx
+                data: dataEx,
+                hoverAnimation: true,
             },
         ]
     };
@@ -244,7 +247,7 @@ function renderBrushedBar(params) {
     //这里总共就一个series,貌似不用循环也行，以防万一
     for (var sIdx = 0; sIdx < brushComponent.selected.length; sIdx++) {
         var brushed = brushComponent.selected[sIdx].dataIndex;
-        console.log(brushed)//选中的国家的index列表（balance列表里面的国家）
+        // console.log(brushed)//选中的国家的index列表（balance列表里面的国家）
     }
 }
 
@@ -258,6 +261,7 @@ function selcet_ini(select, data) {
 
 //select value列表获取
 function chose_get_value(select) {
+    alert($("li .selected").value);
     return $(select).val();
 }
 
@@ -283,31 +287,85 @@ $('#countries').multipleSelect({
     maxHeightUnit: 'row',
     maxHeight: 18,
     isOpen: true
-
 });
 
-$("#countries").change(function () {
-    selected = chose_get_value("#countries");
-    // console.log(echarts.getInstanceByDom(document.getElementById('barchart'"parallel")))
-    let chart0 = echarts.getInstanceByDom(document.getElementById('barchart'))
+//两个列表的差集
+function diff(lt1, lt2) {
+    var diff = lt1.length > lt2.length ? lt1.filter(function (i) { return lt2.indexOf(i) < 0; })
+        : lt2.filter(function (i) { return lt1.indexOf(i) < 0; });
+    return diff
+}
 
-    console.log("did")
-    chart0.dispatchAction({
-        type: 'showTip',
-        // // 可选，系列 index，可以是一个数组指定多个系列
-        seriesIndex: 0,
-        // // 可选，系列名称，可以是一个数组指定多个系列
-        // seriesName?: string|Array,
-        // // 可选，数据的 index
-        dataIndex: COUNTRY.length-1-COUNTRY.indexOf(selected[selected.length-1]),
-        // // 可选，数据的 名称
-        // name: "import"
-    })
-    
-    for(let c of selected){
-        clickCountry(c)
-    }
+$(function () {
+    var mysel = $("#countries");
+    mysel.change(function () {
+        var newvalue = mysel.val(); //当前选中值
+        let chart0 = echarts.getInstanceByDom(document.getElementById('barchart'))
+        let chart1 = echarts.getInstanceByDom(document.getElementById('parallel'))
+        console.log("on change")
 
-    console.log(selected)
+        var clicked = diff(newvalue, selected)[0];
+
+        clickCountry(clicked)
+        //update select
+        if (selected.indexOf(clicked) < 0) {
+            selected.push(clicked)
+        }
+        else {
+            selected.splice(selected.indexOf(clicked), 1)
+        }
+
+        console.log(selected)
+
+        chart0.dispatchAction({
+            type: 'brush',
+            areas: [ // areas 表示选框的集合，可以指定多个选框。
+                { // 选框一：
+                    xAxisIndex: 0, // 指定此选框属于 index 为 0 的 geo 坐标系。
+                    // 也可以通过 xAxisIndex 或 yAxisIndex 来指定此选框属于直角坐标系。
+                    // 如果没有指定，则此选框属于『全局选框』。不属于任何坐标系。
+                    // 属于『坐标系选框』，可以随坐标系一起缩放平移。属于全局的选框不行。
+                    brushType: 'lineX', // 指定选框的类型。还可以为 'rect', 'lineX', 'lineY'
+                    // range: [ // 如果是『全局选框』，则使用 range 来描述选框的范围。
+                    //     0,1
+                    // ],
+                    coordRange: [ // 如果是『坐标系选框』，则使用 coordRange 来指定选框的范围。
+                        COUNTRY.length - 1 - COUNTRY.indexOf(selected[selected.length - 1])
+                        // 这个例子中，因为指定了 geoIndex，所以 coordRange 里单位是经纬度。
+                    ]
+                },
+            ]
+        });
+        chart0.dispatchAction({
+            type: 'showTip',
+            // // 可选，系列 index，可以是一个数组指定多个系列
+            seriesIndex: 0,
+            // // 可选，系列名称，可以是一个数组指定多个系列
+            // seriesName?: string|Array,
+            // // 可选，数据的 index
+            dataIndex: COUNTRY.length - 1 - COUNTRY.indexOf(selected[selected.length - 1]),
+            // // 可选，数据的 名称
+            // name: "import"
+        })
+
+        // chart1.dispatchAction({
+        //     type: 'brush',
+        //     areas: [ // areas 表示选框的集合，可以指定多个选框。
+        //         { // 选框一：
+        //             parallelIndex: 0, // 指定此选框属于 index 为 0 的 geo 坐标系。
+        //             // 也可以通过 xAxisIndex 或 yAxisIndex 来指定此选框属于直角坐标系。
+        //             // 如果没有指定，则此选框属于『全局选框』。不属于任何坐标系。
+        //             // 属于『坐标系选框』，可以随坐标系一起缩放平移。属于全局的选框不行。
+        //             brushType: 'lineY', // 指定选框的类型。还可以为 'rect', 'lineX', 'lineY'
+        //             range: [ // 如果是『全局选框』，则使用 range 来描述选框的范围。
+        //                 COUNTRY.length - 1 - COUNTRY.indexOf(selected[selected.length - 1])
+        //             ],
+        //             // coordRange: [ // 如果是『坐标系选框』，则使用 coordRange 来指定选框的范围。
+        //             //     COUNTRY.length-1-COUNTRY.indexOf(newvalue[newvalue.length-1])
+        //             //     // 这个例子中，因为指定了 geoIndex，所以 coordRange 里单位是经纬度。
+        //             // ]
+        //         },
+        //     ]
+        // })
+    });
 });
-
