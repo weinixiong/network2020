@@ -36,8 +36,11 @@ function paral() {
     };
 
     var optionParal = {
+        title: {
+            text: '产品进/出口量'
+        },
         // brush: { brushLink: "all", toolbox: ['rect', 'keep', 'clear'] },
-        color:["#cc5552","#19a05f"],
+        color:["#cc5552","#25adf4"],
         backgroundColor: '#FFF',
         legend: {
             bottom: 30,
@@ -144,7 +147,7 @@ function paral() {
                 type: 'parallel',
                 lineStyle: lineStyle,
                 smooth: false,
-                data: dataIm,
+                data: dataIm.reverse(),
                 hoverAnimation: true,
             },
             {
@@ -152,7 +155,7 @@ function paral() {
                 type: 'parallel',
                 lineStyle: lineStyle,
                 smooth: false,
-                data: dataEx,
+                data: dataEx.reverse(),
                 hoverAnimation: true,
             },
         ]
@@ -170,8 +173,7 @@ function paral() {
 
 function barchart() {
     var chartBar = echarts.init(document.getElementById('barchart'))
-    var dataBalance = Object.values(balance).reverse();
-    var countryList = Object.keys(balance).reverse();
+    var dataBalance = Object.values(balance);
 
     var optionBar = {
         title: {
@@ -221,7 +223,7 @@ function barchart() {
             axisLabel: { show: false },
             axisTick: { show: false },
             splitLine: { show: false },
-            data: countryList
+            data: COUNTRY
         },
         series: [
             {
@@ -239,7 +241,7 @@ function barchart() {
                 itemStyle: {
                     color: function(p) {
                         // console.log(p)
-                        return p.data > 0 ? '#cc5552' : '#00802d';
+                        return p.data > 0 ? '#cc5552' : '#6bb18c';
                     }
                 }
             }
@@ -334,7 +336,7 @@ $(function () {
                     xAxisIndex: 0, // 指定此选框属于 index 为 0 的 geo 坐标系。
                     brushType: 'lineX', // 指定选框的类型。还可以为 'rect', 'lineX', 'lineY'
                     coordRange: [ // 如果是『坐标系选框』，则使用 coordRange 来指定选框的范围。
-                        COUNTRY.length - 1 - COUNTRY.indexOf(selected[selected.length - 1])
+                        COUNTRY.indexOf(selected[selected.length - 1])
                         // 这个例子中，因为指定了 geoIndex，所以 coordRange 里单位是经纬度。
                     ]
                 },
@@ -343,7 +345,7 @@ $(function () {
         chart0.dispatchAction({
             type: 'showTip',
             seriesIndex: 0,
-            dataIndex: COUNTRY.length - 1 - COUNTRY.indexOf(selected[selected.length - 1]),
+            dataIndex: COUNTRY.indexOf(selected[selected.length - 1]),
         })
 
         // chart1.dispatchAction({

@@ -52,7 +52,7 @@ option = {
         barWidth: '60%',
         itemStyle:{
             normal:{
-                color:'#ccc'
+                color:'#cc5552'
             }
         },
         label: {
