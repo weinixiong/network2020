@@ -238,7 +238,7 @@ function barchart() {
                 hoverAnimation: true,
                 itemStyle: {
                     color: function(p) {
-                        console.log(p)
+                        // console.log(p)
                         return p.data > 0 ? '#cc5552' : '#00802d';
                     }
                 }
@@ -332,13 +332,7 @@ $(function () {
             areas: [ // areas 表示选框的集合，可以指定多个选框。
                 { // 选框一：
                     xAxisIndex: 0, // 指定此选框属于 index 为 0 的 geo 坐标系。
-                    // 也可以通过 xAxisIndex 或 yAxisIndex 来指定此选框属于直角坐标系。
-                    // 如果没有指定，则此选框属于『全局选框』。不属于任何坐标系。
-                    // 属于『坐标系选框』，可以随坐标系一起缩放平移。属于全局的选框不行。
                     brushType: 'lineX', // 指定选框的类型。还可以为 'rect', 'lineX', 'lineY'
-                    // range: [ // 如果是『全局选框』，则使用 range 来描述选框的范围。
-                    //     0,1
-                    // ],
                     coordRange: [ // 如果是『坐标系选框』，则使用 coordRange 来指定选框的范围。
                         COUNTRY.length - 1 - COUNTRY.indexOf(selected[selected.length - 1])
                         // 这个例子中，因为指定了 geoIndex，所以 coordRange 里单位是经纬度。
@@ -348,14 +342,8 @@ $(function () {
         });
         chart0.dispatchAction({
             type: 'showTip',
-            // // 可选，系列 index，可以是一个数组指定多个系列
             seriesIndex: 0,
-            // // 可选，系列名称，可以是一个数组指定多个系列
-            // seriesName?: string|Array,
-            // // 可选，数据的 index
             dataIndex: COUNTRY.length - 1 - COUNTRY.indexOf(selected[selected.length - 1]),
-            // // 可选，数据的 名称
-            // name: "import"
         })
 
         // chart1.dispatchAction({
