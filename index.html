@@ -51,6 +51,7 @@
         </div>
     </div>
     <div class='right'>
+        <div id = 'countryName' ></div>
         <div id='Cpie' style="height:45%;width:100%;border: 1px solid #ccc;margin: 3px;"></div>
         <div id='Lchart' style="height:45%;width:100%;border: 1px solid #ccc;margin: 3px;bottom: 5px;"></div>
     </div>
@@ -135,11 +136,12 @@
         path.sort(function(a,b){
             return b.value - a.value
         })
-        let data = [path[0],path[1],path[2],path[3],path[4]]
+        let data = [path[4],path[3],path[2],path[1],path[0]]
         let ldata = []
         let l_label = []
         for(let k of data){
-            ldata.push(k.value)
+            let v = (k.value/100000000)
+            ldata.push(v.toFixed(2))
             l_label.push(k.name)
         }
 
@@ -168,7 +170,7 @@
                     { name: 'Clothing',  max:maxV}]
         
 
-        pie(l_label,ldata,r_label,r_data)
+        pie(country,l_label,ldata,r_label,r_data)
     }
     let data = [
         {value:335, name:'广东'},
