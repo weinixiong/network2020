@@ -294,7 +294,7 @@ $('#countries').multipleSelect({
     animate: "slide",
     filter: true,
     maxHeightUnit: 'row',
-    maxHeight: 18,
+    maxHeight: 24,
     isOpen: true
 });
 
@@ -313,16 +313,17 @@ $(function () {
         let chart1 = echarts.getInstanceByDom(document.getElementById('parallel'))
         console.log("on change")
 
-        var clicked = diff(newvalue, selected)[0];
+        var clicked = diff(newvalue, selected);
 
-        clickCountry(clicked)
-        
-        //update select
-        if (selected.indexOf(clicked) < 0) {
-            selected.push(clicked)
-        }
-        else {
-            selected.splice(selected.indexOf(clicked), 1)
+        for(let c of clicked){
+            clickCountry(c)
+            //update select
+            if (selected.indexOf(c) < 0) {
+                selected.push(c)
+            }
+            else {
+                selected.splice(selected.indexOf(c), 1)
+            }
         }
         
         renderLchart(selected[selected.length-1])

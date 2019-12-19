@@ -245,6 +245,9 @@ function initMap(data){
             min = data.min
     }
    let option = {
+    title: {
+        text: '各国进/出口关系'
+    },
         backgroundColor:"#E6EDF3",
         tooltip: {
             trigger: 'item',
