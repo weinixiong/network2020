@@ -37,7 +37,7 @@ function paral() {
 
     var optionParal = {
         // brush: { brushLink: "all", toolbox: ['rect', 'keep', 'clear'] },
-        color:["#c25552","#2879ff"],
+        color:["#cc5552","#2879ff"],
         backgroundColor: '#FFF',
         legend: {
             bottom: 30,
@@ -236,6 +236,12 @@ function barchart() {
                 },
                 data: dataBalance,
                 hoverAnimation: true,
+                itemStyle: {
+                    color: function(p) {
+                        console.log(p)
+                        return p.data > 0 ? '#cc5552' : '#00802d';
+                    }
+                }
             }
         ]
     };
