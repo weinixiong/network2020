@@ -142,7 +142,33 @@
             ldata.push(k.value)
             l_label.push(k.name)
         }
-        pie(l_label,ldata)
+
+        let radarData = dataEx[COUNTRY.length-1-COUNTRY.indexOf(selected[selected.length-1])]
+        let maxV = 0
+        let r_data = []
+        
+        for (let k =1;k<radarData.length;k++){
+            r_data.push(radarData[k])
+            if (maxV<radarData[k])
+                maxV = radarData[k]
+        }
+        r_data = [
+            {
+                value : r_data,
+                name : ''
+            }
+        ]
+        let r_label = [
+                    { name: 'Food',  max:maxV},
+                    { name: 'Fuels',  max:maxV},
+                    { name: 'Iron',  max:maxV },
+                    { name: 'Chemicals',  max:maxV},
+                    { name: 'Machinery',  max:maxV},
+                    { name: 'Textiles',  max:maxV},
+                    { name: 'Clothing',  max:maxV}]
+        
+
+        pie(l_label,ldata,r_label,r_data)
     }
     let data = [
         {value:335, name:'广东'},
