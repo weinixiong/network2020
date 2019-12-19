@@ -253,7 +253,7 @@ function initMap(data){
             trigger: 'item',
             formatter: function (params) {
                 if (params.value) {
-                    return params.name + '<br/>' + params.value[2];
+                    return params.name + '<br/>' + (params.value[2]/10000).toFixed(0)+'万';
                 } else {
                     return params.name;
                 }
