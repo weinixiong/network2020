@@ -37,7 +37,7 @@ function paral() {
 
     var optionParal = {
         // brush: { brushLink: "all", toolbox: ['rect', 'keep', 'clear'] },
-        color:["#cc5552","#2879ff"],
+        color:["#cc5552","#19a05f"],
         backgroundColor: '#FFF',
         legend: {
             bottom: 30,
