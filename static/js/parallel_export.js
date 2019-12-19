@@ -307,7 +307,7 @@ $(function () {
         var clicked = diff(newvalue, selected)[0];
 
         clickCountry(clicked)
-        renderLchart(selected[selected.length-1])
+        
         //update select
         if (selected.indexOf(clicked) < 0) {
             selected.push(clicked)
@@ -315,6 +315,8 @@ $(function () {
         else {
             selected.splice(selected.indexOf(clicked), 1)
         }
+        
+        renderLchart(selected[selected.length-1])
 
         console.log(selected)
 

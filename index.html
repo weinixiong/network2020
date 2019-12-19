@@ -9,7 +9,7 @@
     <script src="./static/js/world.js"></script>
     <link rel="stylesheet" href="./static/css/main.css">  
     <script type="text/javascript" src="./static/js/jquery-3.4.1.min.js"></script> 
-    
+
     <!-- multiple-select.js -->
     <link rel="stylesheet" href="https://unpkg.com/multiple-select@1.5.2/dist/multiple-select.min.css">
     <script src="https://unpkg.com/multiple-select@1.5.2/dist/multiple-select.min.js"></script>
@@ -19,19 +19,11 @@
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
     <div id="filter" style="width: 330px;">
         <!-- <select id="countries" class="j-chosen" data-live-search="true" multiple="multiple"></select> -->
-        <select id="countries" data-placeholder="Choose a Country..."  multiple="multiple=" ></select>
+        <select id="countries" data-placeholder="Choose a Country..." multiple="multiple="></select>
     </div>
     <div class="left">
         <div id="main" style='height:600px'></div>
         <div id='statisticP'>
-            <div class="layer parallel">
-                <div class="layerTitle">
-                    <i class="arrow" onclick="hideAndShow(this)"></i>产品进/出口量
-                </div>
-                <div class=" sencondLayer inputSlider">
-                    <div id="parallel" style="width:100%;height:300px;"></div>
-                </div>
-            </div>
             <div class="layer barchart">
                 <div class="layerTitle">
                     <i class="arrow" onclick="hideAndShow(this)"></i>进出口差值与GDP比值
@@ -40,6 +32,15 @@
                     <div id="barchart" style="width:100%;height:300px;"></div>
                 </div>
             </div>
+            <div class="layer parallel">
+                <div class="layerTitle">
+                    <i class="arrow" onclick="hideAndShow(this)"></i>产品进/出口量
+                </div>
+                <div class=" sencondLayer inputSlider">
+                    <div id="parallel" style="width:100%;height:300px;"></div>
+                </div>
+            </div>
+
             <div class="layer BubbleChart">
                 <div class="layerTitle">
                     <i class="arrow" onclick="hideAndShow(this)"></i>人均GDP、人口、基尼指数
@@ -54,7 +55,7 @@
         <div id='Cpie' style="height:45%;width:100%;border: 1px solid #ccc;margin: 3px;"></div>
         <div id='Lchart' style="height:45%;width:100%;border: 1px solid #ccc;margin: 3px;bottom: 5px;"></div>
     </div>
-    
+
 
 </body>
 
@@ -123,65 +124,65 @@
                 paral();
             if (className.contains('BubbleChart'))
                 GDPBubbleChart();
-                if (className.contains('barchart'))
+            if (className.contains('barchart'))
                 barchart();
         }
         // console.log(p)
     }
-    function renderLchart(country){
+    function renderLchart(country) {
         //{ name: r.target, value: Number(r.value) }
         let path = pathList[country].path
         let top5 = []
-        path.sort(function(a,b){
+        path.sort(function (a, b) {
             return b.value - a.value
         })
-        let data = [path[0],path[1],path[2],path[3],path[4]]
+        let data = [path[0], path[1], path[2], path[3], path[4]]
         let ldata = []
         let l_label = []
-        for(let k of data){
+        for (let k of data) {
             ldata.push(k.value)
             l_label.push(k.name)
         }
 
-        let radarData = dataEx[COUNTRY.length-1-COUNTRY.indexOf(selected[selected.length-1])]
+        let radarData = dataEx[COUNTRY.length - 1 - COUNTRY.indexOf(selected[selected.length - 1])]
         let maxV = 0
         let r_data = []
-        
-        for (let k =1;k<radarData.length;k++){
+
+        for (let k = 1; k < radarData.length; k++) {
             r_data.push(radarData[k])
-            if (maxV<radarData[k])
+            if (maxV < radarData[k])
                 maxV = radarData[k]
         }
         r_data = [
             {
-                value : r_data,
-                name : ''
+                value: r_data,
+                name: ''
             }
         ]
         let r_label = [
-                    { name: 'Food',  max:maxV},
-                    { name: 'Fuels',  max:maxV},
-                    { name: 'Iron',  max:maxV },
-                    { name: 'Chemicals',  max:maxV},
-                    { name: 'Machinery',  max:maxV},
-                    { name: 'Textiles',  max:maxV},
-                    { name: 'Clothing',  max:maxV}]
-        
+            { name: 'Food', max: maxV },
+            { name: 'Fuels', max: maxV },
+            { name: 'Iron', max: maxV },
+            { name: 'Chemicals', max: maxV },
+            { name: 'Machinery', max: maxV },
+            { name: 'Textiles', max: maxV },
+            { name: 'Clothing', max: maxV }]
 
-        pie(l_label,ldata,r_label,r_data)
+
+        pie(l_label, ldata, r_label, r_data)
     }
     let data = [
-        {value:335, name:'广东'},
-        {value:310, name:'江苏'},
-        {value:234, name:'广西'},
-        {value:135, name:'浙江'},
-        {value:1048, name:'黑龙江'},
-        {value:251, name:'其他'},
-        ]
-    let name ='中国'
+        { value: 335, name: '广东' },
+        { value: 310, name: '江苏' },
+        { value: 234, name: '广西' },
+        { value: 135, name: '浙江' },
+        { value: 1048, name: '黑龙江' },
+        { value: 251, name: '其他' },
+    ]
+    let name = '中国'
     var Pchart = echarts.init(document.getElementById('Cpie'));
     var Lchart = echarts.init(document.getElementById('Lchart'));
-    
+
     let rrr = renderLchart('China')
     console.log(rrr)
 </script>
