@@ -292,6 +292,11 @@ $("#countries").change(function () {
     let chart0 = echarts.getInstanceByDom(document.getElementById('barchart'))
 
     console.log("did")
+    
+    for(let c of selected){
+        clickCountry(c)
+    }
+    renderLchart(selected[selected.length-1])
     chart0.dispatchAction({
         type: 'showTip',
         // // 可选，系列 index，可以是一个数组指定多个系列
@@ -304,9 +309,6 @@ $("#countries").change(function () {
         // name: "import"
     })
     
-    for(let c of selected){
-        clickCountry(c)
-    }
 
     console.log(selected)
 });
