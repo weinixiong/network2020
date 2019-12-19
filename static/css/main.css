@@ -2,6 +2,7 @@ body{
 	display: flex;
 	display:-webkit-flex;
 	flex-direction: row;
+	height:100%
 
 }
 .left {
@@ -23,7 +24,7 @@ body{
 	display: flex;
 	display:-webkit-flex;
 	flex-direction: column;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	width:20%
 }
 
@@ -90,7 +91,7 @@ display: flex
 }
 
 #countryName{
-	font-size: 32px;
+	    font-size: 32px;
     text-align: center;
     border: 1px solid #ccc;
     margin: 3px;
