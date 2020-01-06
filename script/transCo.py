@@ -190,7 +190,7 @@ def getcountries():
     for k in balanceC:
         if k in bubbleC and k in exportsC and k in importsC and k in country_coordC:
             res.append(k)
-    with open('./countries.json','w') as f:
+    with open('./results/countries.json','w') as f:
         json.dump(res,f)
 def freshData():
     p = open('./results/countries.json')
@@ -249,4 +249,5 @@ if __name__ == '__main__':
     # fw=open("./GDP_Population_gini.json","w")#打开json文件
     # json.dump(res,fw,sort_keys=True)
     # getcountries()
-    getcommon()
+    freshData()
+    # getcommon()
