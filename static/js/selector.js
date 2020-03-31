@@ -1,15 +1,16 @@
 //初始化多选框
 function selcet_ini(select, data) {
     //添加选项
-    // for (let c of data) {
-    //     $(select).append('<option>' + c.toString() + "</option>")
-    // }
-    for (let c in data) {
-        $(select).append('<optgroup label='+c.toString()+' id='+c.toString()+'></optgroup>')
-        for(let operator of data[c]){
-            $('#'+c).append('<option value='+c.toString()+'-'+operator.toString()+'>' + operator.toString() + "</option>")
-        }
+    for (let c of data) {
+        $(select).append('<option>' + c.toString() + "</option>")
     }
+    //添加国家-运营商选项
+    // for (let c in data) {
+    //     $(select).append('<optgroup label='+c.toString()+' id='+c.toString()+'></optgroup>')
+    //     for(let operator of data[c]){
+    //         $('#'+c).append('<option value='+c.toString()+'-'+operator.toString()+'>' + operator.toString() + "</option>")
+    //     }
+    // }
 }
 
 //select value列表获取
@@ -24,7 +25,7 @@ function chose_get_text(select) {
 }
 
 //多选select 数据初始化
-selcet_ini("#countries", MOCK);
+selcet_ini("#countries", COUNTRY);
 
 $('#countries').multipleSelect({
     addTitle: true, //鼠标点悬停在下拉框时是否显示被选中的值
@@ -59,7 +60,7 @@ $(function () {
         var clicked = diff(newvalue, selected);
 
         for(let c of clicked){
-            // clickCountry(c)联动选运营商
+            clickCountry(c)//联动选运营商
             //update select
             if (selected.indexOf(c) < 0) {
                 selected.push(c)
@@ -69,6 +70,6 @@ $(function () {
             }
         }
         console.log(selected,clicked)
-        // renderLchart(selected[selected.length-1])
+        renderLchart(selected[selected.length-1])
     });
 });
