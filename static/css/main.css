@@ -1,9 +1,22 @@
 body{
 	display: flex;
 	display:-webkit-flex;
-	flex-direction: row;
+	flex-direction: column;
 	height:100%
 
+}
+.title{
+	background-color: rgb(201,201,201);
+	text-align: center;
+	font-size: 16px;
+	height: 30px;
+	width:100%;
+}
+.main-panel{
+	height: calc(100% - 30px);
+	width:100%;
+	display: flex;
+	flex-direction: row;
 }
 .left {
 	display: flex;
@@ -16,6 +29,8 @@ body{
 #main{
 	border: 1px solid #ccc;
 	margin: 3px;
+	width:1300px;
+	height: 600px;
 }
 #statisticP{
 	height:10%
@@ -96,4 +111,7 @@ display: flex
     border: 1px solid #ccc;
     margin: 3px;
     margin-bottom: 5px;
+}
+.tabs_inner{
+	pointer-events: none;
 }

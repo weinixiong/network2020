@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta http-equiv="Access-Control-Allow-Origin:*" content="text/html; charset=utf-8" />
-    <title>World Economy</title>
-    <!-- 引入 echarts.js -->
-    <script src="./static/js/echarts.js"></script>
-    <script src="./static/js/world.js"></script>
-    <link rel="stylesheet" href="./static/css/main.css">  
-    <script type="text/javascript" src="./static/js/jquery-3.4.1.min.js"></script> 
-
-    <!-- multiple-select.js -->
-    <link rel="stylesheet" href="https://unpkg.com/multiple-select@1.5.2/dist/multiple-select.min.css">
-    <script src="https://unpkg.com/multiple-select@1.5.2/dist/multiple-select.min.js"></script>
+<meta http-equiv="Access-Control-Allow-Origin:*" content="text/html; charset=utf-8" />
+<title>World Economy</title>
+<!-- 引入 echarts.js -->
+<script src="./static/js/echarts.js"></script>
+<script src="./static/js/world.js"></script>
+<link rel="stylesheet" href="./static/css/main.css">  
+<script type="text/javascript" src="./static/js/jquery-3.4.1.min.js"></script> 
+<!-- multiple-select.js -->
+<link rel="stylesheet" href="https://unpkg.com/multiple-select@1.5.2/dist/multiple-select.min.css">
+<script src="https://unpkg.com/multiple-select@1.5.2/dist/multiple-select.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-    <div id="filter" style="width: 330px;">
-        <!-- <select id="countries" class="j-chosen" data-live-search="true" multiple="multiple"></select> -->
-        <select id="countries" data-placeholder="Choose a Country..." multiple="multiple="></select>
-    </div>
-    <div class="left">
-        <div id="main" style='height:600px'></div>
-        <div id='statisticP'>
-            <div class="layer barchart">
-                <div class="layerTitle">
-                    <i class="arrow" onclick="hideAndShow(this)"></i>进出口差值与GDP比值
-                </div>
-                <div class=" sencondLayer inputSlider">
-                    <div id="barchart" style="width:100%;height:300px;"></div>
-                </div>
-            </div>
-            <div class="layer parallel">
-                <div class="layerTitle">
-                    <i class="arrow" onclick="hideAndShow(this)"></i>产品进/出口量
-                </div>
-                <div class=" sencondLayer inputSlider">
-                    <div id="parallel" style="width:100%;height:300px;"></div>
-                </div>
-            </div>
 
-            <div class="layer BubbleChart">
-                <div class="layerTitle">
-                    <i class="arrow" onclick="hideAndShow(this)"></i>人均GDP、人口、基尼指数
+    <div class='title'>INVIS 区域电信网数据可视化系统</div>
+    <div class="main-panel">
+        <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+        <div id="filter" style="width: 330px;">
+            <!-- <select id="countries" class="j-chosen" data-live-search="true" multiple="multiple"></select> -->
+            <select id="countries" data-placeholder="Choose a Country..." multiple="multiple="></select>
+        </div>
+        <div class="left">
+            <div >
+                <ul class='nav nav-tabs' id='nav_tabs'>
+                    <li class="active tabs" id="nav_operator"><a class="tabs_inner">运营商商业关系</a></li>
+                    <li id="nav_device_connect" class="tabs"><a class="tabs_inner">通信连接结构</a></li>
+                    <!-- <li ><a href="#">设备运行风险分析</a></li> -->
+                </ul>
+                <div style='height:600px;width:100%'>
+                    <div id='operator' style='display: block'></div>
+                    <div id="main" style='display: none'></div>
                 </div>
-                <div class=" sencondLayer inputSlider">
-                    <div id="BubbleChart" style="width:100%; height:600px;border: 1px solid #ccc;"></div>
+
+            </div>
+            <div id='statisticP'>
+                <div class="layer barchart">
+                    <div class="layerTitle">
+                        <i class="arrow" onclick="hideAndShow(this)"></i>进出口差值与GDP比值
+                    </div>
+                    <div class=" sencondLayer inputSlider">
+                        <div id="barchart" style="width:100%;height:300px;"></div>
+                    </div>
+                </div>
+                <div class="layer parallel">
+                    <div class="layerTitle">
+                        <i class="arrow" onclick="hideAndShow(this)"></i>产品进/出口量
+                    </div>
+                    <div class=" sencondLayer inputSlider">
+                        <div id="parallel" style="width:100%;height:300px;"></div>
+                    </div>
+                </div>
+
+                <div class="layer BubbleChart">
+                    <div class="layerTitle">
+                        <i class="arrow" onclick="hideAndShow(this)"></i>人均GDP、人口、基尼指数
+                    </div>
+                    <div class=" sencondLayer inputSlider">
+                        <div id="BubbleChart" style="width:100%; height:600px;border: 1px solid #ccc;"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class='right'>
-        <div id = 'countryName' style="width:100%"></div>
-        <div id='Cpie' style="height:300px;width:100%;border: 1px solid #ccc;margin: 3px;"></div>
-        <div id='Lchart' style="height:300px;width:100%;border: 1px solid #ccc;margin: 3px;bottom: 5px;"></div>
-    </div>
+        <div class='right'>
+            <div id = 'countryName' style="width:100%"></div>
+            <div id='Cpie' style="height:300px;width:100%;border: 1px solid #ccc;margin: 3px;"></div>
+            <div id='Lchart' style="height:300px;width:100%;border: 1px solid #ccc;margin: 3px;bottom: 5px;"></div>
+        </div>
+   </div>
 
 
 </body>
-
+<script type="text/javascript" src="./static/js/nav_control.js"></script>
 <script src="./static/js/drawMap.js"></script>
 <script src="./static/js/BubbleChart.js"></script>
 <script src="./static/js/pie.js"></script>
@@ -184,7 +198,7 @@
     var Lchart = echarts.init(document.getElementById('Lchart'));
 
     // let rrr = renderLchart('China')
-    console.log(rrr)
+    // console.log(rrr)
 </script>
 
 </html>
