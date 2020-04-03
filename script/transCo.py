@@ -2,63 +2,106 @@ import csv
 import json
 
 def csv2json1(filename):
-    finput = open('./script/'+filename+'.csv','r',encoding='gbk')
-    ls = []
-    for line in finput:
+    finput = open('./cdata/'+filename+'.csv','r',encoding='UTF-8')
+    ispc_input = open('./cdata/ispc.csv','r')
+    ispc = {}
+    header = None
+    for line in ispc_input:
         line = line.replace('\n','').replace('"','')
         temp = line.split(',')
-        nameLens = 0
-        name = ''
-        for item in temp:
-            if(item.isdigit()==False and item !=''):
-                if (nameLens!=0):
-                    print(item)
-                name +=','+ item
-                nameLens +=1
-        for i in range(nameLens-1):
-            del temp[1]
-        # temp.splice(0,nameLens)
-        temp[0] = name
-        ls.append(temp)
+        if header is None:
+            header = temp
+            continue
+        cur = {}
+        for index, item in enumerate(header):
+            cur[item] = temp[index]
+        ispc[cur['ISPC']] = cur
+    ls = {}
+    label = None
+    for line in finput:
+        # print(line)
+        line = line.replace('\n','').replace('"','')
+        temp = line.split(',')
+        if label is None:
+            label = temp
+            continue;
+        line = {}
+        opc = ''
+        for i in range(0,len(temp)):
+            # print(label,temp,i)
+            if(label[i]=='opc'):
+                opc = temp[i]
+                if opc not in ls.keys():
+                    ls[opc] = {}
+                # print(temp[i],ls)
+            if(label[i]=='dpc'):
+                if(temp[i] not in ls[opc].keys()):
+                    ls[opc][temp[i]] = 0
+                # print(temp[2],ls[opc][temp[i]])
+                ls[opc][temp[i]]+=int(temp[2])#count
+                
     finput.close()#关闭数据流
-    foutput = open('./'+filename+".json",'w')
-    series = []
-    '''
-    [
-        [
-            [815,34.05,351014,"Australia",1800]
-            人均GDP,GINI系数，人口，国家，年份
-        ]
-    ]
-    '''
-    countries = []
-    maxV = 0
-    minV = 0
-    for i in range(1,len(ls)):
-        countries.append(ls[i][0])
-        s = []
-        #zip是内置函数，将两个长度一样的列表合成一个关系树，ls[0]是key,ls[1]是value
-        # ls[i] = dict(zip(ls[0],ls[i]))
-        for j in range(1,len(ls[0])):
-            if ls[i][j] == '':
-                value = 0
+    print(ls)
+    res = {}
+    for opc in ls:
+        if opc in ispc.keys():
+            if ispc[opc]['city']:
+                ocity = ispc[opc]['city']
             else:
-                value = int(ls[i][j])
-            s.append([value,value,value,ls[i][0],value])
-            if value > maxV:
-                    maxV = value
-            if value < minV or minV==0:
-                    minV = value
-        series.append(s)
-    res = {
-        'timeline':ls[0][1:],
-        'countries':countries,
-        'series':series,
-        'max':maxV,
-        'min':minV
-    }
-    json.dump(res,foutput,sort_keys=True)
-    foutput.close()
+                ocity = ispc[opc]['country']
+        else:
+            print(opc,'不存在该opc')
+            continue
+        cur = []
+        for dpc in ls[opc]:
+            if dpc in ispc.keys():
+                if ispc[dpc]['city']:
+                    dcity = ispc[dpc]['city']
+                else:
+                    dcity = ispc[dpc]['country']
+            else:
+                print(dpc,'不存在该ispc')
+                continue
+            cur.append({'dpc':dpc,'value':ls[opc][dpc],'dcity':dcity})
+        res[opc] = {'ocity':ocity,'tolist':cur,'operator':ispc[opc]['operator']}
+    with open('./'+filename+".json", 'w', encoding='utf-8') as f:
+        json.dump(res, f , ensure_ascii=False, indent=4)
+        f.close()
+def getispcLatLng(filename):
+    finput = open('./cdata/country_coord.json','r',encoding='UTF-8')
+    country_coord = json.load(finput)
+    chinaIspc = json.load(open('./tisp_connect.json','r',encoding='UTF-8'))
+    ispc_input = open('./cdata/ispc.csv','r')
+    ispc = {}
+    countrylist = {}
+    header = None
+    for line in ispc_input:
+        line = line.replace('\n','').replace('"','')
+        temp = line.split(',')
+        if header is None:
+            header = temp
+            continue
+        cur = {}
+        for index, item in enumerate(header):
+            cur[item] = temp[index]
+        # print(cur)
+        if(cur['country']=='China'):
+            if(cur['ISPC'] in chinaIspc.keys() and cur['city']!=''):
+                cur['latLng'] =  country_coord[cur['city']]
+            else:
+                continue
+        else:
+            if cur['country'] in country_coord.keys() and cur['country'] not in countrylist.keys():
+                cur['latLng'] =  country_coord[cur['country']]
+                countrylist[cur['country']] = True
+            else:
+                continue
+        ispc[cur['ISPC']] = cur
+              
+    finput.close()#关闭数据流
+    with open('./'+filename+".json", 'w', encoding='utf-8') as f:
+        json.dump(ispc, f , ensure_ascii=False, indent=4)
+        f.close()
     
 def MergeData():
     #读取基尼系数数据
@@ -245,9 +288,5 @@ def getcommon():
             print(c)
 if __name__ == '__main__':
     print('main------')
-    # res = MergeData()
-    # fw=open("./GDP_Population_gini.json","w")#打开json文件
-    # json.dump(res,fw,sort_keys=True)
-    # getcountries()
-    freshData()
-    # getcommon()
+    # csv2json1('tisp_connect')
+    getispcLatLng('ispc_coord')

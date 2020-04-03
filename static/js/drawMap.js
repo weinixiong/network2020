@@ -7,6 +7,7 @@ var countryInf = {}//{countryName:{value:'',data:''}},
     minV = 0,
     // Clicked = fasle;//用于确定是否增加国家的点
     ClickedList = {}//是否已点击
+var ISPCList = {}
 //根据起始终点名称确定经纬度坐标
 var convertData1 = function (fName,data) {
     let d1 = [],
@@ -61,7 +62,7 @@ function Draw(result) {
     return series
 };
 function GetSeries(fName,d1,d2){
-    let series = []
+    let series = [init_series]
     series.push(
                 {
                     name: fName,
@@ -194,47 +195,124 @@ function FreshLim(Name,IsDel){
     
 }
 Mapchart.on('click', function (params) {
-    var city = params.name;//默认飞线原点
-    clickCountry(city);
+    var ispc = params.name;//默认飞线原点
+    freshRightpanel(ISPCList[ispc])
+    clickCountry(ispc,false);
 });
-
-function clickCountry(city){
+function freshRightpanel(ispc){
+    let rightpanel = document.getElementById('ispcInfList')
+    let innerhtml = ''
+    let transfor = {
+         "ISPC":'国际信令点编码',
+        "name": "信令点名称",
+        "operator": "所属运营商",
+        "city": "所在城市",
+        "device": "设备信息",
+        "country_ch": "所属国家",
+    }
+    for(let key in ispc){
+        if(transfor.hasOwnProperty(key) && ispc[key]!='')
+            innerhtml +=`<li>${transfor[key]}: ${ispc[key]}</li>`
+    }
+    innerhtml = '<ul>'+innerhtml+"</ul>"
+    rightpanel.innerHTML = innerhtml
+}
+function clickCountry(city,isoperator = true){
     console.log('clicked',city)
-    if(ClickedList.hasOwnProperty(city) && ClickedList[city])
-    {
-        ClickedList[city] = false
-        //对各个节点的数据的value进行更新
-        //删除数据之后对极值进行更新
-        FreshLim(city,true)
-    }
-    else{
-        
-        //初始化飞线数据
-        var path = pathList[city].path
-        let data = {city,path,value:100}
-        if(countryInf.hasOwnProperty(city))
-            countryInf[city]['data'] = data
-        else
-            countryInf[city] = {data,value:0}
-        FreshLim(city,false)
-        // let s = Draw(data);
-        // let series = chart.getOption().series
-        // Freshlabel(series.concat(s));
-    }
-    let series = []
-    for(let k in ClickedList){
-        if(ClickedList[k]){
-            let s = Draw(countryInf[k].data)
-            series = series.concat(s)
+    if(isoperator){
+        for(let key in pathList){
+            if(city==pathList[key].operator){
+                clickISPC(city)
+            }
         }
     }
+    else{
+        clickISPC(city)
+    }
+    let series = [init_series]
+        for(let k in ClickedList){
+            if(ClickedList[k]){
+                let s = Draw(countryInf[k].data)
+                series = series.concat(s)
+            }
+        }
     freshMap({series,max:maxV,min:minV})
 }
-
+function clickISPC(city){
+    if(ClickedList.hasOwnProperty(city) && ClickedList[city])
+        {
+            ClickedList[city] = false
+            //对各个节点的数据的value进行更新
+            //删除数据之后对极值进行更新
+            FreshLim(city,true)
+        }
+        else{
+            
+            //初始化飞线数据
+            var path = pathList[city].path
+            let data = {city,path,value:100}
+            if(countryInf.hasOwnProperty(city))
+                countryInf[city]['data'] = data
+            else
+                countryInf[city] = {data,value:0}
+            FreshLim(city,false)
+            // let s = Draw(data);
+            // let series = chart.getOption().series
+            // Freshlabel(series.concat(s));
+        }
+}
+//获取地理名称的经纬度
+var getCoord = function (data) {
+    let res = [];
+    for (var key in data) {
+        var geoCoord = data[key].latLng;
+        if (geoCoord) {
+            res.push({
+                name: key,
+                value: geoCoord.concat(10),
+                inf:data[key]
+            });
+            // for (var data of item.datas) {
+            //     obj.value += data.tradname + "&emsp;价格" + data.price + "&emsp;" + (!isNaN(data.rise) ? (Number(data.rise) == 0 ? '--' : (Number(data.rise) > 0 ? "<span style='color:red'>涨跌" + data.rise + "</span>" : "<span style='color:green'>涨跌" + data.rise + "</span>")) : '--') + '<br/>';
+            // }
+        }
+    }
+    return res;
+};
+var init_series =  null
 function initMap(data){
     let series = [],
         min = 1000,
         max = 5000
+    ISPCList = data
+    init_series = {
+                    type: 'effectScatter',
+                    coordinateSystem: 'geo',
+                    data: getCoord(data),
+                    symbol: 'circle',
+                    symbolSize: 12,
+                    label: {
+                        normal: {
+                            show: false
+                        },
+                        // emphasis: {
+                        //     show: false
+                        // }
+                    },
+                    itemStyle: {
+                        emphasis: {
+                            borderColor: '#fff',
+                            borderWidth: 1
+                        },
+                        normal: {
+                            color: 'rgba(255,0,0,0.5)'//157,197,200,1)'
+                        }
+                    },
+                    rippleEffect: {
+                            period: 4, brushType: 'stroke', scale: 2
+                        }
+                }
+    console.log(init_series)
     if(data!=null)
     {
         if(data.hasOwnProperty('series'))
@@ -252,44 +330,72 @@ function initMap(data){
         tooltip: {
             trigger: 'item',
             formatter: function (params) {
-                if (params.value) {
-                    return params.name + '<br/>' + (params.value[2]/10000).toFixed(0)+'万';
-                } else {
-                    return params.name;
-                }
+                return params.name;
             }
         },
         geo: {
             map: 'world',
-            zlevel: 10,
             layoutCenter: ['50%', '50%'],
-            roam: true,
             layoutSize: "100%",
             zoom: 1.8,
             label: {
-                normal: {
-                    show: false,//地图上的省份名称是否显示
-                    textStyle:{
-                        fontSize:12,
-                        color: '#43D0D6'
-                    }
-                },
                 emphasis: {
-                    show: true
+                    show: false
                 }
             },
             itemStyle: {
                 normal: {
-                    color: '#F3F1EB',
-                    borderWidth: 1.1,
-                    // borderColor: '#516a89'
+                    areaColor: '#323c48',
+                    borderColor: '#111'
                 },
                 emphasis: {
-                    areaColor: 'rgba(51, 69, 89, .5)'
+                    areaColor: '#2a333d'
                 }
             }
         },
-        series
+        // tooltip: {
+        //     trigger: 'item',
+        //     formatter: function (params) {
+        //         if (params.value) {
+        //             return params.name + '<br/>' + (params.value[2]/10000).toFixed(0)+'万';
+        //         } else {
+        //             return params.name;
+        //         }
+        //     }
+        // },
+        // geo: {
+        //     map: 'world',
+        //     zlevel: 10,
+        //     layoutCenter: ['50%', '50%'],
+        //     roam: true,
+        //     layoutSize: "100%",
+        //     zoom: 1.8,
+        //     label: {
+        //         normal: {
+        //             show: false,//地图上的省份名称是否显示
+        //             textStyle:{
+        //                 fontSize:12,
+        //                 color: '#43D0D6'
+        //             }
+        //         },
+        //         emphasis: {
+        //             show: true
+        //         }
+        //     },
+        //     itemStyle: {
+        //         normal: {
+        //             color: '#F3F1EB',
+        //             borderWidth: 1.1,
+        //             // borderColor: '#516a89'
+        //         },
+        //         emphasis: {
+        //             areaColor: 'rgba(51, 69, 89, .5)'
+        //         }
+        //     }
+        // },
+        series:[
+            init_series
+        ]
         };
     
     Mapchart.setOption(option,true)
@@ -312,5 +418,8 @@ function freshMap(data){
     Mapchart.setOption(option,true)
 }
 function initMapData(countries_coord){
-    geoCoordMap = countries_coord
+    geoCoordMap = {}
+    for(let key in countries_coord){
+        geoCoordMap[key] = countries_coord[key].latLng
+    }
 }

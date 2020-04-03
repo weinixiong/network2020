@@ -23,11 +23,18 @@ window.onload = ()=>{
 			if(navs[i].id==id){
 				navs[i].className ='active tabs'
 				document.getElementById(list[navs[i].id]).style.display='block'
+				
 			}
 			else{
 				navs[i].className ='tabs'
 				document.getElementById(list[navs[i].id]).style.display='none'
 			}
+		}
+		if(id=='nav_device_connect'){
+			document.getElementById('ispcInf').style.display='block'
+		}
+		else{
+			document.getElementById('ispcInf').style.display='none'
 		}
 	}
 }

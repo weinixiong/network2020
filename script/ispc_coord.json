@@ -1,0 +1,2536 @@
+{
+    "4-024-0": {
+        "ISPC": "4-024-0",
+        "DEC": "8384",
+        "name": "AWCC",
+        "operator": "AWCC",
+        "city": "",
+        "device": "",
+        "country": "Afghanistan",
+        "country_ch": "阿富汗",
+        "latLng": [
+            "67.709953",
+            "33.93911"
+        ]
+    },
+    "2-152-0": {
+        "ISPC": "2-152-0",
+        "DEC": "5312",
+        "name": "ISC – Tirana",
+        "operator": "ALBTelecom",
+        "city": "Tirana",
+        "device": "ISC",
+        "country": "Albania",
+        "country_ch": "阿尔巴尼亚",
+        "latLng": [
+            "20.168331",
+            "41.153332"
+        ]
+    },
+    "6-006-0": {
+        "ISPC": "6-006-0",
+        "DEC": "12336",
+        "name": "",
+        "operator": "ex.Consortium Algérie Télécom",
+        "city": "",
+        "device": "",
+        "country": "Algeria",
+        "country_ch": "阿尔及利亚",
+        "latLng": [
+            "1.659626",
+            "28.033886"
+        ]
+    },
+    "2-196-1": {
+        "ISPC": "2-196-1",
+        "DEC": "5665",
+        "name": "Andorra AXE",
+        "operator": "Servei de Telecomunicacions d'Andorra",
+        "city": "",
+        "device": "",
+        "country": "Andorra",
+        "country_ch": "安道尔",
+        "latLng": [
+            "1.601554",
+            "42.546245"
+        ]
+    },
+    "6-062-0": {
+        "ISPC": "6-062-0",
+        "DEC": "12784",
+        "name": "ISC1",
+        "operator": "Angola Telecom",
+        "city": "",
+        "device": "ISC",
+        "country": "Angola",
+        "country_ch": "安哥拉",
+        "latLng": [
+            "17.873887",
+            "-11.202692"
+        ]
+    },
+    "3-168-0": {
+        "ISPC": "3-168-0",
+        "DEC": "7488",
+        "name": "TDMA Mobile Switch",
+        "operator": "Cable and Wireless",
+        "city": "",
+        "device": "",
+        "country": "Anguilla",
+        "country_ch": "安圭拉",
+        "latLng": [
+            "-63.068615",
+            "18.220554"
+        ]
+    },
+    "3-088-0": {
+        "ISPC": "3-088-0",
+        "DEC": "6848",
+        "name": "NEAX61E INTS",
+        "operator": "Cable & Wireless",
+        "city": "",
+        "device": "IN",
+        "country": "Antigua and Barbuda",
+        "country_ch": "安提瓜和巴布达",
+        "latLng": [
+            "-61.796428",
+            "17.060816"
+        ]
+    },
+    "7-041-0": {
+        "ISPC": "7-041-0",
+        "DEC": "14664",
+        "name": "Artigas II",
+        "operator": "Impsat S.A.",
+        "city": "",
+        "device": "",
+        "country": "Argentina",
+        "country_ch": "阿根廷",
+        "latLng": [
+            "-63.616672",
+            "-38.416097"
+        ]
+    },
+    "2-200-0": {
+        "ISPC": "2-200-0",
+        "DEC": "5696",
+        "name": "Arminco",
+        "operator": "Arminco",
+        "city": "",
+        "device": "",
+        "country": "Armenia",
+        "country_ch": "亚美尼亚",
+        "latLng": [
+            "45.038189",
+            "40.069099"
+        ]
+    },
+    "3-164-0": {
+        "ISPC": "3-164-0",
+        "DEC": "7456",
+        "name": "OSTD",
+        "operator": "Setar N.V.",
+        "city": "",
+        "device": "",
+        "country": "Aruba",
+        "country_ch": "阿鲁巴",
+        "latLng": [
+            "-69.968338",
+            "12.52111"
+        ]
+    },
+    "5-010-0": {
+        "ISPC": "5-010-0",
+        "DEC": "10320",
+        "name": "Sydney",
+        "operator": "Telstra Corporation Ltd",
+        "city": "Sydney",
+        "device": "",
+        "country": "Australia",
+        "country_ch": "澳大利亚",
+        "latLng": [
+            "133.775136",
+            "-25.274398"
+        ]
+    },
+    "2-025-0": {
+        "ISPC": "2-025-0",
+        "DEC": "4296",
+        "name": "MSS_SA_A",
+        "operator": "T-Mobile Austria GmbH",
+        "city": "",
+        "device": "MSS",
+        "country": "Austria",
+        "country_ch": "奥地利",
+        "latLng": [
+            "14.550072",
+            "47.516231"
+        ]
+    },
+    "4-070-0": {
+        "ISPC": "4-070-0",
+        "DEC": "8752",
+        "name": "",
+        "operator": "Azertelekom LLC",
+        "city": "",
+        "device": "",
+        "country": "Azerbaijan",
+        "country_ch": "阿塞拜疆",
+        "latLng": [
+            "47.576927",
+            "40.143105"
+        ]
+    },
+    "3-128-0": {
+        "ISPC": "3-128-0",
+        "DEC": "7168",
+        "name": "Central Four",
+        "operator": "Bahamas Telecommunications Company Ltd",
+        "city": "",
+        "device": "",
+        "country": "Bahamas",
+        "country_ch": "巴哈马",
+        "latLng": [
+            "-77.39628",
+            "25.03428"
+        ]
+    },
+    "4-052-0": {
+        "ISPC": "4-052-0",
+        "DEC": "8608",
+        "name": "Salmanya (SAL)",
+        "operator": "Bahrain Telecommunications Company (Batelco)",
+        "city": "",
+        "device": "",
+        "country": "Bahrain",
+        "country_ch": "巴林",
+        "latLng": [
+            "50.637772",
+            "25.930414"
+        ]
+    },
+    "4-140-4": {
+        "ISPC": "4-140-4",
+        "DEC": "9316",
+        "name": "ITX-4 Sylhet",
+        "operator": "Bangladesh Telegraph and Telephone Board",
+        "city": "",
+        "device": "",
+        "country": "Bangladesh",
+        "country_ch": "孟加拉",
+        "latLng": [
+            "90.356331",
+            "23.684994"
+        ]
+    },
+    "3-084-0": {
+        "ISPC": "3-084-0",
+        "DEC": "6816",
+        "name": "DMS-300 International Gateway Switch 1995",
+        "operator": "Cable and Wireless (Barbados) Ltd",
+        "city": "",
+        "device": "international gateway",
+        "country": "Barbados",
+        "country_ch": "巴巴多斯",
+        "latLng": [
+            "-59.543198",
+            "13.193887"
+        ]
+    },
+    "2-204-2": {
+        "ISPC": "2-204-2",
+        "DEC": "5730",
+        "name": "STP1",
+        "operator": "Beltelecom",
+        "city": "",
+        "device": "STP",
+        "country": "Belarus",
+        "country_ch": "白俄罗斯",
+        "latLng": [
+            "27.953389",
+            "53.709807"
+        ]
+    },
+    "2-012-1": {
+        "ISPC": "2-012-1",
+        "DEC": "4193",
+        "name": "Bruxelles/F",
+        "operator": "Belgacom International Carrier Services",
+        "city": "",
+        "device": "",
+        "country": "Belgium",
+        "country_ch": "比利时",
+        "latLng": [
+            "4.469936",
+            "50.503887"
+        ]
+    },
+    "7-004-0": {
+        "ISPC": "7-004-0",
+        "DEC": "14368",
+        "name": "Orange Walk Huawei HSS",
+        "operator": "Belize Telemedia Limited (formerly Belize Telecommunications Ltd.)",
+        "city": "Orange Walk",
+        "device": "",
+        "country": "Belize",
+        "country_ch": "伯利兹",
+        "latLng": [
+            "-88.49765",
+            "17.189877"
+        ]
+    },
+    "6-032-1": {
+        "ISPC": "6-032-1",
+        "DEC": "12545",
+        "name": "",
+        "operator": "BTSA",
+        "city": "",
+        "device": "",
+        "country": "Benin",
+        "country_ch": "贝宁",
+        "latLng": [
+            "2.315834",
+            "9.30769"
+        ]
+    },
+    "3-100-1": {
+        "ISPC": "3-100-1",
+        "DEC": "6945",
+        "name": "DV1",
+        "operator": "LinkBermuda (formerly C&W)",
+        "city": "",
+        "device": "",
+        "country": "Bermuda",
+        "country_ch": "百慕大",
+        "latLng": [
+            "-64.75737",
+            "32.321384"
+        ]
+    },
+    "4-072-0": {
+        "ISPC": "4-072-0",
+        "DEC": "8768",
+        "name": "…",
+        "operator": "Bhutan Telecom Ltd.",
+        "city": "",
+        "device": "",
+        "country": "Bhutan",
+        "country_ch": "不丹",
+        "latLng": [
+            "90.433601",
+            "27.514162"
+        ]
+    },
+    "2-218-0": {
+        "ISPC": "2-218-0",
+        "DEC": "5840",
+        "name": "IATC SA1/Sarajevo",
+        "operator": "BH Telecom d.d. Sarajevo",
+        "city": "Sarajevo",
+        "device": "",
+        "country": "Bosnia and Herzegovina",
+        "country_ch": "波斯尼亚与黑塞哥维那",
+        "latLng": [
+            "17.679076",
+            "43.915886"
+        ]
+    },
+    "6-104-0": {
+        "ISPC": "6-104-0",
+        "DEC": "13120",
+        "name": "TOLLOPS (GISC)",
+        "operator": "Botswana Telecommunications Corporation",
+        "city": "",
+        "device": "ISC",
+        "country": "Botswana",
+        "country_ch": "博茨瓦纳",
+        "latLng": [
+            "24.684866",
+            "-22.328474"
+        ]
+    },
+    "7-048-0": {
+        "ISPC": "7-048-0",
+        "DEC": "14720",
+        "name": "Rio de Janeiro/PTS ARCOS-PTSA",
+        "operator": "Vivo",
+        "city": "Rio de Janeiro",
+        "device": "",
+        "country": "Brazil",
+        "country_ch": "巴西",
+        "latLng": [
+            "-51.92528",
+            "-14.235004"
+        ]
+    },
+    "3-096-0": {
+        "ISPC": "3-096-0",
+        "DEC": "6912",
+        "name": "Chalwell ITP-1",
+        "operator": "Caribbean Cellular Tel. Ltd",
+        "city": "",
+        "device": "",
+        "country": "British Virgin Islands",
+        "country_ch": "英属维尔京群岛",
+        "latLng": [
+            "-64.639968",
+            "18.420695"
+        ]
+    },
+    "2-168-0": {
+        "ISPC": "2-168-0",
+        "DEC": "5440",
+        "name": "TPN",
+        "operator": "Interoute Bulgaria",
+        "city": "",
+        "device": "",
+        "country": "Bulgaria",
+        "country_ch": "保加利亚",
+        "latLng": [
+            "25.48583",
+            "42.733883"
+        ]
+    },
+    "6-084-0": {
+        "ISPC": "6-084-0",
+        "DEC": "12960",
+        "name": "",
+        "operator": "ONATEL",
+        "city": "",
+        "device": "",
+        "country": "Burundi",
+        "country_ch": "布隆迪",
+        "latLng": [
+            "29.918886",
+            "-3.373056"
+        ]
+    },
+    "4-112-0": {
+        "ISPC": "4-112-0",
+        "DEC": "9088",
+        "name": "Bayon G1",
+        "operator": "Telecom Cambodia",
+        "city": "",
+        "device": "",
+        "country": "Cambodia",
+        "country_ch": "柬埔寨",
+        "latLng": [
+            "104.990963",
+            "12.565679"
+        ]
+    },
+    "6-049-0": {
+        "ISPC": "6-049-0",
+        "DEC": "12680",
+        "name": "Yaoundé",
+        "operator": "MTN Cameroon",
+        "city": "",
+        "device": "",
+        "country": "Cameroon",
+        "country_ch": "喀麦隆",
+        "latLng": [
+            "12.354722",
+            "7.369722"
+        ]
+    },
+    "3-004-0": {
+        "ISPC": "3-004-0",
+        "DEC": "6176",
+        "name": "VPA1",
+        "operator": "Tata Communications (Canada) ULC",
+        "city": "",
+        "device": "",
+        "country": "Canada",
+        "country_ch": "加拿大",
+        "latLng": [
+            "-106.346771",
+            "56.130366"
+        ]
+    },
+    "3-092-0": {
+        "ISPC": "3-092-0",
+        "DEC": "6880",
+        "name": "ISC Current Gateway",
+        "operator": "Cable & Wireless",
+        "city": "",
+        "device": "ISC",
+        "country": "Cayman Islands",
+        "country_ch": "开曼群岛",
+        "latLng": [
+            "-80.566956",
+            "19.513469"
+        ]
+    },
+    "7-059-0": {
+        "ISPC": "7-059-0",
+        "DEC": "14808",
+        "name": "Santiago",
+        "operator": "Compa?ia de Telecomunicaciones de Chile Transmisiones Regionales S.A.",
+        "city": "",
+        "device": "",
+        "country": "Chile",
+        "country_ch": "智利",
+        "latLng": [
+            "-71.542969",
+            "-35.675147"
+        ]
+    },
+    "4-121-0": {
+        "ISPC": "4-121-0",
+        "DEC": "9160",
+        "name": "Shanghai E-Call gateway 3",
+        "operator": "China Telecom",
+        "city": "Shanghai",
+        "device": "",
+        "country": "China",
+        "country_ch": "中国",
+        "latLng": [
+            121.480539,
+            31.235929
+        ]
+    },
+    "4-121-4": {
+        "ISPC": "4-121-4",
+        "DEC": "9164",
+        "name": "Guangzhou ISTP1",
+        "operator": "China Telecom",
+        "city": "Guangzhou",
+        "device": "ISTP",
+        "country": "China",
+        "country_ch": "中国",
+        "latLng": [
+            113.271431,
+            23.135336
+        ]
+    },
+    "4-122-0": {
+        "ISPC": "4-122-0",
+        "DEC": "9168",
+        "name": "Shanghai ISTP",
+        "operator": "China Unicom",
+        "city": "Shanghai",
+        "device": "ISTP",
+        "country": "China",
+        "country_ch": "中国",
+        "latLng": [
+            121.480539,
+            31.235929
+        ]
+    },
+    "4-127-0": {
+        "ISPC": "4-127-0",
+        "DEC": "9208",
+        "name": "Shanghai CDMA-ITP1",
+        "operator": "China Telecom",
+        "city": "Shanghai",
+        "device": "",
+        "country": "China",
+        "country_ch": "中国",
+        "latLng": [
+            121.480539,
+            31.235929
+        ]
+    },
+    "4-127-1": {
+        "ISPC": "4-127-1",
+        "DEC": "9209",
+        "name": "Guangzhou CDMA-ITP1",
+        "operator": "China Telecom",
+        "city": "Guangzhou",
+        "device": "",
+        "country": "China",
+        "country_ch": "中国",
+        "latLng": [
+            113.271431,
+            23.135336
+        ]
+    },
+    "4-127-2": {
+        "ISPC": "4-127-2",
+        "DEC": "9210",
+        "name": "Beijing CDMA-ITP",
+        "operator": "China Telecom",
+        "city": "Beijing",
+        "device": "",
+        "country": "China",
+        "country_ch": "中国",
+        "latLng": [
+            116.413384,
+            39.910925
+        ]
+    },
+    "4-128-6": {
+        "ISPC": "4-128-6",
+        "DEC": "9222",
+        "name": "Guangzhou ISTP2B'",
+        "operator": "China Telecom",
+        "city": "Guangzhou",
+        "device": "ISTP",
+        "country": "China",
+        "country_ch": "中国",
+        "latLng": [
+            113.271431,
+            23.135336
+        ]
+    },
+    "7-064-0": {
+        "ISPC": "7-064-0",
+        "DEC": "14848",
+        "name": "",
+        "operator": "Colombia Telecomunicaciones S.A. ESP",
+        "city": "",
+        "device": "",
+        "country": "Colombia",
+        "country_ch": "哥伦比亚",
+        "latLng": [
+            "-74.297333",
+            "4.570868"
+        ]
+    },
+    "5-096-0": {
+        "ISPC": "5-096-0",
+        "DEC": "11008",
+        "name": "AVR-MOB",
+        "operator": "Telecom Cook Islands",
+        "city": "",
+        "device": "",
+        "country": "Cook Islands",
+        "country_ch": "库克群岛",
+        "latLng": [
+            "-159.777671",
+            "-21.236736"
+        ]
+    },
+    "7-023-0": {
+        "ISPC": "7-023-0",
+        "DEC": "14520",
+        "name": "MSC Internacional",
+        "operator": "Telefonica de Costa Rica TC S.A",
+        "city": "",
+        "device": "MSC",
+        "country": "Costa Rica",
+        "country_ch": "哥斯达黎加",
+        "latLng": [
+            "-83.753428",
+            "9.748917"
+        ]
+    },
+    "6-024-1": {
+        "ISPC": "6-024-1",
+        "DEC": "12481",
+        "name": "NGP Gateway - Abidjan",
+        "operator": "Orange - C?te d'Ivoire",
+        "city": "",
+        "device": "",
+        "country": "C?te d'Ivoire",
+        "country_ch": "科特迪瓦",
+        "latLng": [
+            "-5.54708",
+            "7.539989"
+        ]
+    },
+    "2-180-0": {
+        "ISPC": "2-180-0",
+        "DEC": "5536",
+        "name": "Zagreb/MC2",
+        "operator": "HT d.d.",
+        "city": "",
+        "device": "",
+        "country": "Croatia",
+        "country_ch": "克罗地亚",
+        "latLng": [
+            "15.2",
+            "45.1"
+        ]
+    },
+    "3-136-1": {
+        "ISPC": "3-136-1",
+        "DEC": "7233",
+        "name": "",
+        "operator": "ETECSA",
+        "city": "",
+        "device": "",
+        "country": "Cuba",
+        "country_ch": "古巴",
+        "latLng": [
+            "-77.781167",
+            "21.521757"
+        ]
+    },
+    "2-160-0": {
+        "ISPC": "2-160-0",
+        "DEC": "5376",
+        "name": "ACR ITE Nicosia",
+        "operator": "Cyprus Telecommunications Authority (CYTA)",
+        "city": "Nicosia",
+        "device": "",
+        "country": "Cyprus",
+        "country_ch": "塞浦路斯",
+        "latLng": [
+            "33.429859",
+            "35.126413"
+        ]
+    },
+    "2-076-0": {
+        "ISPC": "2-076-0",
+        "DEC": "4704",
+        "name": "Copenhagen - Copenhagen dnc",
+        "operator": "TDC A/S",
+        "city": "Copenhagen",
+        "device": "",
+        "country": "Denmark",
+        "country_ch": "丹麦",
+        "latLng": [
+            "9.501785",
+            "56.26392"
+        ]
+    },
+    "3-132-0": {
+        "ISPC": "3-132-0",
+        "DEC": "7200",
+        "name": "Roseau Exchange",
+        "operator": "Cable & Wireless Dominica",
+        "city": "",
+        "device": "",
+        "country": "Dominica",
+        "country_ch": "多米尼克",
+        "latLng": [
+            "-61.370976",
+            "15.414999"
+        ]
+    },
+    "7-081-0": {
+        "ISPC": "7-081-0",
+        "DEC": "14984",
+        "name": "Telecsa UIO-CDMA",
+        "operator": "Telecsa S.A.",
+        "city": "",
+        "device": "",
+        "country": "Ecuador",
+        "country_ch": "厄瓜多尔",
+        "latLng": [
+            "-78.183406",
+            "-1.831239"
+        ]
+    },
+    "6-004-0": {
+        "ISPC": "6-004-0",
+        "DEC": "12320",
+        "name": "CAI 1 Ramsis/Cairo",
+        "operator": "Telecom Egypt",
+        "city": "Cairo",
+        "device": "",
+        "country": "Egypt",
+        "country_ch": "埃及",
+        "latLng": [
+            "30.802498",
+            "26.820553"
+        ]
+    },
+    "7-012-5": {
+        "ISPC": "7-012-5",
+        "DEC": "14437",
+        "name": "Salnet 1",
+        "operator": "El Salvador Network S.A.",
+        "city": "",
+        "device": "",
+        "country": "El Salvador",
+        "country_ch": "萨尔瓦多",
+        "latLng": [
+            "-88.89653",
+            "13.794185"
+        ]
+    },
+    "6-054-0": {
+        "ISPC": "6-054-0",
+        "DEC": "12720",
+        "name": "PS International Bata",
+        "operator": "Orange (GETESA)",
+        "city": "",
+        "device": "",
+        "country": "Equatorial Guinea",
+        "country_ch": "赤道几内亚",
+        "latLng": [
+            "10.267895",
+            "1.650801"
+        ]
+    },
+    "6-114-1": {
+        "ISPC": "6-114-1",
+        "DEC": "13201",
+        "name": "Asmara",
+        "operator": "Eritel Corporation",
+        "city": "",
+        "device": "",
+        "country": "Eritrea",
+        "country_ch": "厄立特里亚",
+        "latLng": [
+            "39.782334",
+            "15.179384"
+        ]
+    },
+    "2-092-0": {
+        "ISPC": "2-092-0",
+        "DEC": "4832",
+        "name": "Tallinn",
+        "operator": "AS Eesti Telekom",
+        "city": "",
+        "device": "",
+        "country": "Estonia",
+        "country_ch": "爱沙尼亚",
+        "latLng": [
+            "25.013607",
+            "58.595272"
+        ]
+    },
+    "6-072-1": {
+        "ISPC": "6-072-1",
+        "DEC": "12865",
+        "name": "Bole",
+        "operator": "Ethiopian Telecommunications Corporation",
+        "city": "",
+        "device": "",
+        "country": "Ethiopia",
+        "country_ch": "埃塞俄比亚",
+        "latLng": [
+            "40.489673",
+            "9.145"
+        ]
+    },
+    "3-179-0": {
+        "ISPC": "3-179-0",
+        "DEC": "7576",
+        "name": "FOIC1",
+        "operator": "Faroese Telecom P/F",
+        "city": "",
+        "device": "",
+        "country": "Faroe Islands",
+        "country_ch": "法罗群岛",
+        "latLng": [
+            "-6.911806",
+            "61.892635"
+        ]
+    },
+    "5-084-0": {
+        "ISPC": "5-084-0",
+        "DEC": "10912",
+        "name": "FINTEL ISC-1",
+        "operator": "Fintel",
+        "city": "",
+        "device": "ISC",
+        "country": "Fiji",
+        "country_ch": "斐济",
+        "latLng": [
+            "179.414413",
+            "-16.578193"
+        ]
+    },
+    "2-088-0": {
+        "ISPC": "2-088-0",
+        "DEC": "4800",
+        "name": "Helsinki (HEL1)",
+        "operator": "TeliaSonera Finland Oyj",
+        "city": "Helsinki",
+        "device": "",
+        "country": "Finland",
+        "country_ch": "芬兰",
+        "latLng": [
+            "25.748151",
+            "61.92411"
+        ]
+    },
+    "2-016-0": {
+        "ISPC": "2-016-0",
+        "DEC": "4224",
+        "name": "ITN France 1",
+        "operator": "ITN France",
+        "city": "",
+        "device": "",
+        "country": "France",
+        "country_ch": "法国",
+        "latLng": [
+            "2.213749",
+            "46.227638"
+        ]
+    },
+    "7-084-1": {
+        "ISPC": "7-084-1",
+        "DEC": "15009",
+        "name": "Dauphin Télécom - Guyane",
+        "operator": "Dauphin Télécom",
+        "city": "",
+        "device": "",
+        "country": "French Guiana",
+        "country_ch": "法属圭亚那",
+        "latLng": [
+            "-53.125782",
+            "3.933889"
+        ]
+    },
+    "5-094-0": {
+        "ISPC": "5-094-0",
+        "DEC": "10992",
+        "name": "Commutateur Papeete",
+        "operator": "O.P.T.",
+        "city": "",
+        "device": "",
+        "country": "French Polynesia",
+        "country_ch": "法属波利尼西亚",
+        "latLng": [
+            "-149.406843",
+            "-17.679742"
+        ]
+    },
+    "6-056-0": {
+        "ISPC": "6-056-0",
+        "DEC": "12736",
+        "name": "Système de gestion des réseaux",
+        "operator": "-",
+        "city": "",
+        "device": "",
+        "country": "Gabon",
+        "country_ch": "加蓬",
+        "latLng": [
+            "11.609444",
+            "-0.803689"
+        ]
+    },
+    "6-014-0": {
+        "ISPC": "6-014-0",
+        "DEC": "12400",
+        "name": "",
+        "operator": "GAMTEL",
+        "city": "",
+        "device": "",
+        "country": "Gambia",
+        "country_ch": "冈比亚",
+        "latLng": [
+            "-15.310139",
+            "13.443182"
+        ]
+    },
+    "2-033-0": {
+        "ISPC": "2-033-0",
+        "DEC": "4360",
+        "name": "Essen",
+        "operator": "Versatel Süd GmbH",
+        "city": "",
+        "device": "",
+        "country": "Germany",
+        "country_ch": "德国",
+        "latLng": [
+            "10.451526",
+            "51.165691"
+        ]
+    },
+    "6-040-0": {
+        "ISPC": "6-040-0",
+        "DEC": "12608",
+        "name": "Accra North International Gateway (ITE1)",
+        "operator": "Ghana Telecommunications Company Ltd",
+        "city": "",
+        "device": "international gateway",
+        "country": "Ghana",
+        "country_ch": "加纳",
+        "latLng": [
+            "-1.023194",
+            "7.946527"
+        ]
+    },
+    "2-132-0": {
+        "ISPC": "2-132-0",
+        "DEC": "5152",
+        "name": "Gibtelecom",
+        "operator": "Gibtelecom (mobile service)",
+        "city": "",
+        "device": "",
+        "country": "Gibraltar",
+        "country_ch": "直布罗陀",
+        "latLng": [
+            "-5.345374",
+            "36.137741"
+        ]
+    },
+    "2-004-0": {
+        "ISPC": "2-004-0",
+        "DEC": "4128",
+        "name": "Athens/KT",
+        "operator": "OTE",
+        "city": "Athens",
+        "device": "",
+        "country": "Greece",
+        "country_ch": "希腊",
+        "latLng": [
+            "21.824312",
+            "39.074208"
+        ]
+    },
+    "3-018-0": {
+        "ISPC": "3-018-0",
+        "DEC": "6288",
+        "name": "NUK-MC_INT",
+        "operator": "Tele Greenland",
+        "city": "",
+        "device": "IN",
+        "country": "Greenland",
+        "country_ch": "格陵兰",
+        "latLng": [
+            "-42.604303",
+            "71.706936"
+        ]
+    },
+    "3-104-0": {
+        "ISPC": "3-104-0",
+        "DEC": "6976",
+        "name": "Mount Hartman Exchange",
+        "operator": "Cable & Wireless Grenada",
+        "city": "",
+        "device": "",
+        "country": "Grenada",
+        "country_ch": "格林纳达",
+        "latLng": [
+            "-61.604171",
+            "12.262776"
+        ]
+    },
+    "3-156-1": {
+        "ISPC": "3-156-1",
+        "DEC": "7393",
+        "name": "Dauphin Télécom - Saint Martin 1",
+        "operator": "Dauphin Télécom",
+        "city": "",
+        "device": "",
+        "country": "Guadeloupe",
+        "country_ch": "瓜德罗普岛",
+        "latLng": [
+            "-62.067641",
+            "16.995971"
+        ]
+    },
+    "7-008-0": {
+        "ISPC": "7-008-0",
+        "DEC": "14400",
+        "name": "Central Aristos/EWSD",
+        "operator": "Cablenet S.A.",
+        "city": "",
+        "device": "",
+        "country": "Guatemala",
+        "country_ch": "危地马拉",
+        "latLng": [
+            "-90.230759",
+            "15.783471"
+        ]
+    },
+    "6-021-0": {
+        "ISPC": "6-021-0",
+        "DEC": "12456",
+        "name": "",
+        "operator": "GAMMA CONCEPT S.A.",
+        "city": "",
+        "device": "",
+        "country": "Guinea",
+        "country_ch": "几内亚",
+        "latLng": [
+            "-9.696645",
+            "9.945587"
+        ]
+    },
+    "7-076-0": {
+        "ISPC": "7-076-0",
+        "DEC": "14944",
+        "name": "Telquest Northcom Home Country Direct Service",
+        "operator": "Guyana Telephone and Telegraph Co. Ltd.",
+        "city": "",
+        "device": "",
+        "country": "Guyana",
+        "country_ch": "圭亚那",
+        "latLng": [
+            "-58.93018",
+            "4.860416"
+        ]
+    },
+    "3-144-0": {
+        "ISPC": "3-144-0",
+        "DEC": "7296",
+        "name": "HAITEL",
+        "operator": "Haiti International Telecommuncation S.A. (HAITEL)",
+        "city": "",
+        "device": "",
+        "country": "Haiti",
+        "country_ch": "海地",
+        "latLng": [
+            "-72.285215",
+            "18.971187"
+        ]
+    },
+    "7-016-0": {
+        "ISPC": "7-016-0",
+        "DEC": "14464",
+        "name": "TGA-MSSTGU",
+        "operator": "Sercom",
+        "city": "",
+        "device": "MSS",
+        "country": "Honduras",
+        "country_ch": "洪都拉斯",
+        "latLng": [
+            "-86.241905",
+            "15.199999"
+        ]
+    },
+    "4-105-0": {
+        "ISPC": "4-105-0",
+        "DEC": "9032",
+        "name": "GlobalOne-HK1",
+        "operator": "Orange Business Services Hong Kong Limited",
+        "city": "",
+        "device": "",
+        "country": "Hong Kong",
+        "country_ch": " China",
+        "latLng": [
+            114.1,
+            22.2
+        ]
+    },
+    "2-032-0": {
+        "ISPC": "2-032-0",
+        "DEC": "4352",
+        "name": "Pannon INT2",
+        "operator": "Telenor Hungary Ltd",
+        "city": "",
+        "device": "IN",
+        "country": "Hungary",
+        "country_ch": "匈牙利",
+        "latLng": [
+            "19.503304",
+            "47.162494"
+        ]
+    },
+    "2-148-0": {
+        "ISPC": "2-148-0",
+        "DEC": "5280",
+        "name": "Reykjavik/RIC",
+        "operator": "Iceland Telecom Ltd",
+        "city": "",
+        "device": "",
+        "country": "Iceland",
+        "country_ch": "冰岛",
+        "latLng": [
+            "-19.020835",
+            "64.963051"
+        ]
+    },
+    "4-005-1": {
+        "ISPC": "4-005-1",
+        "DEC": "8233",
+        "name": "ISC Chennai",
+        "operator": "Bharat Sanchar Nigam Ltd (BSNL)",
+        "city": "Chennai",
+        "device": "ISC",
+        "country": "India",
+        "country_ch": "印度",
+        "latLng": [
+            "78.96288",
+            "20.593684"
+        ]
+    },
+    "5-020-0": {
+        "ISPC": "5-020-0",
+        "DEC": "10400",
+        "name": "Jakarta-1b ISC",
+        "operator": "PT Indosat (Persero) Tbk.",
+        "city": "",
+        "device": "ISC",
+        "country": "Indonesia",
+        "country_ch": "印度尼西亚",
+        "latLng": [
+            "113.921327",
+            "-0.789275"
+        ]
+    },
+    "4-036-0": {
+        "ISPC": "4-036-0",
+        "DEC": "8480",
+        "name": "…",
+        "operator": "ITPC",
+        "city": "",
+        "device": "",
+        "country": "Iraq",
+        "country_ch": "伊拉克",
+        "latLng": [
+            "43.679291",
+            "33.223191"
+        ]
+    },
+    "2-144-2": {
+        "ISPC": "2-144-2",
+        "DEC": "5250",
+        "name": "Dublin 1",
+        "operator": "Eircell Ltd",
+        "city": "Dublin",
+        "device": "",
+        "country": "Ireland",
+        "country_ch": "爱尔兰",
+        "latLng": [
+            "-8.24389",
+            "53.41291"
+        ]
+    },
+    "4-003-0": {
+        "ISPC": "4-003-0",
+        "DEC": "8216",
+        "name": "…",
+        "operator": "Barak Ltd",
+        "city": "",
+        "device": "",
+        "country": "Israel",
+        "country_ch": "以色列",
+        "latLng": [
+            "34.851612",
+            "31.046051"
+        ]
+    },
+    "2-001-0": {
+        "ISPC": "2-001-0",
+        "DEC": "4104",
+        "name": "Roma/Via T. Maestrelli",
+        "operator": "Albacom S.p.A.",
+        "city": "Roma",
+        "device": "",
+        "country": "Italy",
+        "country_ch": "意大利",
+        "latLng": [
+            "12.56738",
+            "41.87194"
+        ]
+    },
+    "3-076-0": {
+        "ISPC": "3-076-0",
+        "DEC": "6752",
+        "name": "…",
+        "operator": "Cable and Wireless Jamaica Ltd",
+        "city": "",
+        "device": "",
+        "country": "Jamaica",
+        "country_ch": "牙买加",
+        "latLng": [
+            "-77.297508",
+            "18.109581"
+        ]
+    },
+    "4-080-0": {
+        "ISPC": "4-080-0",
+        "DEC": "8832",
+        "name": "Tokyo-1",
+        "operator": "KDDI Corporation",
+        "city": "Tokyo",
+        "device": "",
+        "country": "Japan",
+        "country_ch": "日本",
+        "latLng": [
+            "138.252924",
+            "36.204824"
+        ]
+    },
+    "4-031-0": {
+        "ISPC": "4-031-0",
+        "DEC": "8440",
+        "name": "…",
+        "operator": "Umniah",
+        "city": "",
+        "device": "",
+        "country": "Jordan",
+        "country_ch": "约旦",
+        "latLng": [
+            "36.238414",
+            "30.585164"
+        ]
+    },
+    "4-074-1": {
+        "ISPC": "4-074-1",
+        "DEC": "8785",
+        "name": "Almaty International Switching Centre (ISC)",
+        "operator": "JSC Kazakhtelecom",
+        "city": "Almaty",
+        "device": "ISC",
+        "country": "Kazakhstan",
+        "country_ch": "哈萨克斯坦",
+        "latLng": [
+            "66.923684",
+            "48.019573"
+        ]
+    },
+    "6-078-0": {
+        "ISPC": "6-078-0",
+        "DEC": "12912",
+        "name": "Nairobi",
+        "operator": "Telkom Kenya Ltd",
+        "city": "Nairobi",
+        "device": "",
+        "country": "Kenya",
+        "country_ch": "肯尼亚",
+        "latLng": [
+            "37.906193",
+            "-0.023559"
+        ]
+    },
+    "5-100-0": {
+        "ISPC": "5-100-0",
+        "DEC": "11040",
+        "name": "ATHKL_TARAWA",
+        "operator": "Amalgamated Telecom Holdings Kiribati Limited (ATHKL)",
+        "city": "",
+        "device": "",
+        "country": "Kiribati",
+        "country_ch": "基里巴斯",
+        "latLng": [
+            "-168.734039",
+            "-3.370417"
+        ]
+    },
+    "4-038-0": {
+        "ISPC": "4-038-0",
+        "DEC": "8496",
+        "name": "ISCX-1",
+        "operator": "Ministry of Communications",
+        "city": "",
+        "device": "ISC",
+        "country": "Kuwait",
+        "country_ch": "科威特",
+        "latLng": [
+            "47.481766",
+            "29.31166"
+        ]
+    },
+    "4-078-1": {
+        "ISPC": "4-078-1",
+        "DEC": "8817",
+        "name": "…",
+        "operator": "Nur Telecom Ltd",
+        "city": "",
+        "device": "",
+        "country": "Kyrgyzstan",
+        "country_ch": "吉尔吉斯斯坦",
+        "latLng": [
+            "74.766098",
+            "41.20438"
+        ]
+    },
+    "2-096-0": {
+        "ISPC": "2-096-0",
+        "DEC": "4864",
+        "name": "Riga ISC1 (S-12)",
+        "operator": "Lattelecom",
+        "city": "",
+        "device": "ISC",
+        "country": "Latvia",
+        "country_ch": "拉脱维亚",
+        "latLng": [
+            "24.603189",
+            "56.879635"
+        ]
+    },
+    "6-102-0": {
+        "ISPC": "6-102-0",
+        "DEC": "13104",
+        "name": "MSU",
+        "operator": "Telecom Lesotho pty Ltd.",
+        "city": "",
+        "device": "",
+        "country": "Lesotho",
+        "country_ch": "莱索托",
+        "latLng": [
+            "28.233608",
+            "-29.609988"
+        ]
+    },
+    "6-036-0": {
+        "ISPC": "6-036-0",
+        "DEC": "12576",
+        "name": "MSC (MBC1)",
+        "operator": "Lonestarcell MTN",
+        "city": "",
+        "device": "MSC",
+        "country": "Liberia",
+        "country_ch": "利比里亚",
+        "latLng": [
+            "-9.429499",
+            "6.428055"
+        ]
+    },
+    "6-012-0": {
+        "ISPC": "6-012-0",
+        "DEC": "12384",
+        "name": "International Switching Exchange – Sirt",
+        "operator": "Libyan International Telecommunication Company (LITC)",
+        "city": "",
+        "device": "",
+        "country": "Libya",
+        "country_ch": "利比亚",
+        "latLng": [
+            "17.228331",
+            "26.3351"
+        ]
+    },
+    "2-000-0": {
+        "ISPC": "2-000-0",
+        "DEC": "4096",
+        "name": "TLI Vaduz",
+        "operator": "Telecom Liechtenstein AG",
+        "city": "",
+        "device": "",
+        "country": "Liechtenstein",
+        "country_ch": "列支敦士登",
+        "latLng": [
+            "9.555373",
+            "47.166"
+        ]
+    },
+    "2-236-1": {
+        "ISPC": "2-236-1",
+        "DEC": "5985",
+        "name": "",
+        "operator": "UAB Mediafon",
+        "city": "",
+        "device": "",
+        "country": "Lithuania",
+        "country_ch": "立陶宛",
+        "latLng": [
+            "23.881275",
+            "55.169438"
+        ]
+    },
+    "2-135-0": {
+        "ISPC": "2-135-0",
+        "DEC": "5176",
+        "name": "EBRC Kayl",
+        "operator": "Join Experience S.A.",
+        "city": "",
+        "device": "",
+        "country": "Luxembourg",
+        "country_ch": "卢森堡",
+        "latLng": [
+            "6.129583",
+            "49.815273"
+        ]
+    },
+    "6-092-0": {
+        "ISPC": "6-092-0",
+        "DEC": "13024",
+        "name": "Antananarivo",
+        "operator": "Celtel Madagascar",
+        "city": "Antananarivo",
+        "device": "",
+        "country": "Madagascar",
+        "country_ch": "马达加斯加",
+        "latLng": [
+            "46.869107",
+            "-18.766947"
+        ]
+    },
+    "5-001-0": {
+        "ISPC": "5-001-0",
+        "DEC": "10248",
+        "name": "IGW 4",
+        "operator": "Maxis Broadband Sdn Bhd",
+        "city": "",
+        "device": "IGW",
+        "country": "Malaysia",
+        "country_ch": "马来西亚",
+        "latLng": [
+            "101.975766",
+            "4.210484"
+        ]
+    },
+    "4-144-1": {
+        "ISPC": "4-144-1",
+        "DEC": "9345",
+        "name": "DHRS3",
+        "operator": "Dhiraagu",
+        "city": "",
+        "device": "",
+        "country": "Maldives",
+        "country_ch": "马尔代夫",
+        "latLng": [
+            "73.22068",
+            "3.202778"
+        ]
+    },
+    "6-020-3": {
+        "ISPC": "6-020-3",
+        "DEC": "12451",
+        "name": "CTI2 - Halles",
+        "operator": "SOTELMA-SA",
+        "city": "",
+        "device": "",
+        "country": "Mali",
+        "country_ch": "马里",
+        "latLng": [
+            "-3.996166",
+            "17.570692"
+        ]
+    },
+    "2-156-0": {
+        "ISPC": "2-156-0",
+        "DEC": "5344",
+        "name": "MOTSS International 1",
+        "operator": "Maltacom/GO plc",
+        "city": "",
+        "device": "",
+        "country": "Malta",
+        "country_ch": "马耳他",
+        "latLng": [
+            "14.375416",
+            "35.937496"
+        ]
+    },
+    "3-160-0": {
+        "ISPC": "3-160-0",
+        "DEC": "7424",
+        "name": "Dauphin Télécom - Martinique",
+        "operator": "Dauphin Télécom",
+        "city": "",
+        "device": "",
+        "country": "Martinique",
+        "country_ch": "马提尼克",
+        "latLng": [
+            "-61.024174",
+            "14.641528"
+        ]
+    },
+    "6-018-0": {
+        "ISPC": "6-018-0",
+        "DEC": "12432",
+        "name": "reserved",
+        "operator": "-",
+        "city": "",
+        "device": "",
+        "country": "Mauritania",
+        "country_ch": "毛里塔尼亚",
+        "latLng": [
+            "-10.940835",
+            "21.00789"
+        ]
+    },
+    "6-034-0": {
+        "ISPC": "6-034-0",
+        "DEC": "12560",
+        "name": "Port Louis 1",
+        "operator": "Mauritius Telecom",
+        "city": "",
+        "device": "",
+        "country": "Mauritius",
+        "country_ch": "毛里求斯",
+        "latLng": [
+            "57.552152",
+            "-20.348404"
+        ]
+    },
+    "3-070-0": {
+        "ISPC": "3-070-0",
+        "DEC": "6704",
+        "name": "MSSCTulancingo Hgo",
+        "operator": "Telecomunicaciones de México",
+        "city": "",
+        "device": "MSS",
+        "country": "Mexico",
+        "country_ch": "墨西哥",
+        "latLng": [
+            "-102.552784",
+            "23.634501"
+        ]
+    },
+    "2-024-0": {
+        "ISPC": "2-024-0",
+        "DEC": "4288",
+        "name": "MT03",
+        "operator": "Monaco Telecom",
+        "city": "",
+        "device": "",
+        "country": "Monaco",
+        "country_ch": "摩纳哥",
+        "latLng": [
+            "7.412841",
+            "43.750298"
+        ]
+    },
+    "4-056-7": {
+        "ISPC": "4-056-7",
+        "DEC": "8647",
+        "name": "G-MOBILE MN",
+        "operator": "G-MOBILE LLC",
+        "city": "",
+        "device": "",
+        "country": "Mongolia",
+        "country_ch": "蒙古",
+        "latLng": [
+            "103.846656",
+            "46.862496"
+        ]
+    },
+    "2-040-2": {
+        "ISPC": "2-040-2",
+        "DEC": "4418",
+        "name": "",
+        "operator": "M",
+        "city": "",
+        "device": "",
+        "country": "Montenegro",
+        "country_ch": "黑山",
+        "latLng": [
+            "19.37439",
+            "42.708678"
+        ]
+    },
+    "6-008-0": {
+        "ISPC": "6-008-0",
+        "DEC": "12352",
+        "name": "Rabat MSC",
+        "operator": "Itassalat Al-Maghrib",
+        "city": "Rabat",
+        "device": "MSC",
+        "country": "Morocco",
+        "country_ch": "摩洛哥",
+        "latLng": [
+            "-7.09262",
+            "31.791702"
+        ]
+    },
+    "6-098-0": {
+        "ISPC": "6-098-0",
+        "DEC": "13072",
+        "name": "Windhoek International Exchange",
+        "operator": "Telecom Namibia Ltd.",
+        "city": "",
+        "device": "",
+        "country": "Namibia",
+        "country_ch": "纳米比亚",
+        "latLng": [
+            "18.49041",
+            "-22.95764"
+        ]
+    },
+    "5-072-2": {
+        "ISPC": "5-072-2",
+        "DEC": "10818",
+        "name": "Digicel Nauru Ltd",
+        "operator": "Digicel Nauru Ltd",
+        "city": "",
+        "device": "",
+        "country": "Nauru",
+        "country_ch": "瑙鲁",
+        "latLng": [
+            "166.931503",
+            "-0.522778"
+        ]
+    },
+    "4-058-0": {
+        "ISPC": "4-058-0",
+        "DEC": "8656",
+        "name": "Patan ISC (Kathmandu)",
+        "operator": "Nepal Doorsanchar Co. Ltd",
+        "city": "",
+        "device": "ISC",
+        "country": "Nepal",
+        "country_ch": "尼泊尔",
+        "latLng": [
+            "84.124008",
+            "28.394857"
+        ]
+    },
+    "2-006-7": {
+        "ISPC": "2-006-7",
+        "DEC": "4151",
+        "name": "Amsterdam",
+        "operator": "Tele2 Nederland B.V.",
+        "city": "Amsterdam",
+        "device": "",
+        "country": "Netherlands",
+        "country_ch": "荷兰",
+        "latLng": [
+            "5.291266",
+            "52.132633"
+        ]
+    },
+    "5-092-0": {
+        "ISPC": "5-092-0",
+        "DEC": "10976",
+        "name": "Noumea Gallieni",
+        "operator": "Office des postes et télécommunications",
+        "city": "",
+        "device": "",
+        "country": "New Caledonia",
+        "country_ch": "新喀里多尼亚",
+        "latLng": [
+            "165.618042",
+            "-20.904305"
+        ]
+    },
+    "5-060-0": {
+        "ISPC": "5-060-0",
+        "DEC": "10720",
+        "name": "MayoralDrive GTYS",
+        "operator": "Telecom New Zealand",
+        "city": "",
+        "device": "",
+        "country": "New Zealand",
+        "country_ch": "新西兰",
+        "latLng": [
+            "174.885971",
+            "-40.900557"
+        ]
+    },
+    "7-020-5": {
+        "ISPC": "7-020-5",
+        "DEC": "14501",
+        "name": "Bellsouth",
+        "operator": "Telefonía Celular de Nicaragua - (Bellsouth)",
+        "city": "",
+        "device": "",
+        "country": "Nicaragua",
+        "country_ch": "尼加拉瓜",
+        "latLng": [
+            "-85.207229",
+            "12.865416"
+        ]
+    },
+    "6-028-0": {
+        "ISPC": "6-028-0",
+        "DEC": "12512",
+        "name": "OCB Niamey",
+        "operator": "SONITEL S.A.",
+        "city": "",
+        "device": "",
+        "country": "Niger",
+        "country_ch": "尼日尔",
+        "latLng": [
+            "8.081666",
+            "17.607789"
+        ]
+    },
+    "6-041-0": {
+        "ISPC": "6-041-0",
+        "DEC": "12616",
+        "name": "",
+        "operator": "Visafone",
+        "city": "",
+        "device": "",
+        "country": "Nigeria",
+        "country_ch": "尼日利亚",
+        "latLng": [
+            "8.675277",
+            "9.081999"
+        ]
+    },
+    "2-084-0": {
+        "ISPC": "2-084-0",
+        "DEC": "4768",
+        "name": "Eik GW1",
+        "operator": "Telenor Norge AS",
+        "city": "",
+        "device": "",
+        "country": "Norway",
+        "country_ch": "挪威",
+        "latLng": [
+            "8.468946",
+            "60.472024"
+        ]
+    },
+    "4-044-0": {
+        "ISPC": "4-044-0",
+        "DEC": "8544",
+        "name": "Inter Switch 1 at TCC (ISC1)",
+        "operator": "Omantel",
+        "city": "",
+        "device": "ISC",
+        "country": "Oman",
+        "country_ch": "阿曼",
+        "latLng": [
+            "55.923255",
+            "21.512583"
+        ]
+    },
+    "4-020-0": {
+        "ISPC": "4-020-0",
+        "DEC": "8352",
+        "name": "IGE-2 Karachi (KHI2)",
+        "operator": "M/s Pakistan Telecom Company Ltd",
+        "city": "Karachi",
+        "device": "",
+        "country": "Pakistan",
+        "country_ch": "巴基斯坦",
+        "latLng": [
+            "69.345116",
+            "30.375321"
+        ]
+    },
+    "7-026-1": {
+        "ISPC": "7-026-1",
+        "DEC": "14545",
+        "name": "Digicel MG INT",
+        "operator": "Digicel Panamá S.A.",
+        "city": "",
+        "device": "IN",
+        "country": "Panama",
+        "country_ch": "巴拿马",
+        "latLng": [
+            "-80.782127",
+            "8.537981"
+        ]
+    },
+    "5-074-0": {
+        "ISPC": "5-074-0",
+        "DEC": "10832",
+        "name": "LAEMGW",
+        "operator": "Digicel PNG Ltd",
+        "city": "",
+        "device": "MGW",
+        "country": "Papua New Guinea",
+        "country_ch": "巴布亚新几内亚",
+        "latLng": [
+            "143.95555",
+            "-6.314993"
+        ]
+    },
+    "7-088-0": {
+        "ISPC": "7-088-0",
+        "DEC": "15040",
+        "name": "…",
+        "operator": "Copaco S.A.",
+        "city": "",
+        "device": "",
+        "country": "Paraguay",
+        "country_ch": "巴拉圭",
+        "latLng": [
+            "-58.443832",
+            "-23.442503"
+        ]
+    },
+    "7-032-0": {
+        "ISPC": "7-032-0",
+        "DEC": "14592",
+        "name": "Lima N1",
+        "operator": "Telefónica del Perú S.A.A.",
+        "city": "Lima",
+        "device": "",
+        "country": "Peru",
+        "country_ch": "秘鲁",
+        "latLng": [
+            "-75.015152",
+            "-9.189967"
+        ]
+    },
+    "5-030-0": {
+        "ISPC": "5-030-0",
+        "DEC": "10480",
+        "name": "…",
+        "operator": "Isla Communications (ISLACOM)",
+        "city": "",
+        "device": "",
+        "country": "Philippines",
+        "country_ch": "菲律宾",
+        "latLng": [
+            "121.774017",
+            "12.879721"
+        ]
+    },
+    "2-120-0": {
+        "ISPC": "2-120-0",
+        "DEC": "5056",
+        "name": "OPL WAW 1",
+        "operator": "Orange Polska S.A.",
+        "city": "",
+        "device": "",
+        "country": "Poland",
+        "country_ch": "波兰",
+        "latLng": [
+            "19.145136",
+            "51.919438"
+        ]
+    },
+    "2-136-0": {
+        "ISPC": "2-136-0",
+        "DEC": "5184",
+        "name": "PTC  (LDV/RM3) Linda-a-Velha",
+        "operator": "PT Comunica??es S.A.",
+        "city": "",
+        "device": "",
+        "country": "Portugal",
+        "country_ch": "葡萄牙",
+        "latLng": [
+            "-8.224454",
+            "39.399872"
+        ]
+    },
+    "4-054-0": {
+        "ISPC": "4-054-0",
+        "DEC": "8624",
+        "name": "spare",
+        "operator": "Qatar  Telecom (QTEL)",
+        "city": "",
+        "device": "",
+        "country": "Qatar",
+        "country_ch": "卡塔尔",
+        "latLng": [
+            "51.183884",
+            "25.354826"
+        ]
+    },
+    "2-052-0": {
+        "ISPC": "2-052-0",
+        "DEC": "4512",
+        "name": "Bucuresti",
+        "operator": "Romtelecom S.A.",
+        "city": "Bucuresti",
+        "device": "",
+        "country": "Romania",
+        "country_ch": "罗马尼亚",
+        "latLng": [
+            "24.96676",
+            "45.943161"
+        ]
+    },
+    "6-070-1": {
+        "ISPC": "6-070-1",
+        "DEC": "12849",
+        "name": "FSXKGL1",
+        "operator": "Liquid Telecom",
+        "city": "",
+        "device": "",
+        "country": "Rwanda",
+        "country_ch": "卢旺达",
+        "latLng": [
+            "29.873888",
+            "-1.940278"
+        ]
+    },
+    "3-112-0": {
+        "ISPC": "3-112-0",
+        "DEC": "7040",
+        "name": "Ponds-Needsmust Exchange",
+        "operator": "Cable & Wireless St. Kitts-Nevis",
+        "city": "",
+        "device": "",
+        "country": "Saint Kitts and Nevis",
+        "country_ch": "圣基茨和尼维斯",
+        "latLng": [
+            "-62.782998",
+            "17.357822"
+        ]
+    },
+    "3-116-1": {
+        "ISPC": "3-116-1",
+        "DEC": "7073",
+        "name": "Sans Soucis Exchange",
+        "operator": "Cable & Wireless St. Lucia",
+        "city": "",
+        "device": "",
+        "country": "Saint Lucia",
+        "country_ch": "圣卢西亚",
+        "latLng": [
+            "-60.978893",
+            "13.909444"
+        ]
+    },
+    "3-016-0": {
+        "ISPC": "3-016-0",
+        "DEC": "6272",
+        "name": "St. Pierre-et-Miquelon E10",
+        "operator": "France Telecom",
+        "city": "",
+        "device": "",
+        "country": "Saint Pierre and Miquelon",
+        "country_ch": "圣皮埃尔和密克隆",
+        "latLng": [
+            "-56.27111",
+            "46.941936"
+        ]
+    },
+    "3-120-0": {
+        "ISPC": "3-120-0",
+        "DEC": "7104",
+        "name": "Arnos Vale Exchange",
+        "operator": "Cable & Wireless St. Vincent",
+        "city": "",
+        "device": "",
+        "country": "Saint Vincent and the Grenadines",
+        "country_ch": "圣文森特和格林纳丁斯",
+        "latLng": [
+            "-61.287228",
+            "12.984305"
+        ]
+    },
+    "5-098-0": {
+        "ISPC": "5-098-0",
+        "DEC": "11024",
+        "name": "Int-Gateway/PSTN Switch",
+        "operator": "SamoaTel",
+        "city": "",
+        "device": "",
+        "country": "Samoa",
+        "country_ch": "萨摩亚",
+        "latLng": [
+            "-172.104629",
+            "-13.759029"
+        ]
+    },
+    "2-184-1": {
+        "ISPC": "2-184-1",
+        "DEC": "5569",
+        "name": "San Marino",
+        "operator": "Intelcom",
+        "city": "",
+        "device": "",
+        "country": "San Marino",
+        "country_ch": "圣马力诺",
+        "latLng": [
+            "12.457777",
+            "43.94236"
+        ]
+    },
+    "4-040-0": {
+        "ISPC": "4-040-0",
+        "DEC": "8512",
+        "name": "DAMMAM INTL. VoIP",
+        "operator": "Saudi Telecom Company (STC)",
+        "city": "Dammam",
+        "device": "IN",
+        "country": "Saudi Arabia",
+        "country_ch": "沙特阿拉伯",
+        "latLng": [
+            "45.079162",
+            "23.885942"
+        ]
+    },
+    "6-016-0": {
+        "ISPC": "6-016-0",
+        "DEC": "12416",
+        "name": "INTSTP1",
+        "operator": "Expresso Sénégal",
+        "city": "",
+        "device": "STP",
+        "country": "Senegal",
+        "country_ch": "塞内加尔",
+        "latLng": [
+            "-14.452362",
+            "14.497401"
+        ]
+    },
+    "2-040-0": {
+        "ISPC": "2-040-0",
+        "DEC": "4416",
+        "name": "Beograd/MN1",
+        "operator": "Telekom Srbija a.d.",
+        "city": "",
+        "device": "",
+        "country": "Serbia",
+        "country_ch": "塞尔维亚",
+        "latLng": [
+            "21.005859",
+            "44.016521"
+        ]
+    },
+    "6-066-0": {
+        "ISPC": "6-066-0",
+        "DEC": "12816",
+        "name": "E10S1",
+        "operator": "Cable and Wireless (Seychelles) Ltd.",
+        "city": "",
+        "device": "",
+        "country": "Seychelles",
+        "country_ch": "塞舌尔",
+        "latLng": [
+            "55.491977",
+            "-4.679574"
+        ]
+    },
+    "6-038-0": {
+        "ISPC": "6-038-0",
+        "DEC": "12592",
+        "name": "Sierratel Freetown",
+        "operator": "Sierratel",
+        "city": "",
+        "device": "",
+        "country": "Sierra Leone",
+        "country_ch": "塞拉利昂",
+        "latLng": [
+            "-11.779889",
+            "8.460555"
+        ]
+    },
+    "5-045-0": {
+        "ISPC": "5-045-0",
+        "DEC": "10600",
+        "name": "SingTel OC - INGS-3",
+        "operator": "Singapore Telecommunications Ltd",
+        "city": "",
+        "device": "IN",
+        "country": "Singapore",
+        "country_ch": "新加坡",
+        "latLng": [
+            "103.819836",
+            "1.352083"
+        ]
+    },
+    "2-232-0": {
+        "ISPC": "2-232-0",
+        "DEC": "5952",
+        "name": "ISC Bratislava",
+        "operator": "Zeleznice Slovenskej republiky",
+        "city": "",
+        "device": "ISC",
+        "country": "Slovakia",
+        "country_ch": "斯洛伐克",
+        "latLng": [
+            "19.699024",
+            "48.669026"
+        ]
+    },
+    "2-182-0": {
+        "ISPC": "2-182-0",
+        "DEC": "5552",
+        "name": "IX1 Ljubljana",
+        "operator": "Telekom Slovenija p.o.",
+        "city": "",
+        "device": "",
+        "country": "Slovenia",
+        "country_ch": "斯洛文尼亚",
+        "latLng": [
+            "14.995463",
+            "46.151241"
+        ]
+    },
+    "6-074-0": {
+        "ISPC": "6-074-0",
+        "DEC": "12880",
+        "name": "Mogadishu",
+        "operator": "Aerolite",
+        "city": "",
+        "device": "",
+        "country": "Somalia",
+        "country_ch": "索马里",
+        "latLng": [
+            "46.199616",
+            "5.152149"
+        ]
+    },
+    "6-109-0": {
+        "ISPC": "6-109-0",
+        "DEC": "13160",
+        "name": "ECO-MSC1-JBG-01",
+        "operator": "Liquid Telecommunication South Africa (Pty) Ltd",
+        "city": "",
+        "device": "MSC",
+        "country": "South Africa",
+        "country_ch": "南非",
+        "latLng": [
+            "22.937506",
+            "-30.559482"
+        ]
+    },
+    "2-027-0": {
+        "ISPC": "2-027-0",
+        "DEC": "4312",
+        "name": "Madrid",
+        "operator": "Grupalia Internet S.A.",
+        "city": "Madrid",
+        "device": "",
+        "country": "Spain",
+        "country_ch": "西班牙",
+        "latLng": [
+            "-3.74922",
+            "40.463667"
+        ]
+    },
+    "4-026-0": {
+        "ISPC": "4-026-0",
+        "DEC": "8400",
+        "name": "ISC1 - 5ESS Int'l Gateway",
+        "operator": "Sri Lanka Telecom Ltd",
+        "city": "",
+        "device": "ISC",
+        "country": "Sri Lanka",
+        "country_ch": "斯里兰卡",
+        "latLng": [
+            "80.771797",
+            "7.873054"
+        ]
+    },
+    "6-068-0": {
+        "ISPC": "6-068-0",
+        "DEC": "12832",
+        "name": "ITC Khartoum",
+        "operator": "Sudanese Telephone Company Ltd. (Sudatel)",
+        "city": "",
+        "device": "",
+        "country": "Sudan",
+        "country_ch": "苏丹",
+        "latLng": [
+            "30.217636",
+            "12.862807"
+        ]
+    },
+    "7-092-0": {
+        "ISPC": "7-092-0",
+        "DEC": "15072",
+        "name": "Paramaribo 1",
+        "operator": "Telesur",
+        "city": "Para",
+        "device": "",
+        "country": "Suriname",
+        "country_ch": "苏里南",
+        "latLng": [
+            "-56.027783",
+            "3.919305"
+        ]
+    },
+    "6-106-0": {
+        "ISPC": "6-106-0",
+        "DEC": "13136",
+        "name": "ISC AXE",
+        "operator": "Swaziland Posts & Telecommunications Co. (SPTC)",
+        "city": "",
+        "device": "ISC",
+        "country": "Swaziland",
+        "country_ch": "斯威士兰",
+        "latLng": [
+            "31.465866",
+            "-26.522503"
+        ]
+    },
+    "2-080-0": {
+        "ISPC": "2-080-0",
+        "DEC": "4736",
+        "name": "Stockholm UX1 (Stockholm)",
+        "operator": "TeliaSonera Sverige AB",
+        "city": "",
+        "device": "",
+        "country": "Sweden",
+        "country_ch": "瑞典",
+        "latLng": [
+            "18.643501",
+            "60.128161"
+        ]
+    },
+    "2-053-0": {
+        "ISPC": "2-053-0",
+        "DEC": "4520",
+        "name": "Zürich",
+        "operator": "Interoute Managed Services",
+        "city": "",
+        "device": "",
+        "country": "Switzerland",
+        "country_ch": "瑞士",
+        "latLng": [
+            "8.227512",
+            "46.818188"
+        ]
+    },
+    "4-157-0": {
+        "ISPC": "4-157-0",
+        "DEC": "9448",
+        "name": "Dushanbe",
+        "operator": "Tajiktelecom",
+        "city": "Dushanbe",
+        "device": "",
+        "country": "Tajikistan",
+        "country_ch": "塔吉克斯坦",
+        "latLng": [
+            "71.276093",
+            "38.861034"
+        ]
+    },
+    "6-080-0": {
+        "ISPC": "6-080-0",
+        "DEC": "12928",
+        "name": "DSMITE01",
+        "operator": "Tanzania Telecommunications Company Limited",
+        "city": "",
+        "device": "",
+        "country": "Tanzania",
+        "country_ch": "坦桑尼亚",
+        "latLng": [
+            "34.888822",
+            "-6.369028"
+        ]
+    },
+    "5-039-0": {
+        "ISPC": "5-039-0",
+        "DEC": "10552",
+        "name": "BPL/POI (AWN-ISC1)",
+        "operator": "Advance Wireless Network",
+        "city": "",
+        "device": "ISC",
+        "country": "Thailand",
+        "country_ch": "泰国",
+        "latLng": [
+            "100.992541",
+            "15.870032"
+        ]
+    },
+    "5-130-0": {
+        "ISPC": "5-130-0",
+        "DEC": "11280",
+        "name": "Telin 2",
+        "operator": "Telin Timor-Leste",
+        "city": "",
+        "device": "",
+        "country": "Timor-Leste",
+        "country_ch": "东帝汶",
+        "latLng": [
+            "125.727539",
+            "-8.874217"
+        ]
+    },
+    "6-030-0": {
+        "ISPC": "6-030-0",
+        "DEC": "12528",
+        "name": "CTI Lomé",
+        "operator": "Togo Télécom",
+        "city": "",
+        "device": "",
+        "country": "Togo",
+        "country_ch": "多哥",
+        "latLng": [
+            "0.824782",
+            "8.619543"
+        ]
+    },
+    "5-078-0": {
+        "ISPC": "5-078-0",
+        "DEC": "10864",
+        "name": "Nuku'alofa switch",
+        "operator": "Tonga Communications Corporation",
+        "city": "",
+        "device": "",
+        "country": "Tonga",
+        "country_ch": "汤加",
+        "latLng": [
+            "-175.198242",
+            "-21.178986"
+        ]
+    },
+    "3-148-0": {
+        "ISPC": "3-148-0",
+        "DEC": "7328",
+        "name": "DMS 300 TSTT House",
+        "operator": "Telecommunication Services of Trinidad & Tobago Ltd. (TSTT)",
+        "city": "",
+        "device": "",
+        "country": "Trinidad and Tobago",
+        "country_ch": "特立尼达和多巴哥",
+        "latLng": [
+            "-61.222503",
+            "10.691803"
+        ]
+    },
+    "6-010-0": {
+        "ISPC": "6-010-0",
+        "DEC": "12368",
+        "name": "Central Kasbash",
+        "operator": "Tunisie Telecom",
+        "city": "",
+        "device": "",
+        "country": "Tunisia",
+        "country_ch": "突尼斯",
+        "latLng": [
+            "9.537499",
+            "33.886917"
+        ]
+    },
+    "2-171-0": {
+        "ISPC": "2-171-0",
+        "DEC": "5464",
+        "name": "Ankara/Eser Telekom",
+        "operator": "Eser Telekom",
+        "city": "Ankara",
+        "device": "",
+        "country": "Turkey",
+        "country_ch": "土耳其",
+        "latLng": [
+            "35.243322",
+            "38.963745"
+        ]
+    },
+    "4-160-1": {
+        "ISPC": "4-160-1",
+        "DEC": "9473",
+        "name": "Ashgabat",
+        "operator": "Turkmentelecom",
+        "city": "Ashgabat",
+        "device": "",
+        "country": "Turkmenistan",
+        "country_ch": "土库曼斯坦",
+        "latLng": [
+            "59.556278",
+            "38.969719"
+        ]
+    },
+    "3-152-0": {
+        "ISPC": "3-152-0",
+        "DEC": "7360",
+        "name": "MTX-PSTN-LS",
+        "operator": "Cable & Wireless Ltd",
+        "city": "",
+        "device": "",
+        "country": "Turks and Caicos Islands",
+        "country_ch": "特克斯和凯科斯群岛",
+        "latLng": [
+            "-71.797928",
+            "21.694025"
+        ]
+    },
+    "6-082-0": {
+        "ISPC": "6-082-0",
+        "DEC": "12944",
+        "name": "Kampala",
+        "operator": "Uganda Telecom Ltd",
+        "city": "Kampala",
+        "device": "",
+        "country": "Uganda",
+        "country_ch": "乌干达",
+        "latLng": [
+            "32.290275",
+            "1.373333"
+        ]
+    },
+    "2-214-0": {
+        "ISPC": "2-214-0",
+        "DEC": "5808",
+        "name": "Kyiv",
+        "operator": "Ukrtelecom JSC",
+        "city": "Kyiv",
+        "device": "",
+        "country": "Ukraine",
+        "country_ch": "乌克兰",
+        "latLng": [
+            "31.16558",
+            "48.379433"
+        ]
+    },
+    "4-048-0": {
+        "ISPC": "4-048-0",
+        "DEC": "8576",
+        "name": "IG Softswitch 1 (IS1)",
+        "operator": "Emirates Telecommunications Corporation (ETISALAT)",
+        "city": "",
+        "device": "",
+        "country": "United Arab Emirates",
+        "country_ch": "阿拉伯联合酋长国",
+        "latLng": [
+            "53.847818",
+            "23.424076"
+        ]
+    },
+    "2-068-0": {
+        "ISPC": "2-068-0",
+        "DEC": "4640",
+        "name": "UK_SS01",
+        "operator": "Cable & Wireless UK",
+        "city": "",
+        "device": "",
+        "country": "United Kingdom",
+        "country_ch": "英国",
+        "latLng": [
+            "-3.435973",
+            "55.378051"
+        ]
+    },
+    "3-020-5": {
+        "ISPC": "3-020-5",
+        "DEC": "6309",
+        "name": "Sherman Oaks",
+        "operator": "AT&T",
+        "city": "",
+        "device": "",
+        "country": "United States",
+        "country_ch": "美国",
+        "latLng": [
+            "-95.712891",
+            "37.09024"
+        ]
+    },
+    "7-096-0": {
+        "ISPC": "7-096-0",
+        "DEC": "15104",
+        "name": "MSCURU01",
+        "operator": "AM Wireless Uruguay SA",
+        "city": "",
+        "device": "MSC",
+        "country": "Uruguay",
+        "country_ch": "乌拉圭",
+        "latLng": [
+            "-55.765835",
+            "-32.522779"
+        ]
+    },
+    "4-164-1": {
+        "ISPC": "4-164-1",
+        "DEC": "9505",
+        "name": "Tashkent EWSD",
+        "operator": "UzInter Telecom (JSC Uzintel)",
+        "city": "",
+        "device": "",
+        "country": "Uzbekistan",
+        "country_ch": "乌兹别克斯坦",
+        "latLng": [
+            "64.585262",
+            "41.377491"
+        ]
+    },
+    "5-082-0": {
+        "ISPC": "5-082-0",
+        "DEC": "10896",
+        "name": "Port Vila",
+        "operator": "Telecom Vanuatu Limited",
+        "city": "",
+        "device": "",
+        "country": "Vanuatu",
+        "country_ch": "瓦努阿图",
+        "latLng": [
+            "166.959158",
+            "-15.376706"
+        ]
+    },
+    "4-042-0": {
+        "ISPC": "4-042-0",
+        "DEC": "8528",
+        "name": "Sana'a ISC2",
+        "operator": "Yemen International Telecommunications Company",
+        "city": "Sana",
+        "device": "ISC",
+        "country": "Yemen",
+        "country_ch": "也门",
+        "latLng": [
+            "48.516388",
+            "15.552727"
+        ]
+    },
+    "6-090-0": {
+        "ISPC": "6-090-0",
+        "DEC": "13008",
+        "name": "Lusaka Gateway",
+        "operator": "Zamtel",
+        "city": "Lusaka",
+        "device": "",
+        "country": "Zambia",
+        "country_ch": "赞比亚",
+        "latLng": [
+            "27.849332",
+            "-13.133897"
+        ]
+    },
+    "6-095-0": {
+        "ISPC": "6-095-0",
+        "DEC": "13048",
+        "name": "Harare STP-202",
+        "operator": "Telecel Zimbabwe",
+        "city": "Harare",
+        "device": "STP",
+        "country": "Zimbabwe",
+        "country_ch": "津巴布韦",
+        "latLng": [
+            "29.154857",
+            "-19.015438"
+        ]
+    }
+}

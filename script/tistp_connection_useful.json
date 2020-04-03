@@ -1,0 +1,40 @@
+{
+    "4-122-0": {
+        "ocity": "Shanghai",
+        "tolist": [
+            {
+                "dpc": "4-177-1",
+                "value": 103525,
+                "dcity": "Hong Kong"
+            },
+            {
+                "dpc": "4-178-3",
+                "value": 107517,
+                "dcity": "Hong Kong"
+            }
+        ],
+        "operator": "China Unicom"
+    },
+    "4-127-1": {
+        "ocity": "Guangzhou",
+        "tolist": [
+            {
+                "dpc": "4-121-0",
+                "value": 628,
+                "dcity": "Shanghai"
+            }
+        ],
+        "operator": "China Telecom"
+    },
+    "4-121-0": {
+        "ocity": "Shanghai",
+        "tolist": [
+            {
+                "dpc": "4-121-4",
+                "value": 78,
+                "dcity": "Guangzhou"
+            }
+        ],
+        "operator": "China Telecom"
+    }
+}

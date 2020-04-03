@@ -1,0 +1,210 @@
+connect({
+    "4-121-0": {
+        "ocity": "Shanghai",
+        "tolist": [
+            {
+                "dpc": "4-121-4",
+                "value": 56290,
+                "dcity": "Guangzhou"
+            }
+        ],
+        "operator": "China Telecom"
+    },
+    "4-121-4": {
+        "ocity": "Guangzhou",
+        "tolist": [
+            {
+                "dpc": "4-128-7",
+                "value": 103977,
+                "dcity": "China"
+            },
+            {
+                "dpc": "4-177-1",
+                "value": 16582,
+                "dcity": "Hong Kong"
+            },
+            {
+                "dpc": "4-178-3",
+                "value": 16344,
+                "dcity": "Hong Kong"
+            },
+            {
+                "dpc": "4-183-3",
+                "value": 19,
+                "dcity": "Hong Kong"
+            },
+            {
+                "dpc": "4-183-4",
+                "value": 28,
+                "dcity": "Hong Kong"
+            }
+        ],
+        "operator": "China Telecom"
+    },
+    "4-122-0": {
+        "ocity": "Shanghai",
+        "tolist": [
+            {
+                "dpc": "2-057-6",
+                "value": 7304,
+                "dcity": "Bern"
+            },
+            {
+                "dpc": "4-177-1",
+                "value": 2705184,
+                "dcity": "Hong Kong"
+            },
+            {
+                "dpc": "4-178-3",
+                "value": 2343293,
+                "dcity": "Hong Kong"
+            }
+        ],
+        "operator": "China Unicom"
+    },
+    "4-127-0": {
+        "ocity": "Shanghai",
+        "tolist": [
+            {
+                "dpc": "2-009-0",
+                "value": 1680182,
+                "dcity": "KPN B.V."
+            },
+            {
+                "dpc": "4-121-0",
+                "value": 5,
+                "dcity": "Shanghai"
+            },
+            {
+                "dpc": "4-128-7",
+                "value": 9,
+                "dcity": "China"
+            },
+            {
+                "dpc": "4-177-1",
+                "value": 97276,
+                "dcity": "Hong Kong"
+            },
+            {
+                "dpc": "4-178-3",
+                "value": 98642,
+                "dcity": "Hong Kong"
+            }
+        ],
+        "operator": "China Telecom"
+    },
+    "4-127-1": {
+        "ocity": "Guangzhou",
+        "tolist": [
+            {
+                "dpc": "2-009-1",
+                "value": 1129108,
+                "dcity": "KPN B.V."
+            },
+            {
+                "dpc": "4-121-0",
+                "value": 827,
+                "dcity": "Shanghai"
+            },
+            {
+                "dpc": "4-128-7",
+                "value": 390,
+                "dcity": "China"
+            },
+            {
+                "dpc": "4-177-1",
+                "value": 64137,
+                "dcity": "Hong Kong"
+            },
+            {
+                "dpc": "4-178-3",
+                "value": 63969,
+                "dcity": "Hong Kong"
+            },
+            {
+                "dpc": "4-183-3",
+                "value": 290,
+                "dcity": "Hong Kong"
+            },
+            {
+                "dpc": "4-183-4",
+                "value": 280,
+                "dcity": "Hong Kong"
+            }
+        ],
+        "operator": "China Telecom"
+    },
+    "4-127-2": {
+        "ocity": "Beijing",
+        "tolist": [
+            {
+                "dpc": "2-009-0",
+                "value": 624300,
+                "dcity": "KPN B.V."
+            },
+            {
+                "dpc": "4-121-0",
+                "value": 37,
+                "dcity": "Shanghai"
+            },
+            {
+                "dpc": "4-177-1",
+                "value": 18613,
+                "dcity": "Hong Kong"
+            },
+            {
+                "dpc": "4-178-3",
+                "value": 18909,
+                "dcity": "Hong Kong"
+            }
+        ],
+        "operator": "China Telecom"
+    },
+    "4-128-6": {
+        "ocity": "Guangzhou",
+        "tolist": [
+            {
+                "dpc": "4-127-0",
+                "value": 1141658,
+                "dcity": "Shanghai"
+            }
+        ],
+        "operator": "China Telecom"
+    },
+    "4-128-7": {
+        "ocity": "China",
+        "tolist": [
+            {
+                "dpc": "2-009-0",
+                "value": 4370,
+                "dcity": "KPN B.V."
+            },
+            {
+                "dpc": "2-009-1",
+                "value": 4299,
+                "dcity": "KPN B.V."
+            },
+            {
+                "dpc": "4-121-0",
+                "value": 64,
+                "dcity": "Shanghai"
+            },
+            {
+                "dpc": "4-121-4",
+                "value": 98471,
+                "dcity": "Guangzhou"
+            },
+            {
+                "dpc": "4-183-3",
+                "value": 210,
+                "dcity": "Hong Kong"
+            },
+            {
+                "dpc": "4-183-4",
+                "value": 213,
+                "dcity": "Hong Kong"
+            }
+        ],
+        "operator": "China Telecom"
+    }
+})

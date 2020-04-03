@@ -36,7 +36,13 @@
                 </div>
 
             </div>
-            <div id='statisticP'>
+            <div id='statisticP' >
+                <div id = 'countryName' style="width:100%"></div>
+                <div style='display: flex;'>
+                    <div id='Cpie' class="staview"></div>
+                    <div id='Lchart' class="staview"></div>
+                    <div id='operatorchart' class="staview"></div>
+               </div>
                 <div class="layer barchart">
                     <div class="layerTitle">
                         <i class="arrow" onclick="hideAndShow(this)"></i>进出口差值与GDP比值
@@ -64,10 +70,11 @@
                 </div>
             </div>
         </div>
-        <div class='right'>
-            <div id = 'countryName' style="width:100%"></div>
-            <div id='Cpie' style="height:300px;width:100%;border: 1px solid #ccc;margin: 3px;"></div>
-            <div id='Lchart' style="height:300px;width:100%;border: 1px solid #ccc;margin: 3px;bottom: 5px;"></div>
+        <div class='right' id='rightpanel'>
+            <div id='ispcInf' style='display: none'>
+                <div class='title'> 设备详细信息</div>
+                <div id='ispcInfList'></div>
+            </div>
         </div>
    </div>
 
@@ -78,22 +85,25 @@
 <script src="./static/js/BubbleChart.js"></script>
 <script src="./static/js/pie.js"></script>
 <script type="text/javascript">
-    initMap();
     var pathList = {}
     var GDPList = {}
     var ContinentList = null;
-    function country_coord(res) {
+    function ispc_coord(res) {
         initMapData(res)
+        initMap(res)
     }
-    function Get_export(res) {
-        res.forEach((r) => {
-            if (pathList.hasOwnProperty(r.source)) {
-                pathList[r.source].path.push({ name: r.target, value: Number(r.value) })
-            }
-            else {
-                pathList[r.source] = { path: [{ name: r.target, value: Number(r.value) }] }
-            }
-        })
+    function connect(res) {
+        for(let r in res){
+            let list = res[r].tolist
+            list.forEach(d=>{
+                if (pathList.hasOwnProperty(r)) {
+                    pathList[r].path.push({ name: d.dpc, value: Number(d.value) })
+                }
+                else {
+                    pathList[r] = {operator:res[r].operator, path: [{ name: d.dpc, value: Number(d.value) }] }
+                }
+            })
+        }
     }
     //各个国家的各类商品的进口数据
     //[国家名，各项的值...]
@@ -119,8 +129,8 @@
     }
 </script>
 <script src="./static/data/countries.js"></script>
-<script src="./static/data/country_coord.json?callback=country_coord"></script>
-<script src="./static/data/2018_export.json?callback=Get_export"></script>
+<script src="./static/data/ispc_coord.json?callback=ispc_coord"></script>
+<script src="./static/data/tisp_connect.json?callback=connect"></script>
 <script src="./static/data/WtoData_imports.json?callback=WtoData_imports"></script>
 <script src="./static/data/WtoData_exports.json?callback=WtoData_exports"></script>
 <script src="./static/data/2017_trade_balance_percent_of_gdp.json?callback=WtoData_balance"></script>
@@ -147,42 +157,42 @@
     }
     function renderLchart(country) {
         //{ name: r.target, value: Number(r.value) }
-        let path = pathList[country].path
-        let top5 = []
-        path.sort(function (a, b) {
-            return b.value - a.value
-        })
-        let data = [path[4],path[3],path[2],path[1],path[0]]
-        let ldata = []
-        let l_label = []
-        for(let k of data){
-            let v = (k.value/100000000)
-            ldata.push(v.toFixed(2))
-            l_label.push(k.name)
-        }
+        // let path = pathList[country].path
+        // let top5 = []
+        // path.sort(function (a, b) {
+        //     return b.value - a.value
+        // })
+        // let data = [path[4],path[3],path[2],path[1],path[0]]
+        // let ldata = []
+        // let l_label = []
+        // for(let k of data){
+        //     let v = (k.value/100000000)
+        //     ldata.push(v.toFixed(2))
+        //     l_label.push(k.name)
+        // }
 
-        let radarData = null
-        for(let k of dataEx){
-            if (country==k[0])
-                radarData = k
-        }
-        let maxV = 0
-        let r_data = []
+        // let radarData = null
+        // for(let k of dataEx){
+        //     if (country==k[0])
+        //         radarData = k
+        // }
+        // let maxV = 0
+        // let r_data = []
 
-        for (let k = 1; k < radarData.length; k++) {
-            r_data.push(radarData[k])
-            if (maxV < radarData[k])
-                maxV = radarData[k]
-        }
-        let t = r_data[r_data.length-1]
-        r_data[r_data.length-1] = r_data[r_data.length-2]
-        r_data[r_data.length-2] = t
-        r_data = [
-            {
-                value: r_data,
-                name: ''
-            }
-        ]
+        // for (let k = 1; k < radarData.length; k++) {
+        //     r_data.push(radarData[k])
+        //     if (maxV < radarData[k])
+        //         maxV = radarData[k]
+        // }
+        // let t = r_data[r_data.length-1]
+        // r_data[r_data.length-1] = r_data[r_data.length-2]
+        // r_data[r_data.length-2] = t
+        // r_data = [
+        //     {
+        //         value: r_data,
+        //         name: ''
+        //     }
+        // ]
         let r_label = [
             { name: '食品', max: maxV },
             { name: '燃料', max: maxV },
@@ -191,12 +201,15 @@
             { name: '机械', max: maxV },
             { name: '服装', max: maxV },
             { name: '纺织品', max: maxV }]
-        console.log(radarData,r_data)
+        // console.log(radarData,r_data)
+        let l_label = ['4-121-0','4-121-4','4-128-7','4-177-1','4-178-3']//,'4-183-3','4-183-3'] 
+        let ldata = ["842.23", "1095.24","1475.65", "3037.25","4806.89"]
+        let r_data=[{value:[68998,35389,55756,141230,1085569,157464,109595],name:''}]
         pie(country,l_label,ldata,r_label,r_data)
    }
     var Pchart = echarts.init(document.getElementById('Cpie'));
     var Lchart = echarts.init(document.getElementById('Lchart'));
-
+    var operatorchart =  echarts.init(document.getElementById('operatorchart'));
     // let rrr = renderLchart('China')
     // console.log(rrr)
 </script>

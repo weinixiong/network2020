@@ -25,6 +25,7 @@ body{
 	flex-wrap: wrap;
 	width:80%;
 	margin-left: 0;
+	height: 100%;
 }
 #main{
 	border: 1px solid #ccc;
@@ -33,7 +34,9 @@ body{
 	height: 600px;
 }
 #statisticP{
-	height:10%
+	height:40%;
+	position: flex;
+	/*flex-direction: */
 }
 .right {
 	display: flex;
@@ -114,4 +117,26 @@ display: flex
 }
 .tabs_inner{
 	pointer-events: none;
+}
+#ispcInf .title{
+	background-color: rgb(201,201,201);
+    text-align: center;
+    font-size: 16px;
+    height: 30px;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+#ispcInfList{
+	width: 100%;
+}
+#ispcInfList li{
+	line-height: 60px;
+	font-size: 20px;
+}
+.staview{
+	height:300px;
+	/*border: 1px solid #ccc;*/
+	margin: 3px;
+	display: inline-block;
+	width: 100%;
 }
