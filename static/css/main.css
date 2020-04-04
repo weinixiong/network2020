@@ -120,7 +120,7 @@ display: flex
 .tabs_inner{
 	pointer-events: none;
 }
-#ispcInf .title{
+#ispcInf .title,#operatorInf .title{
 	background-color: rgb(201,201,201);
     text-align: center;
     font-size: 16px;
@@ -130,10 +130,10 @@ display: flex
     line-height: 30px;
     font-weight: 600;
 }
-#ispcInfList{
+#ispcInfList,#operatorInfList{
 	width: 100%;
 }
-#ispcInfList li{
+#ispcInfList li,#operatorInfList li{
 	line-height: 60px;
 	font-size: 20px;
 }

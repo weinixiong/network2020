@@ -32,10 +32,12 @@ window.onload = ()=>{
 		}
 		if(id=='nav_device_connect'){
 			document.getElementById('ispcInf').style.display='block'
+			document.getElementById('operatorInf').style.display='none'
 			// document.getElementById('operator_container').style.display='none'
 		}
 		else{
 			document.getElementById('ispcInf').style.display='none'
+			document.getElementById('operatorInf').style.display='block'
 			// document.getElementById('operator_container').style.display='block'
 		}
 	}
