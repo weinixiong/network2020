@@ -6,10 +6,12 @@ function selcet_ini(select, data) {
     // }
     //添加国家-运营商选项
     for (let c in data) {
-        $(select).append('<optgroup label='+c.toString()+' id='+c.toString()+' class="optgroup"></optgroup>')
+        // $(select).append($('<optgroup>'))
+        $(select).append('<optgroup  label="'+c.toString()+'" id='+c.toString()+' class="optgroup"></optgroup>')
         for(let operator of data[c]){
-            $('#'+c).append('<option value='+c.toString()+'-'+operator.toString()+' class="option">' + operator.toString() + "</option>")
+            $('#'+c).append('<option value= "'+c.toString()+'-'+operator.toString()+'" class="option">' + operator.toString() + "</option>")
         }
+        // 
     }
 }
 
@@ -57,10 +59,9 @@ $(function () {
     mysel.change(function () {
         var newvalue = mysel.val(); //当前选中值列表
         let chart0 = echarts.getInstanceByDom(document.getElementById('barchart'))
-        // console.log("on change")
 
         var clicked = diff(newvalue, selected);
-
+        // console.log(clicked)
         for(let c of clicked){
             let [country,operator] = c.split('-')
             clickCountry({country,operator})//联动选运营商
