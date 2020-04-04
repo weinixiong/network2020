@@ -217,8 +217,10 @@ function freshRightpanel(ispc){
     innerhtml = '<ul>'+innerhtml+"</ul>"
     rightpanel.innerHTML = innerhtml
 }
+var lastoperator = ''
 function clickCountry(city,isoperator = true){
     console.log('clicked',city)
+    let lists = {}
     if(isoperator){
         let operator = city.operator
         for(let key in pathList){
@@ -226,17 +228,32 @@ function clickCountry(city,isoperator = true){
                 clickISPC(key)
             }
         }
+        if(lastoperator!=operator){
+            lastoperator=operator
+            for(let key in ISPCList){
+                if(operator==ISPCList[key].operator){
+                    lists[key] = ISPCList[key]
+                }
+            }
+        }
+       else
+        lastoperator = ''
     }
     else{
         clickISPC(city)
     }
     let series = []
-        for(let k in ClickedList){
-            if(ClickedList[k]){
-                let s = Draw(countryInf[k].data)
-                series = series.concat(s)
-            }
+    if(Object.keys(lists).length!=0){
+        series.concat(getinit_series(lists))
+    }
+    series = series.concat(getinit_series(lists))
+    for(let k in ClickedList){
+        if(ClickedList[k]){
+            let s = Draw(countryInf[k].data)
+            series = series.concat(s)
         }
+    }
+
     if(series.length==0)
         series = [init_series]
     freshMap({series,max:maxV,min:minV})
@@ -288,33 +305,7 @@ function initMap(data){
         min = 1000,
         max = 5000
     ISPCList = data
-    init_series = {
-                    type: 'effectScatter',
-                    coordinateSystem: 'geo',
-                    data: getCoord(data),
-                    symbol: 'circle',
-                    symbolSize: 12,
-                    label: {
-                        normal: {
-                            show: false
-                        },
-                        // emphasis: {
-                        //     show: false
-                        // }
-                    },
-                    itemStyle: {
-                        emphasis: {
-                            borderColor: '#fff',
-                            borderWidth: 1
-                        },
-                        normal: {
-                            color: 'rgba(255,0,0,0.5)'//157,197,200,1)'
-                        }
-                    },
-                    rippleEffect: {
-                            period: 4, brushType: 'stroke', scale: 2
-                        }
-                }
+    init_series = getinit_series(ISPCList)
     // console.log(init_series)
     if(data!=null)
     {
@@ -403,6 +394,35 @@ function initMap(data){
     
     Mapchart.setOption(option,true)
 };
+function getinit_series(data){
+    return {
+                    type: 'effectScatter',
+                    coordinateSystem: 'geo',
+                    data: getCoord(data),
+                    symbol: 'circle',
+                    symbolSize: 12,
+                    label: {
+                        normal: {
+                            show: false
+                        },
+                        // emphasis: {
+                        //     show: false
+                        // }
+                    },
+                    itemStyle: {
+                        emphasis: {
+                            borderColor: '#fff',
+                            borderWidth: 1
+                        },
+                        normal: {
+                            color: 'rgba(255,0,0,0.5)'//157,197,200,1)'
+                        }
+                    },
+                    rippleEffect: {
+                            period: 4, brushType: 'stroke', scale: 2
+                        }
+                }
+}
 function freshMap(data){
     let series = [],
         min = 1000,

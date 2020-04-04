@@ -86,9 +86,12 @@ def getispcLatLng(filename):
             cur[item] = temp[index]
         # print(cur)
         if(cur['country']=='China'):
-            if(cur['ISPC'] in chinaIspc.keys() and cur['city']!=''):
+            if cur['city']!='' and cur['city'] in country_coord.keys():
+                # (cur['ISPC'] in chinaIspc.keys() and ):
                 cur['latLng'] =  country_coord[cur['city']]
             else:
+                print(cur)
+                # if cur['city'] in country_coord.keys()
                 continue
         else:
             if cur['country'] in country_coord.keys() and cur['country'] not in countrylist.keys():
