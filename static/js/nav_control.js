@@ -14,7 +14,7 @@
 // }
 window.onload = ()=>{
 	let nav_tabs = document.getElementById('nav_tabs')
-	var list = {'nav_operator':'operator','nav_device_connect':'main'}
+	var list = {'nav_operator':'operator_container','nav_device_connect':'main'}
 	nav_tabs.onclick = (ev)=>{
 		let id = ev.target.id
 		let panelId = list[id]
@@ -32,9 +32,11 @@ window.onload = ()=>{
 		}
 		if(id=='nav_device_connect'){
 			document.getElementById('ispcInf').style.display='block'
+			// document.getElementById('operator_container').style.display='none'
 		}
 		else{
 			document.getElementById('ispcInf').style.display='none'
+			// document.getElementById('operator_container').style.display='block'
 		}
 	}
 }

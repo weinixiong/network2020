@@ -1,0 +1,4350 @@
+ownership({
+  "type":"force",
+  "categories": [
+    {
+      "name": "Non Operator",
+      "keyword": {},
+      "base": "Non Operator",
+      "itemStyle": {
+        "normal": {
+          "brushType": "both",
+          "color": "#D0D102",
+          "strokeColor": "#5182ab",
+          "lineWidth": 1
+        }
+      }
+    },
+    {
+      "name": "Operator",
+      "keyword": {},
+      "base": "Operator",
+      "itemStyle": {
+        "normal": {
+          "brushType": "both",
+          "color": "#00A1CB",
+          "strokeColor": "#5182ab",
+          "lineWidth": 1
+        }
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Vodafone Albania",
+      "value": 1.7990000000000002,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE) 2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+800/1800/2600 MHz LTE, LTE-A, LTE-A Pro 3600MHz/3700MHz 5G NR testing",
+      "subscribers": 1.7990000000000002,
+      "ownership": [
+        "Vodafone"
+      ],
+      "mccmnc": "27602",
+      "country": " Albania",
+      "MVNO": 0
+    },
+    {
+      "name": "Telekom Albania  (Formerly AMC)",
+      "value": 1.122,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE) 2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+800/1800/2600 MHz LTE, LTE-A",
+      "subscribers": 1.122,
+      "ownership": [
+        "Albania Telecom Invest"
+      ],
+      "mccmnc": "27601",
+      "country": " Albania",
+      "MVNO": 0
+    },
+    {
+      "name": "ALBtelecom Mobile  (Formerly Eagle MOBILE)",
+      "value": 0.585,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE) 2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+1800/2600 MHz LTE, LTE-A",
+      "subscribers": 0.585,
+      "ownership": [
+        "ALBtelecom"
+      ],
+      "mccmnc": "27603",
+      "country": " Albania",
+      "MVNO": 0
+    },
+    {
+      "name": "Andorra Telecom  (formerly Servei de Telecomunicacions d'Andorra (STA))",
+      "value": 0.08199999999999999,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 MHz (GPRS)2100 MHz UMTS, HSDPA 800/1800 MHz LTE",
+      "subscribers": 0.08199999999999999,
+      "ownership": [
+        "State-owned"
+      ],
+      "mccmnc": "21303",
+      "country": " Andorra",
+      "MVNO": 0
+    },
+    {
+      "name": "MTS (Formerly Viva Cell)",
+      "value": 2.1,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE)2100 MHz UMTS, DC-HSPA+2600 MHz LTE",
+      "subscribers": 2.1,
+      "ownership": [
+        "MTS",
+        "Unknown-Armenia-1"
+      ],
+      "mccmnc": "28305",
+      "country": " Armenia",
+      "MVNO": 0
+    },
+    {
+      "name": "Ucom (Formerly Orange)",
+      "value": 1.0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE)900/2100 MHz UMTS, DC-HSPA+ 800/1800/2600 MHz LTE, LTE-AVoLTE",
+      "subscribers": 1.0,
+      "ownership": [
+        "Ucom"
+      ],
+      "mccmnc": "28310",
+      "country": " Armenia",
+      "MVNO": 0
+    },
+    {
+      "name": "Beeline (Formerly ArmenTel)",
+      "value": 0.9329999999999999,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE) 2100 MHz UMTS, HSDPA 900/1800 MHz LTE",
+      "subscribers": 0.9329999999999999,
+      "ownership": [
+        "VEON"
+      ],
+      "mccmnc": "28301",
+      "country": " Armenia",
+      "MVNO": 0
+    },
+    {
+      "name": "A1",
+      "value": 5.5,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 (GPRS, EDGE) 2100 MHz UMTS, HSDPA, HSUPA, HSPA+, DC-HSPA+ 800/1800/2600 MHz LTE, LTE-AVoLTEVoWiFi",
+      "subscribers": 5.5,
+      "ownership": [
+        "A1 Telekom Austria Group"
+      ],
+      "mccmnc": "23201",
+      "country": " Austria",
+      "MVNO": 0
+    },
+    {
+      "name": "Magenta Telekom  (Formerly T-Mobile, max.mobil.)",
+      "value": 6.071000000000001,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/1800 (GPRS, EDGE) 900/2100 MHz UMTS, HSDPA, HSUPA, HSPA+, DC-HSPA+ (roams on 3's UMTS network where no UMTS) 800/1800/2100/2600 MHz LTE, LTE-AVoLTEVoWiFi",
+      "subscribers": 6.071000000000001,
+      "ownership": [
+        "Deutsche Telekom"
+      ],
+      "mccmnc": "23203",
+      "country": " Austria",
+      "MVNO": 0
+    },
+    {
+      "name": "3 (Drei)•Includes the previous Orange network.",
+      "value": 3.5,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 (GPRS, EDGE) (roams on Magenta Telekom's GSM network when needed) 2100 MHz UMTS, HSDPA, HSUPA, HSPA+, DC-HSPA+ 900/1800/2100/2600 MHz LTE, LTE-AVoLTEVoWiFi",
+      "subscribers": 3.5,
+      "ownership": [
+        "CK Hutchison Holdings"
+      ],
+      "mccmnc": "23205",
+      "country": " Austria",
+      "MVNO": 0
+    },
+    {
+      "name": "Azercell",
+      "value": 4.417,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM 900 MHz (GPRS, EDGE) 2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+ 1800 MHz LTE",
+      "subscribers": 4.417,
+      "ownership": [
+        "AzInTelecom (state-owned company)"
+      ],
+      "mccmnc": "40001",
+      "country": " Azerbaijan",
+      "MVNO": 0
+    },
+    {
+      "name": "Bakcell",
+      "value": 3.4,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM 900 MHz (GPRS, EDGE)  2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+ 1800 MHz LTE[9]",
+      "subscribers": 3.4,
+      "ownership": [
+        "NEQSOL Holding"
+      ],
+      "mccmnc": "40002",
+      "country": " Azerbaijan",
+      "MVNO": 0
+    },
+    {
+      "name": "Nar",
+      "value": 2.1,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM 1800 MHz (GPRS, EDGE) 2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+ 1800 MHz LTE",
+      "subscribers": 2.1,
+      "ownership": [
+        "Azerfon LLC"
+      ],
+      "mccmnc": "40004",
+      "country": " Azerbaijan",
+      "MVNO": 0
+    },
+    {
+      "name": "Aztrank",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "CDMA2000",
+      "subscribers": 0,
+      "ownership": [
+        "Lukoil Europe Ltd.",
+        "State-owned"
+      ],
+      "mccmnc": "40003",
+      "country": " Azerbaijan",
+      "MVNO": 0
+    },
+    {
+      "name": "Nakhtel",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 5,
+      "technology": "GSM 900 MHz (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+ 1800 MHz LTE CDMA 800",
+      "subscribers": 0,
+      "ownership": [
+        "Nakhtel LLC"
+      ],
+      "mccmnc": "40006",
+      "country": " Azerbaijan",
+      "MVNO": 0
+    },
+    {
+      "name": "MTS",
+      "value": 5.6,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSUPA, HSPA+ 1800/2600 MHz LTE, LTE-A",
+      "subscribers": 5.6,
+      "ownership": [
+        "Beltelecom",
+        "MTS",
+        "Sistema",
+        "free float"
+      ],
+      "mccmnc": "25702",
+      "country": " Belarus",
+      "MVNO": 0
+    },
+    {
+      "name": "A1 (formerly velcom)",
+      "value": 4.877,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/1800 (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSUPA, DC-HSPA+ 1800/2600 MHz LTE, LTE-A",
+      "subscribers": 4.877,
+      "ownership": [
+        "A1 Telekom Austria Group"
+      ],
+      "mccmnc": "25701",
+      "country": " Belarus",
+      "MVNO": 0
+    },
+    {
+      "name": "Life:)",
+      "value": 1.5,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSUPA, HSPA+ 1800/2600 MHz LTE, LTE-A",
+      "subscribers": 1.5,
+      "ownership": [
+        "Turkcell",
+        "Belarusian Government"
+      ],
+      "mccmnc": "25704",
+      "country": " Belarus",
+      "MVNO": 0
+    },
+    {
+      "name": "BeCloud",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "1800/2600 MHz LTE, LTE-A",
+      "subscribers": 0,
+      "ownership": [
+        "RUE National Traffic Exchange Center",
+        "Unknown-Belarus-4"
+      ],
+      "mccmnc": "25706",
+      "country": " Belarus",
+      "MVNO": 0
+    },
+    {
+      "name": "Proximus",
+      "value": 5.75,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 (EDGE)900/2100 MHz UMTS, DC-HSPA+800/1800/2600 MHz LTE, LTE-AVoLTE",
+      "subscribers": 5.75,
+      "ownership": [
+        "Proximus"
+      ],
+      "mccmnc": "20601",
+      "country": " Belgium",
+      "MVNO": 0
+    },
+    {
+      "name": "Orange  (formerly Mobistar, OBE)",
+      "value": 3.85,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/1800 (EDGE)900/2100 MHz UMTS, DC-HSPA+800/1800/2600 MHz LTE, LTE-AVoLTEVoWiFi",
+      "subscribers": 3.85,
+      "ownership": [
+        "Orange S.A.",
+        "Unknown-Belgium-2"
+      ],
+      "mccmnc": "20610",
+      "country": " Belgium",
+      "MVNO": 0
+    },
+    {
+      "name": "BASE",
+      "value": 2.8,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 (EDGE)900/2100 MHz UMTS, DC-HSPA+800/1800/2600 MHz LTE, LTE-AVoLTE",
+      "subscribers": 2.8,
+      "ownership": [
+        "Telenet"
+      ],
+      "mccmnc": "20620",
+      "country": " Belgium",
+      "MVNO": 0
+    },
+    {
+      "name": "BH Telecom",
+      "value": 1.4909999999999999,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900 (GPRS, EDGE)2100 MHz UMTS, HSDPA+, HSPA1800 MHz LTE",
+      "subscribers": 1.4909999999999999,
+      "ownership": [
+        "BH Telecom"
+      ],
+      "mccmnc": "21890",
+      "country": " Bosnia and Herzegovina",
+      "MVNO": 0
+    },
+    {
+      "name": "m:tel",
+      "value": 1.4140000000000001,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/1800 (GPRS, EDGE)900/2100 MHz UMTS, HSPA, HSPA+, HSDPA, HSDPA+, DC-HSPA, DC-HSPA+800/1800 MHz LTE, LTE-A, LTE-A Pro",
+      "subscribers": 1.4140000000000001,
+      "ownership": [
+        "Telekom Srbija",
+        "Telekom Srbija",
+        "Telekom Srpske"
+      ],
+      "mccmnc": "21805",
+      "country": " Bosnia and Herzegovina",
+      "MVNO": 0
+    },
+    {
+      "name": "HT Eronet",
+      "value": 0.445,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 (GPRS, EDGE)900/2100 MHz UMTS, HSPA, HSPA+, HSDPA, HSDPA+, DC-HSPA, DC-HSPA+, DC-HSUPA, DC-HSDPA, HSUPA800/1800 MHz LTE, LTE-A, LTE-A Pro",
+      "subscribers": 0.445,
+      "ownership": [
+        "Hrvatski Telekom"
+      ],
+      "mccmnc": "21803",
+      "country": " Bosnia and Herzegovina",
+      "MVNO": 0
+    },
+    {
+      "name": "A1 (Formerly Mtel, Mobiltel)",
+      "value": 3.836775,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900 (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSPA+, DC-HSPA+ 900/1800/2100/2600 MHz LTE, LTE-A (The additional spectrum on 2100 and 2600 MHz is for temporary usage) 3500 MHz 5G NR (For trials; shared with Telenor and Vivacom)",
+      "subscribers": 3.836775,
+      "ownership": [
+        "A1 Telekom Austria Group"
+      ],
+      "mccmnc": "28401",
+      "country": " Bulgaria",
+      "MVNO": 0
+    },
+    {
+      "name": "Telenor (Formerly Globul)",
+      "value": 3.1130419999999996,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900 (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSUPA, HSPA+900/1800/2100/2600 MHz LTE, LTE-A (The additional spectrum on 2100 and 2600 MHz is for temporary usage)VoLTE3500 MHz 5G NR (For trials; shared with A1 and Vivacom)",
+      "subscribers": 3.1130419999999996,
+      "ownership": [
+        "PPF"
+      ],
+      "mccmnc": "28405",
+      "country": " Bulgaria",
+      "MVNO": 0
+    },
+    {
+      "name": "Vivacom  (Formerly Vivatel)",
+      "value": 3.075,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900 (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSPA+, DC-HSPA+ 900/1800/2100/2600 MHz LTE, LTE-A (The additional spectrum on 2100 and 2600 MHz is for temporary usage)VoLTEVoWiFi3500 MHz 5G NR (For trials; shared with A1 and Telenor)",
+      "subscribers": 3.075,
+      "ownership": [
+        "Bulgarian Telecommunications Company EAD"
+      ],
+      "mccmnc": "28403",
+      "country": " Bulgaria",
+      "MVNO": 0
+    },
+    {
+      "name": "Hrvatski Telekom  (Formerly T-Mobile, HTmobile)",
+      "value": 2.03,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE)900/2100 MHz UMTS, HSDPA800/1800/2600 MHz LTE, LTE-A, LTE-A ProVoLTEVoWiFi",
+      "subscribers": 2.03,
+      "ownership": [
+        "Deutsche Telekom",
+        "Unknown-Croatia-1"
+      ],
+      "mccmnc": "21901",
+      "country": " Croatia",
+      "MVNO": 0
+    },
+    {
+      "name": "A1  (Formerly Vip, Vipnet)",
+      "value": 1.534,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900 MHz (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSPA+800/1800/2100/2600 MHz LTE, LTE-A, LTE-A ProVoLTE",
+      "subscribers": 1.534,
+      "ownership": [
+        "A1 Telekom Austria Group"
+      ],
+      "mccmnc": "21910",
+      "country": " Croatia",
+      "MVNO": 0
+    },
+    {
+      "name": "Tele2",
+      "value": 0.825,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE)(Roaming on Telekom Croatia when needed)900/2100 MHz UMTS, HSPA 1800/2600 MHz LTE, LTE-A",
+      "subscribers": 0.825,
+      "ownership": [
+        "The United Group",
+        "Tele2",
+        "Tele2",
+        "Tele2"
+      ],
+      "mccmnc": "21902",
+      "country": " Croatia",
+      "MVNO": 0
+    },
+    {
+      "name": "epic  (Formerly MTN, Areeba)",
+      "value": 0.39899999999999997,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE)900/2100 MHz UMTS, HSPA+800/1800 MHz LTE, LTE-A",
+      "subscribers": 0.39899999999999997,
+      "ownership": [
+        "Monaco Telecom"
+      ],
+      "mccmnc": "28010",
+      "country": " Cyprus",
+      "MVNO": 0
+    },
+    {
+      "name": "Cytamobile-Vodafone",
+      "value": 0.29600000000000004,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE)900/2100 MHz UMTS, HSPA+800/1800/2600 MHz LTE, LTE-A",
+      "subscribers": 0.29600000000000004,
+      "ownership": [
+        "Cyprus Telecommunications Authority (Cyta)"
+      ],
+      "mccmnc": "28001",
+      "country": " Cyprus",
+      "MVNO": 0
+    },
+    {
+      "name": "PrimeTel",
+      "value": 0.115,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "2100 MHz UMTS, HSPA+900/1800 MHz LTEGSM/UMTS roaming on epic when needed",
+      "subscribers": 0.115,
+      "ownership": [
+        "PrimeTel PLC"
+      ],
+      "mccmnc": "28020",
+      "country": " Cyprus",
+      "MVNO": 0
+    },
+    {
+      "name": "T-Mobile  (Formerly Paegas)",
+      "value": 6.282,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSUPA, HSPA+, DC-HSPA+ 800/1800/2100/2600 MHz LTE, LTE-AVoLTEVoWiFi",
+      "subscribers": 6.282,
+      "ownership": [
+        "Deutsche Telekom"
+      ],
+      "mccmnc": "23001",
+      "country": " Czech Republic",
+      "MVNO": 0
+    },
+    {
+      "name": "O2  (Formerly Eurotel, Český Telecom)",
+      "value": 5.178999999999999,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSUPA, HSPA+, DC-HSPA+CDMA EV-DO 800/1800/2600 MHz LTE, LTE-AVoLTEVoWiFi",
+      "subscribers": 5.178999999999999,
+      "ownership": [
+        "PPF"
+      ],
+      "mccmnc": "23002",
+      "country": " Czech Republic",
+      "MVNO": 0
+    },
+    {
+      "name": "Vodafone  (Formerly Oskar)",
+      "value": 3.9810000000000003,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSUPA, HSPA+ 800/900/1800/2100/2600 MHz LTE, LTE-AVoLTEVoWiFi",
+      "subscribers": 3.9810000000000003,
+      "ownership": [
+        "Vodafone"
+      ],
+      "mccmnc": "23003",
+      "country": " Czech Republic",
+      "MVNO": 0
+    },
+    {
+      "name": "TDC",
+      "value": 3.205,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSPA+ 800/2600 MHz[31] LTEVoLTE",
+      "subscribers": 3.205,
+      "ownership": [
+        "TDC"
+      ],
+      "mccmnc": "23801",
+      "country": " Denmark",
+      "MVNO": 0
+    },
+    {
+      "name": "Telenor  (Formerly Sonofon)",
+      "value": 1.765,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "900/1800 GSM, (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSPA+ 800/900/1800 MHz LTEVoLTE (Shares network with Telia)",
+      "subscribers": 1.765,
+      "ownership": [
+        "Telenor"
+      ],
+      "mccmnc": "23802",
+      "country": " Denmark",
+      "MVNO": 0
+    },
+    {
+      "name": "Telia",
+      "value": 1.5230000000000001,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "900/1800 GSM, (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSPA+ 900/1800/2600 MHz LTEVoLTE (Shares network with Telenor)",
+      "subscribers": 1.5230000000000001,
+      "ownership": [
+        "Telia Company",
+        "Telia Company"
+      ],
+      "mccmnc": "23820",
+      "country": " Denmark",
+      "MVNO": 0
+    },
+    {
+      "name": "3 (Tre)",
+      "value": 1.344,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "900/2100 MHz UMTS, HSDPA, HSPA+ 1800/2600 MHz LTEVoLTE (Roams on Telia's GSM/UMTS network where 3 does not reach)",
+      "subscribers": 1.344,
+      "ownership": [
+        "CK Hutchison Holdings",
+        "Investor AB"
+      ],
+      "mccmnc": "23806",
+      "country": " Denmark",
+      "MVNO": 0
+    },
+    {
+      "name": "Net 1",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 5,
+      "technology": "450 MHz LTE",
+      "subscribers": 0,
+      "ownership": [
+        "Access Industries"
+      ],
+      "mccmnc": " ",
+      "country": " Denmark",
+      "MVNO": 0
+    },
+    {
+      "name": "Telia (Formerly EMT)",
+      "value": 0.868,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 (EDGE)900/2100 MHz UMTS, HSPA800/1800/2600 MHz LTEVoLTE",
+      "subscribers": 0.868,
+      "ownership": [
+        "Telia Company"
+      ],
+      "mccmnc": "24801",
+      "country": " Estonia",
+      "MVNO": 0
+    },
+    {
+      "name": "Elisa  (Formerly Radiolinja)",
+      "value": 0.524,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/1800 (EDGE)900/2100 MHz UMTS, HSPA800/1800/2100/2600 MHz LTE",
+      "subscribers": 0.524,
+      "ownership": [
+        "Elisa"
+      ],
+      "mccmnc": "24802",
+      "country": " Estonia",
+      "MVNO": 0
+    },
+    {
+      "name": "Tele2 (Formerly Q-GSM)",
+      "value": 0.505,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 (EDGE)900/2100 MHz UMTS, HSPA800/1800/2100 MHz LTE",
+      "subscribers": 0.505,
+      "ownership": [
+        "Tele2"
+      ],
+      "mccmnc": "24803",
+      "country": " Estonia",
+      "MVNO": 0
+    },
+    {
+      "name": "Føroya Tele",
+      "value": 0.044000000000000004,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900 900/2100 MHz UMTS 1800 MHz LTE",
+      "subscribers": 0.044000000000000004,
+      "ownership": [
+        "Faroese Telecom"
+      ],
+      "mccmnc": "28801",
+      "country": " Faroe Islands",
+      "MVNO": 0
+    },
+    {
+      "name": "Hey  (Formerly Kall)",
+      "value": 0.018000000000000002,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900 2100 MHz UMTS1800 MHz LTE",
+      "subscribers": 0.018000000000000002,
+      "ownership": [
+        "Kall P/F"
+      ],
+      "mccmnc": "28802",
+      "country": " Faroe Islands",
+      "MVNO": 0
+    },
+    {
+      "name": "Telia (Formerly Sonera)",
+      "value": 3.2489999999999997,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 MHz (EDGE)900/2100 MHz UMTS, HSPA800/1800/2600 MHz LTE, LTE-AVoLTE",
+      "subscribers": 3.2489999999999997,
+      "ownership": [
+        "Telia Company"
+      ],
+      "mccmnc": "2442024436(SYV[2])24491",
+      "country": " Finland",
+      "MVNO": 0
+    },
+    {
+      "name": "Elisa",
+      "value": 2.9,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/1800 MHz (EDGE)900/2100 MHz UMTS, HSPA800/1800/2600 MHz LTE, LTE-AVoLTE",
+      "subscribers": 2.9,
+      "ownership": [
+        "Elisa"
+      ],
+      "mccmnc": "244052440624421",
+      "country": " Finland",
+      "MVNO": 0
+    },
+    {
+      "name": "DNA",
+      "value": 2.412,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 MHz (EDGE)900/2100 MHz UMTS, HSPA700/800/1800/2100/2600 MHz LTE, LTE-AVoLTEVoWiFi",
+      "subscribers": 2.412,
+      "ownership": [
+        "Telenor",
+        "Unknown-Finland-3"
+      ],
+      "mccmnc": "2440324404244122441324436(SYV[3])",
+      "country": " Finland",
+      "MVNO": 0
+    },
+    {
+      "name": "Ålcom  (Formerly ÅMT / Ålands Mobiltelefon)",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "GSM-900 MHz (EDGE)900/2100 MHz UMTS, HSPA800/1800/2600 MHz LTE, LTE-A",
+      "subscribers": 0,
+      "ownership": [
+        "Mariehamns Telefon, Ålands Telefonandelslag"
+      ],
+      "mccmnc": "24414",
+      "country": " Finland",
+      "MVNO": 0
+    },
+    {
+      "name": "Ukko Mobile",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 5,
+      "technology": "450 MHz LTE",
+      "subscribers": 0,
+      "ownership": [
+        "Ukkoverkot"
+      ],
+      "mccmnc": "24435",
+      "country": " Finland",
+      "MVNO": 0
+    },
+    {
+      "name": "Orange  (Formerly Itineris)",
+      "value": 33.52,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "900/1800 MHz GSM (GPRS, EDGE) 900/2100 MHz UMTS, HSPA, HSPA+, DC-HSPA+700/800/1800/2100/2600 MHz LTE, LTE-AVoLTEVoWiFi",
+      "subscribers": 33.52,
+      "ownership": [
+        "Orange S.A."
+      ],
+      "mccmnc": "20801",
+      "country": " France",
+      "MVNO": 0
+    },
+    {
+      "name": "SFR",
+      "value": 20.2,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "900/1800 MHz GSM (GPRS, EDGE) 900/2100 MHz UMTS, HSPA, HSPA+, DC-HSPA+800/1800/2100/2600 MHz LTE, LTE-AVoLTEVoWiFi",
+      "subscribers": 20.2,
+      "ownership": [
+        "Altice"
+      ],
+      "mccmnc": "20810",
+      "country": " France",
+      "MVNO": 0
+    },
+    {
+      "name": "Bouygues Telecom",
+      "value": 16.809,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "900 MHz GSM (GPRS, EDGE) 900/2100 MHz UMTS, HSPA, HSPA+700/800/1800/2100/2600 MHz LTE, LTE-AVoLTEVoWiFi",
+      "subscribers": 16.809,
+      "ownership": [
+        "Bouygues Group",
+        "Unknown-France-3"
+      ],
+      "mccmnc": "20820",
+      "country": " France",
+      "MVNO": 0
+    },
+    {
+      "name": "Free Mobile",
+      "value": 13.390999999999998,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "900/2100 MHz UMTS, HSPA, HSPA+ (Roaming on Orange 2G/3G when needed, limited to 768 kbit/s download, 384 kbit/s upload)700/1800/2600 MHz LTE, LTE-A",
+      "subscribers": 13.390999999999998,
+      "ownership": [
+        "Iliad S.A."
+      ],
+      "mccmnc": "20815",
+      "country": " France",
+      "MVNO": 0
+    },
+    {
+      "name": "MagtiCom",
+      "value": 2.639,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE )2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+ 800/1800 MHz LTEVoLTE",
+      "subscribers": 2.639,
+      "ownership": [
+        "ITC"
+      ],
+      "mccmnc": "28202",
+      "country": " Georgia",
+      "MVNO": 0
+    },
+    {
+      "name": "Silknet (Geocell)",
+      "value": 2.08,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+, CDMA2000, EVDO Rev. A2300 MHz TD-LTE 1800 MHz LTE",
+      "subscribers": 2.08,
+      "ownership": [
+        "Silk Road Group"
+      ],
+      "mccmnc": "28201",
+      "country": " Georgia",
+      "MVNO": 0
+    },
+    {
+      "name": "Beeline",
+      "value": 0.946,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 MHz (GPRS , EDGE) 2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+  800 MHz LTE",
+      "subscribers": 0.946,
+      "ownership": [
+        "VEON",
+        "GMC Group",
+        "VEON"
+      ],
+      "mccmnc": "28204",
+      "country": " Georgia",
+      "MVNO": 0
+    },
+    {
+      "name": "Telekom  (Formerly D1 DeTeMobil, T-Mobile)",
+      "value": 45.598,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "900/1800 MHz GSM (EDGE) 2100 MHz UMTS, HSPA, HSPA+, DC-HSPA+800/900/1800/2600 MHz LTE, LTE-AVoLTEVoWiFi3600 MHz 5G NR",
+      "subscribers": 45.598,
+      "ownership": [
+        "Deutsche Telekom AG"
+      ],
+      "mccmnc": "26201",
+      "country": " Germany",
+      "MVNO": 0
+    },
+    {
+      "name": "O2  (Formerly Viag Interkom) • Includes the previous E-Plus network.",
+      "value": 43.607,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "900/1800 MHz GSM (GPRS, EDGE)  2100 MHz UMTS, HSPA, HSPA+, DC-HSPA+700/800/1800/2100/2600 MHz LTE, LTE-AVoLTEVoWiFi",
+      "subscribers": 43.607,
+      "ownership": [
+        "Telefónica S.A."
+      ],
+      "mccmnc": "26203",
+      "country": " Germany",
+      "MVNO": 0
+    },
+    {
+      "name": "Vodafone  (Formerly D2 Mannesmann)",
+      "value": 29.649,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "900 MHz GSM (GPRS, EDGE) 2100 MHz UMTS, HSPA, HSPA+, DC-HSPA+700/800/1800/2100/2600 MHz LTE, LTE-AVoLTEVoWiFi3600 MHz 5G NR",
+      "subscribers": 29.649,
+      "ownership": [
+        "Vodafone Group"
+      ],
+      "mccmnc": "26202",
+      "country": " Germany",
+      "MVNO": 0
+    },
+    {
+      "name": "GIBTEL",
+      "value": 0.022000000000000002,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/18002100 MHz UMTS 800/2600 MHz LTE, LTE-A",
+      "subscribers": 0.022000000000000002,
+      "ownership": [
+        "Gibraltar Telecommunications Int. Ltd."
+      ],
+      "mccmnc": "26601",
+      "country": " Gibraltar",
+      "MVNO": 0
+    },
+    {
+      "name": "COSMOTE",
+      "value": 8.052999999999999,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 (EDGE)2100 MHz UMTS, HSDPA, DC-HSPA+800/1800/2600 MHz LTE, LTE-A VoLTE WIFI Calling",
+      "subscribers": 8.052999999999999,
+      "ownership": [
+        "OTE"
+      ],
+      "mccmnc": "20201, 20202",
+      "country": " Greece",
+      "MVNO": 0
+    },
+    {
+      "name": "Vodafone  (Formerly Panafon) •Includes the previous CYTA Hellas network.",
+      "value": 4.849,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/1800 (EDGE)900/2100 MHz UMTS, HSDPA, DC-HSPA+800/1800/2600 MHz LTE, LTE-A, VoLTE WIFI Calling",
+      "subscribers": 4.849,
+      "ownership": [
+        "Vodafone",
+        "Unknown-Greece-2"
+      ],
+      "mccmnc": "20205 (Vodafone), 20214 (Cyta)",
+      "country": " Greece",
+      "MVNO": 0
+    },
+    {
+      "name": "WIND  (Formerly Telestet, TIM) •Includes the previous Q-Telecom network.",
+      "value": 3.074,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 (EDGE)2100/900 MHz UMTS, HSDPA, DC-HSPA+800/1800/2600 MHz LTE, LTE-A",
+      "subscribers": 3.074,
+      "ownership": [
+        "Largo Ltd (SSN Ad-Hoc Committee)"
+      ],
+      "mccmnc": "20209 (Q-Telecom), 20210 (WIND)",
+      "country": " Greece",
+      "MVNO": 0
+    },
+    {
+      "name": "TELE Greenland",
+      "value": 0.01355,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900 900 MHz UMTS800 MHz LTE",
+      "subscribers": 0.01355,
+      "ownership": [
+        "TELE Greenland"
+      ],
+      "mccmnc": "29001",
+      "country": " Greenland",
+      "MVNO": 0
+    },
+    {
+      "name": "Sure Mobile",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900 2100 MHz UMTSLTE",
+      "subscribers": 0,
+      "ownership": [
+        "Batelco",
+        "Batelco",
+        "Batelco"
+      ],
+      "mccmnc": "23455",
+      "country": " Guernsey",
+      "MVNO": 0
+    },
+    {
+      "name": "JT (Guernsey) Global",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-18002100 MHz UMTS",
+      "subscribers": 0,
+      "ownership": [
+        "JT Global"
+      ],
+      "mccmnc": "23450",
+      "country": " Guernsey",
+      "MVNO": 0
+    },
+    {
+      "name": "Airtel-Vodafone",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-18002100 MHz UMTS",
+      "subscribers": 0,
+      "ownership": [
+        "Bharti Airtel",
+        "Bharti Airtel"
+      ],
+      "mccmnc": "23403",
+      "country": " Guernsey",
+      "MVNO": 0
+    },
+    {
+      "name": "Telekom  (Formerly Westel, T-Mobile)",
+      "value": 5.297999999999999,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSUPA, HSPA+, DC-HSPA+ 800/1800/2600 MHz LTE, LTE-AVoLTEVoWiFi (LTE 800 MHz is in cooperating with Telenor)",
+      "subscribers": 5.297999999999999,
+      "ownership": [
+        "Deutsche Telekom",
+        "Free Float"
+      ],
+      "mccmnc": "21630",
+      "country": " Hungary",
+      "MVNO": 0
+    },
+    {
+      "name": "Telenor (Formerly Pannon)",
+      "value": 3.56,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/1800 (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSUPA, HSPA+, DC-HSPA+ 800/1800/2600 MHz LTE, LTE-AVoLTE (LTE 800 MHz is in cooperating with Telekom)",
+      "subscribers": 3.56,
+      "ownership": [
+        "PPF"
+      ],
+      "mccmnc": "21601",
+      "country": " Hungary",
+      "MVNO": 0
+    },
+    {
+      "name": "Vodafone",
+      "value": 3.095,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSUPA, HSPA+, DC-HSPA+ 800/1800/2600 MHz LTE, LTE-A3500 MHz 5G NR",
+      "subscribers": 3.095,
+      "ownership": [
+        "Vodafone",
+        "Framtakssjóður Íslands.",
+        "Vodafone"
+      ],
+      "mccmnc": "21670",
+      "country": " Hungary",
+      "MVNO": 0
+    },
+    {
+      "name": "DIGI Mobil",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "GSM-1800 (GPRS, EDGE) 1800 MHz LTEVoLTE3600 MHz TD-LTE",
+      "subscribers": 0,
+      "ownership": [
+        "RCS & RDS"
+      ],
+      "mccmnc": "21603",
+      "country": " Hungary",
+      "MVNO": 0
+    },
+    {
+      "name": "Síminn",
+      "value": 0.154,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 MHz 900/2100 MHz UMTS700/1800/2600 MHz LTE",
+      "subscribers": 0.154,
+      "ownership": [
+        "Siminn hf"
+      ],
+      "mccmnc": "27401",
+      "country": " Iceland",
+      "MVNO": 0
+    },
+    {
+      "name": "Nova",
+      "value": 0.054000000000000006,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "2100 MHz UMTS, HSDPA1800 MHz LTEVoLTE",
+      "subscribers": 0.054000000000000006,
+      "ownership": [
+        "Nova ehf."
+      ],
+      "mccmnc": "27411",
+      "country": " Iceland",
+      "MVNO": 0
+    },
+    {
+      "name": "Yellow Mobile",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "2600 MHz LTE",
+      "subscribers": 0,
+      "ownership": [
+        "Yellow Mobile B.V."
+      ],
+      "mccmnc": "27488",
+      "country": " Iceland",
+      "MVNO": 0
+    },
+    {
+      "name": "3 (Three) (Includes the previous O2 network)",
+      "value": 2.3,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE) 900/2100/ MHz UMTS, HSPA+800/1800 MHz LTE, LTE-A",
+      "subscribers": 2.3,
+      "ownership": [
+        "CK Hutchison Holdings"
+      ],
+      "mccmnc": "27205 (Three) 27202 (O2)",
+      "country": " Ireland",
+      "MVNO": 0
+    },
+    {
+      "name": "Vodafone(Formerly Eircell)",
+      "value": 1.992,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900 MHz (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSPA+800/1800 MHz LTE, LTE-AVoLTE",
+      "subscribers": 1.992,
+      "ownership": [
+        "Vodafone"
+      ],
+      "mccmnc": "27201",
+      "country": " Ireland",
+      "MVNO": 0
+    },
+    {
+      "name": "Eir (Formerly Meteor)",
+      "value": 1.047,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSPA+800/1800 MHz LTE, LTE-A",
+      "subscribers": 1.047,
+      "ownership": [
+        "Iliad",
+        "NJJ",
+        "Unknown-Ireland-3"
+      ],
+      "mccmnc": "27203",
+      "country": " Ireland",
+      "MVNO": 0
+    },
+    {
+      "name": "Manx Telecom",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900 2100 MHzUMTS800/1800 MHz LTE",
+      "subscribers": 0,
+      "ownership": [
+        "Freefloat (AIM-listed)"
+      ],
+      "mccmnc": "23458",
+      "country": " Isle of Man",
+      "MVNO": 0
+    },
+    {
+      "name": "Wind Tre",
+      "value": 27.655,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "900/1800 MHz GSM (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSUPA, HSPA+, DC-HSPA+ 800/1800/2100/2600 MHz LTE, LTE-A",
+      "subscribers": 27.655,
+      "ownership": [
+        "CK Hutchison Holdings"
+      ],
+      "mccmnc": "22288 (Wind) 22299 (Tre)",
+      "country": " Italy",
+      "MVNO": 0
+    },
+    {
+      "name": "TIM",
+      "value": 23.324,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "900/1800 MHz GSM (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSUPA, HSPA+, DC-HSPA+800/1500/1800/2600 MHz LTE, LTE-AVoLTE3700 MHz 5G NR (Only in Rome and Turin)",
+      "subscribers": 23.324,
+      "ownership": [
+        "Vivendi",
+        "Unknown-Italy-2"
+      ],
+      "mccmnc": "22201",
+      "country": " Italy",
+      "MVNO": 0
+    },
+    {
+      "name": "Vodafone  (Formerly Omnitel)",
+      "value": 20.192,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "900/1800 MHz GSM (GPRS, EDGE[58])900/2100 MHz UMTS, HSDPA, HSUPA, HSPA+800/1800/2100/2600 MHz LTE, LTE-AVoLTE3700 MHz 5G NR (Only in some areas of Bologna, Milan, Naples, Rome and Turin)",
+      "subscribers": 20.192,
+      "ownership": [
+        "Vodafone"
+      ],
+      "mccmnc": "22210",
+      "country": " Italy",
+      "MVNO": 0
+    },
+    {
+      "name": "Iliad",
+      "value": 3.841,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "900/2100 MHz UMTS, HSDPA, HSUPA, HSPA+, DC-HSPA+1800/2600 MHz LTE, LTE-A(Roaming on Wind Tre when needed)",
+      "subscribers": 3.841,
+      "ownership": [
+        "Iliad"
+      ],
+      "mccmnc": "22250",
+      "country": " Italy",
+      "MVNO": 0
+    },
+    {
+      "name": "JT (Jersey) Global",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/18002100 MHz UMTS 800/1800/2600 MHz LTE",
+      "subscribers": 0,
+      "ownership": [
+        "JT Global"
+      ],
+      "mccmnc": "23450",
+      "country": " Jersey",
+      "MVNO": 0
+    },
+    {
+      "name": "Vala",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 MHz900/2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+ 1800 MHz LTE, LTE-A",
+      "subscribers": 0,
+      "ownership": [
+        "Government of Kosovo"
+      ],
+      "mccmnc": "22101",
+      "country": " Kosovo",
+      "MVNO": 0
+    },
+    {
+      "name": "IPKO Telecommunications LLC",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/1800 MHz900/2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+ 1800 MHz LTE, LTE-A",
+      "subscribers": 0,
+      "ownership": [
+        "Telekom Slovenije"
+      ],
+      "mccmnc": "22102",
+      "country": " Kosovo",
+      "MVNO": 0
+    },
+    {
+      "name": "Z mobile[63]",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 MHz900/2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+ 1800 MHz LTE, LTE-A",
+      "subscribers": 0,
+      "ownership": [
+        "Devolli Group"
+      ],
+      "mccmnc": "22106",
+      "country": " Kosovo",
+      "MVNO": 0
+    },
+    {
+      "name": "mts",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "GSM-900/1800 MHz900/2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+, LTE, LTE-A",
+      "subscribers": 0,
+      "ownership": [
+        "Telekom Srbija",
+        "Telekom Srbija"
+      ],
+      "mccmnc": "22103",
+      "country": " Kosovo",
+      "MVNO": 0
+    },
+    {
+      "name": "D3 mobile",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 5,
+      "technology": "GSM-900/1800 MHz900/2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+",
+      "subscribers": 0,
+      "ownership": [
+        "Dukagjini LLC"
+      ],
+      "mccmnc": "22108",
+      "country": " Kosovo",
+      "MVNO": 0
+    },
+    {
+      "name": "LMT",
+      "value": 1.075,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 MHz900/2100 MHz UMTS, DC-HSPA+1800 MHz LTE, LTE-A",
+      "subscribers": 1.075,
+      "ownership": [
+        "Republic of Latvia and related",
+        "Telia"
+      ],
+      "mccmnc": "24701",
+      "country": " Latvia",
+      "MVNO": 0
+    },
+    {
+      "name": "Bite",
+      "value": 0.467,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 MHz2100 MHz UMTS, HSPA+LTE, LTE-A",
+      "subscribers": 0.467,
+      "ownership": [
+        "Providence Equity Partners",
+        "Providence Equity Partners"
+      ],
+      "mccmnc": "24705",
+      "country": " Latvia",
+      "MVNO": 0
+    },
+    {
+      "name": "Triatel",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "CDMA2000[69]",
+      "subscribers": 0,
+      "ownership": [
+        "Unknown-Latvia-4"
+      ],
+      "mccmnc": "24703",
+      "country": " Latvia",
+      "MVNO": 0
+    },
+    {
+      "name": "FL1 [de]   (formerly Mobilkom Liechtenstein AG)",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 2100 MHz UMTS  800 MHz LTE",
+      "subscribers": 0,
+      "ownership": [
+        "State-owned"
+      ],
+      "mccmnc": "29505",
+      "country": " Liechtenstein",
+      "MVNO": 0
+    },
+    {
+      "name": "7acht   (formerly Orange FL)",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/18002100 MHz UMTS1800 MHz LTE",
+      "subscribers": 0,
+      "ownership": [
+        "Salt Mobile AG [de]"
+      ],
+      "mccmnc": "29502",
+      "country": " Liechtenstein",
+      "MVNO": 0
+    },
+    {
+      "name": "Swisscom FL",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 2100 MHz UMTS900/1800/2100 MHz LTEVoLTE",
+      "subscribers": 0,
+      "ownership": [
+        "Swisscom"
+      ],
+      "mccmnc": "29501",
+      "country": " Liechtenstein",
+      "MVNO": 0
+    },
+    {
+      "name": "Telia (Formerly Omnitel)",
+      "value": 1.69,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900 MHz (EDGE)2100 MHz UMTS, HSPA+800/1800/2100/2600 MHz LTE, LTE-AVoLTE",
+      "subscribers": 1.69,
+      "ownership": [
+        "Telia Company"
+      ],
+      "mccmnc": "24601",
+      "country": " Lithuania",
+      "MVNO": 0
+    },
+    {
+      "name": "Lietuvos radijo ir televizijos centras (MEZON)",
+      "value": 0.05,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "3500 MHz WiMAX  2300 MHz LTE",
+      "subscribers": 0.05,
+      "ownership": [
+        "State-owned"
+      ],
+      "mccmnc": "24608",
+      "country": " Lithuania",
+      "MVNO": 0
+    },
+    {
+      "name": "POST",
+      "value": 0.25,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 2100 MHz UMTS, HSDPA1800 MHz LTE",
+      "subscribers": 0.25,
+      "ownership": [
+        "POST Luxembourg"
+      ],
+      "mccmnc": "27001",
+      "country": " Luxembourg",
+      "MVNO": 0
+    },
+    {
+      "name": "Tango",
+      "value": 0.28,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/18002100 MHz UMTS, HSPA+1800 MHz LTEVoLTE",
+      "subscribers": 0.28,
+      "ownership": [
+        "Proximus Group"
+      ],
+      "mccmnc": "27077",
+      "country": " Luxembourg",
+      "MVNO": 0
+    },
+    {
+      "name": "Orange",
+      "value": 0.076,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-1800 (EDGE)2100 MHz UMTS, DC-HSPA+1800 MHz LTE",
+      "subscribers": 0.076,
+      "ownership": [
+        "Orange S.A.",
+        "Orange S.A.",
+        "Unknown-Moldova-1"
+      ],
+      "mccmnc": "27099",
+      "country": " Luxembourg",
+      "MVNO": 0
+    },
+    {
+      "name": "LOL Mobile",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "2100 MHz UMTS, HSDPA",
+      "subscribers": 0,
+      "ownership": [
+        "Luxembourg Online"
+      ],
+      "mccmnc": " ",
+      "country": " Luxembourg",
+      "MVNO": 0
+    },
+    {
+      "name": "Vodafone  (Formerly Telecell)",
+      "value": 0.3,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM 900/1800 MHz (GPRS) 900/2100 MHz UMTS, HSDPA, HSUPA800/1800/2600 MHz LTE, LTE-A, LTE-A Pro",
+      "subscribers": 0.3,
+      "ownership": [
+        "Monaco Telecom"
+      ],
+      "mccmnc": "27801",
+      "country": " Malta",
+      "MVNO": 0
+    },
+    {
+      "name": "GO",
+      "value": 0.23,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM 900/1800 MHz (GPRS, EDGE) 900/2100 MHz UMTS, HSDPA800/1800/2600 MHz LTE, LTE-A, LTE-A Pro",
+      "subscribers": 0.23,
+      "ownership": [
+        "Dubai Holding",
+        "Public"
+      ],
+      "mccmnc": "27821",
+      "country": " Malta",
+      "MVNO": 0
+    },
+    {
+      "name": "Melita",
+      "value": 0.076,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "2100 MHz UMTS, HSDPA800/1800 MHz LTE, LTE-A Pro",
+      "subscribers": 0.076,
+      "ownership": [
+        "Apax France."
+      ],
+      "mccmnc": "27877",
+      "country": " Malta",
+      "MVNO": 0
+    },
+    {
+      "name": "Moldcell",
+      "value": 1.492,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900 MHz (GPRS, EDGE) 2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+ 800/1800/2600 MHz LTE",
+      "subscribers": 1.492,
+      "ownership": [
+        "Telia Company"
+      ],
+      "mccmnc": "25902",
+      "country": " Moldova",
+      "MVNO": 0
+    },
+    {
+      "name": "Unité",
+      "value": 0.321,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "450 MHz CDMA2000, EVDO Rev. A 900/2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+ 1800 MHz LTE",
+      "subscribers": 0.321,
+      "ownership": [
+        "Moldtelecom"
+      ],
+      "mccmnc": "25905",
+      "country": " Moldova",
+      "MVNO": 0
+    },
+    {
+      "name": "Interdnestrcom operating in Transnistria region only",
+      "value": 0.29100000000000004,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "450/800 MHz CDMA2000, EVDO Rev. A 800 MHz LTE[76]",
+      "subscribers": 0.29100000000000004,
+      "ownership": [
+        "Sheriff"
+      ],
+      "mccmnc": "25903",
+      "country": " Moldova",
+      "MVNO": 0
+    },
+    {
+      "name": "Monaco Telecom",
+      "value": 0.021,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "1800 MHz GSM 900/2100 MHz UMTS800/1800/2600 MHz LTE",
+      "subscribers": 0.021,
+      "ownership": [
+        "NJJ Capital/Xavier Niel",
+        "Société Nationale de Financement"
+      ],
+      "mccmnc": "21201",
+      "country": " Monaco",
+      "MVNO": 0
+    },
+    {
+      "name": "Telenor (Formerly Promonte)",
+      "value": 0.42200000000000004,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM 900/1800 (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSUPA, HSPA+2600 MHz LTEWiMAX",
+      "subscribers": 0.42200000000000004,
+      "ownership": [
+        "PPF"
+      ],
+      "mccmnc": "29701",
+      "country": " Montenegro",
+      "MVNO": 0
+    },
+    {
+      "name": "Telekom(Formerly Monet)",
+      "value": 0.384,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM 900/1800 (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSUPA, HSPA+800/1800/2600 MHz LTE",
+      "subscribers": 0.384,
+      "ownership": [
+        "Hrvatski Telekom"
+      ],
+      "mccmnc": "29702",
+      "country": " Montenegro",
+      "MVNO": 0
+    },
+    {
+      "name": "Telekom(Formerly MoTelekomnet)",
+      "value": 0.384,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM 900/1800 (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSUPA, HSPA+800/1800/2600 MHz LTE",
+      "subscribers": 0.384,
+      "ownership": [
+        "Public stock"
+      ],
+      "mccmnc": "29702",
+      "country": " Montenegro",
+      "MVNO": 0
+    },
+    {
+      "name": "KPN •Includes the previous Telfort network.",
+      "value": 5.28,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "900 MHz GSM (GPRS, EDGE) 900/2100 MHz UMTS, HSDPA, HSUPA, HSPA+800/1800/2100/2600 MHz LTE, LTE-A2600 MHz TD-LTEVoLTEVoWiFiAML450 MHz CDMA (Smart meters)",
+      "subscribers": 5.28,
+      "ownership": [
+        "Koninklijke KPN N.V."
+      ],
+      "mccmnc": "20408",
+      "country": " Netherlands",
+      "MVNO": 0
+    },
+    {
+      "name": "Vodafone  (Formerly Libertel)",
+      "value": 5.019,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "900/1800 MHz GSM (GPRS, EDGE) 2100 MHz UMTS, HSDPA, HSUPA, HSPA+ (3G discontinued as of 3 February 2020)800/1800/2100/2600 MHz LTE, LTE-AVoLTEVoWiFiAML",
+      "subscribers": 5.019,
+      "ownership": [
+        "Vodafone",
+        "Liberty Global"
+      ],
+      "mccmnc": "20404",
+      "country": " Netherlands",
+      "MVNO": 0
+    },
+    {
+      "name": "T-Mobile •Includes the previous Tele2 and Orange networks.",
+      "value": 3.905,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "1800 MHz GSM (GPRS , EDGE)(2G discontinued as of 15 November 2020)900/2100 MHz UMTS, HSDPA , HSUPA, HSPA+800/900/1800/2100/2600 MHz LTE, LTE-A2600 MHz TD-LTEVoLTEVoWiFiAML",
+      "subscribers": 3.905,
+      "ownership": [
+        "Deutsche Telekom",
+        "Tele2"
+      ],
+      "mccmnc": "20416 and 20402",
+      "country": " Netherlands",
+      "MVNO": 0
+    },
+    {
+      "name": "A1 (Formerly one.Vip)",
+      "value": 1.1540000000000001,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 (GPRS)900/2100 MHz UMTS, HSPA+800/1800 MHz LTE, LTE-A",
+      "subscribers": 1.1540000000000001,
+      "ownership": [
+        "A1 Telekom Austria Group"
+      ],
+      "mccmnc": "29403",
+      "country": " North Macedonia",
+      "MVNO": 0
+    },
+    {
+      "name": "Telekom  (Formerly T-Mobile, MOBIMAK)",
+      "value": 1.1420000000000001,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900 (GPRS, EDGE)2100 MHz UMTS, HSDPA800/1800 MHz LTE, LTE-A",
+      "subscribers": 1.1420000000000001,
+      "ownership": [
+        "Magyar Telekom (Subsidiary of Deutsche Telekom)",
+        "Unknown-North-Macedonia-2"
+      ],
+      "mccmnc": "29401",
+      "country": " North Macedonia",
+      "MVNO": 0
+    },
+    {
+      "name": "Lycamobile",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "Uses A1 MK's mobile network (MVNO)",
+      "subscribers": 0,
+      "ownership": [
+        "Unknown-North-Macedonia-3"
+      ],
+      "mccmnc": 0,
+      "country": " North Macedonia",
+      "MVNO": 0
+    },
+    {
+      "name": "Telekabel",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "Uses Telekom MK's mobile network",
+      "subscribers": 0,
+      "ownership": [
+        "Unknown-North-Macedonia-4"
+      ],
+      "mccmnc": 0,
+      "country": " North Macedonia",
+      "MVNO": 0
+    },
+    {
+      "name": "Telenor",
+      "value": 3.282,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSUPA, HSPA+800/900/1800/2100/2600 MHz LTE, LTE-AVoLTEVoWiFi",
+      "subscribers": 3.282,
+      "ownership": [
+        "Telenor",
+        "PPF"
+      ],
+      "mccmnc": "24201",
+      "country": " Norway",
+      "MVNO": 0
+    },
+    {
+      "name": "Telia (Formerly NetCom) •Includes the previous Tele2 network.",
+      "value": 2.178,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSUPA, HSPA+800/900/1800/2100/2600 MHz LTE, LTE-AVoLTE",
+      "subscribers": 2.178,
+      "ownership": [
+        "Telia Company"
+      ],
+      "mccmnc": "24202",
+      "country": " Norway",
+      "MVNO": 0
+    },
+    {
+      "name": "Ice (Formerly Ice.net)",
+      "value": 0.337,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "450/800/900/1800 MHz LTE(LTE deployed in summer 2015 swapping 450 MHz CDMA[84])",
+      "subscribers": 0.337,
+      "ownership": [
+        "Access Industries"
+      ],
+      "mccmnc": "24214, 24206",
+      "country": " Norway",
+      "MVNO": 0
+    },
+    {
+      "name": "Orange (Formerly IDEA)",
+      "value": 15.14,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM 900/1800 MHz (GPRS, EDGE)UMTS 900/2100 MHz (HSDPA, HSUPA, HSPA+)800/1800/2100/2600 MHz LTE, LTE-AVoLTEVoWiFi",
+      "subscribers": 15.14,
+      "ownership": [
+        "Orange S.A.",
+        "Bank of New York and others"
+      ],
+      "mccmnc": "26003",
+      "country": " Poland",
+      "MVNO": 0
+    },
+    {
+      "name": "Play",
+      "value": 15.107000000000001,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "E-GSM/GSM 900/1800 MHz (GPRS, EDGE)UMTS 900/2100 MHz (HSDPA, HSUPA, HSPA+) 800/1800/2100/2600 MHz LTE, LTE-AVoLTEVoWiFi (for supported iOS/Android devices)2100 MHz 5G NR*** (Roaming 2G/3G/LTE on Orange Poland** and Plus* networks and 2G/3G on T-Mobile Poland** network. Limited to 3 Mbit/s download, 1 Mbit/s upload). * till 29.12.2019, on some areas already inactive** till 31.12.2021, on some areas already inactive*** from 07.01.2020",
+      "subscribers": 15.107000000000001,
+      "ownership": [
+        "(Novator, Tollerton)"
+      ],
+      "mccmnc": "26006",
+      "country": " Poland",
+      "MVNO": 0
+    },
+    {
+      "name": "Plus (Formerly Plus GSM)",
+      "value": 12.09,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "CDMA 420 MHzGSM 900/1800 MHz (GPRS, EDGE)UMTS 900/2100 MHz (HSDPA, HSUPA, HSPA+, DC-HSPA+)900/1800/2100/2600 MHz LTE, LTE-A 2600 MHz TD-LTE",
+      "subscribers": 12.09,
+      "ownership": [
+        "Polkomtel (owned by Polkomtel sp. z o.o., Eileme 4 AB (publ) related to Metelem Holding Company Ltd.)"
+      ],
+      "mccmnc": "26001",
+      "country": " Poland",
+      "MVNO": 0
+    },
+    {
+      "name": "T-Mobile (Formerly Era)",
+      "value": 10.908,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "GSM 900/1800 MHz (GPRS, EDGE)UMTS 900/2100 MHz (HSDPA, HSUPA, HSPA+)800/1800/2100/2600 MHz LTE, LTE-AVoLTEVoWiFi",
+      "subscribers": 10.908,
+      "ownership": [
+        "Deutsche Telekom"
+      ],
+      "mccmnc": "26002",
+      "country": " Poland",
+      "MVNO": 0
+    },
+    {
+      "name": "MEO  (Formerly TMN)",
+      "value": 7.709,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900 (GPRS, EDGE)2100 MHz UMTS, HSPA, HSPA+, DC-HSPA+ 800/1800/2100/2600 MHz LTE, LTE-A",
+      "subscribers": 7.709,
+      "ownership": [
+        "Altice"
+      ],
+      "mccmnc": "26806",
+      "country": " Portugal",
+      "MVNO": 0
+    },
+    {
+      "name": "Vodafone  (Formerly Telecel)",
+      "value": 4.853,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900 (GPRS, EDGE) 900 MHz UMTS, HSPA, HSPA+, DC-HSPA+ 800/900/1800/2100/2600 MHz LTE, LTE-A  2600 MHz TD-LTE VoLTE",
+      "subscribers": 4.853,
+      "ownership": [
+        "Vodafone"
+      ],
+      "mccmnc": "26801",
+      "country": " Portugal",
+      "MVNO": 0
+    },
+    {
+      "name": "NOS  (Formerly Optimus)",
+      "value": 4.2589999999999995,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800, (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSUPA, HSPA+ 800/1800/2100/2600 MHz LTE",
+      "subscribers": 4.2589999999999995,
+      "ownership": [
+        "NOS"
+      ],
+      "mccmnc": "26803",
+      "country": " Portugal",
+      "MVNO": 0
+    },
+    {
+      "name": "Orange(Formerly Dialog)",
+      "value": 10.38,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 (GPRS, EDGE) 900/2100 MHz UMTS, HSPA, HSPA+, DC-HSPA+  800/1800/2600 MHz LTE, LTE-AVoLTEVoWiFi3700 MHz 5G NR",
+      "subscribers": 10.38,
+      "ownership": [
+        "Orange S.A."
+      ],
+      "mccmnc": "22610",
+      "country": " Romania",
+      "MVNO": 0
+    },
+    {
+      "name": "Vodafone (Formerly Connex)",
+      "value": 9.73,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/1800 (GPRS, EDGE)  900/2100 MHz UMTS, HSPA, HSPA+, DC-HSPA+  800/1800/2100 MHz LTE, LTE-AViLTEVoLTEVoWiFi",
+      "subscribers": 9.73,
+      "ownership": [
+        "Vodafone"
+      ],
+      "mccmnc": "22601",
+      "country": " Romania",
+      "MVNO": 0
+    },
+    {
+      "name": "Digi.Mobil",
+      "value": 5.58,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900  900/2100 MHz UMTS, HSPA, HSPA+  2100 MHz LTE 2600 MHz TD-LTEVoLTEVoWiFi3500 MHz 5G NR (Available in Bucharest, Busteni, Brasov, Craiova, Constanta, Cluj-Napoca, Iasi, Mamaia, Poiana Brasov, Predeal, Sibiu, Sinaia, Timisioara.)",
+      "subscribers": 5.58,
+      "ownership": [
+        "RCS&RDS"
+      ],
+      "mccmnc": "22605",
+      "country": " Romania",
+      "MVNO": 0
+    },
+    {
+      "name": "Telekom (Formerly Cosmorom, Cosmote)",
+      "value": 4.76,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "GSM-900/1800 (GPRS, EDGE)  900/2100 MHz UMTS, HSPA, HSPA+, DC-HSPA+  800/900/1800 MHz LTE",
+      "subscribers": 4.76,
+      "ownership": [
+        "OTE",
+        "Telekom Romania Communications SA"
+      ],
+      "mccmnc": "22603",
+      "country": " Romania",
+      "MVNO": 0
+    },
+    {
+      "name": "MegaFon",
+      "value": 75.45,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSUPA, HSPA+800/1800/2600 MHz LTE, LTE-AVoLTE",
+      "subscribers": 75.45,
+      "ownership": [
+        "USM Group",
+        "MegaFon Finance"
+      ],
+      "mccmnc": "25002",
+      "country": " Russia",
+      "MVNO": 0
+    },
+    {
+      "name": "Tele2 Russia",
+      "value": 44.6,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "GSM-900/1800 MHz (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSUPA, HSPA+800/1800/2600 MHz LTECDMA2000 1x, 450 MHz450 MHz LTE (as Skylink)CDMA2000 EV-DO Rev. A, 450 MHz NMT - 450i, 450 MHz[93]",
+      "subscribers": 44.6,
+      "ownership": [
+        "Rostelecom",
+        "VTB Capital",
+        "Bank Rossiya",
+        "Severstal"
+      ],
+      "mccmnc": "25020",
+      "country": " Russia",
+      "MVNO": 0
+    },
+    {
+      "name": "Sotovaja Svjaz MOTIV",
+      "value": 2.45,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 5,
+      "technology": "GSM-1800 MHz (GPRS, EDGE)1800 MHz LTE",
+      "subscribers": 2.45,
+      "ownership": [
+        "Unknown-Russia-5"
+      ],
+      "mccmnc": "25035",
+      "country": " Russia",
+      "MVNO": 0
+    },
+    {
+      "name": "Tattelecom",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 6,
+      "technology": "GSM-1800 MHz (GPRS, EDGE)1800 MHz LTE",
+      "subscribers": 0,
+      "ownership": [
+        "Unknown-Russia-6"
+      ],
+      "mccmnc": "25054",
+      "country": " Russia",
+      "MVNO": 0
+    },
+    {
+      "name": "Vainahtelecom",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 7,
+      "technology": "GSM-1800 MHz (GPRS, EDGE)2300 MHz LTE",
+      "subscribers": 0,
+      "ownership": [
+        "Unknown-Russia-7"
+      ],
+      "mccmnc": "25022",
+      "country": " Russia",
+      "MVNO": 0
+    },
+    {
+      "name": "Telefonia Mobile Sammarinese (TMS)",
+      "value": 0.019,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900/1800 (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSUPA, HSPA+, DC-HSPA+ 800/1800/2600 MHz LTE, LTE-A (actually uses Italian TIM network)",
+      "subscribers": 0.019,
+      "ownership": [
+        "Telefonia Mobile Sammarinese"
+      ],
+      "mccmnc": "22201",
+      "country": " San Marino",
+      "MVNO": 0
+    },
+    {
+      "name": "vip",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "900/1800 MHz - GSM (GPRS, EDGE)900/2100 MHz - UMTS (HSDPA, DC-HSPA+)800/1800 MHz - LTE (LTE-A, LTE-A Pro, VoLTE)",
+      "subscribers": 0,
+      "ownership": [
+        "A1 Telekom Austria Group"
+      ],
+      "mccmnc": "22005",
+      "country": " Serbia",
+      "MVNO": 0
+    },
+    {
+      "name": "Globaltel - MVNO (uses vip network)",
+      "value": 0,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "900/1800 MHz- GSM (GPRS, EDGE)900/2100 MHz - UMTS (HSDPA, DC-HSPA+)800/1800 MHz - LTE (LTE-A, LTE-A Pro)",
+      "subscribers": 0,
+      "ownership": [
+        "Pink International Company",
+        "Procescom"
+      ],
+      "mccmnc": "22011",
+      "country": " Serbia",
+      "MVNO": 0
+    },
+    {
+      "name": "Orange  (Formerly Globtel, Slovtel)",
+      "value": 2.79,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "900/1800 MHz GSM (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, DC-HSPA+800/1800/2600 MHz LTE, LTE-A 3500/3600/3700 MHz 5G (Coming in 2021) VoLTE (Except Funfón) VoWiFi (Except Funfón)",
+      "subscribers": 2.79,
+      "ownership": [
+        "Atlas Services Belgium s.a."
+      ],
+      "mccmnc": "23101",
+      "country": " Slovakia",
+      "MVNO": 0
+    },
+    {
+      "name": "Telekom  (Formerly Eurotel, T-Mobile)",
+      "value": 2.31,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "900/1800 MHz GSM (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSPA+, DC-HSPA+800/1800/2600 MHz LTE, LTE-A 5G (Coming in 2021)  VoLTE (For prepaid cards only)",
+      "subscribers": 2.31,
+      "ownership": [
+        "Deutsche Telekom"
+      ],
+      "mccmnc": "23102",
+      "country": " Slovakia",
+      "MVNO": 0
+    },
+    {
+      "name": "O2",
+      "value": 2.08,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "900/1800 MHz GSM (GPRS, EDGE) 2100 MHz UMTS, HSDPA800/1800 MHz LTE, LTE-A 3700 MHz 5G (Coming in 2021)VoLTE (Except Tescomobile SK)",
+      "subscribers": 2.08,
+      "ownership": [
+        "PPF",
+        "Telefónica"
+      ],
+      "mccmnc": "23106",
+      "country": " Slovakia",
+      "MVNO": 0
+    },
+    {
+      "name": "4KA / SWAN Mobile",
+      "value": 0.4,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "900/1800 MHz GSM (GPRS, EDGE) (Roaming on Orange Slovakia (2G/3G) when needed)1800 MHz LTE 3500/3700 MHz 5G (since July 2019) VoLTE ViLTE",
+      "subscribers": 0.4,
+      "ownership": [
+        "SWAN Mobile, a. s.",
+        "Danubiatel a.s."
+      ],
+      "mccmnc": "23103",
+      "country": " Slovakia",
+      "MVNO": 0
+    },
+    {
+      "name": "Telekom Slovenije(formerly Mobitel)",
+      "value": 1.002,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM 900/1800 (GPRS, EDGE)2100 MHz: UMTS, HSPA, HSPA+, DC-HSPA+800/900/1800/2600 MHz LTE, LTE-AVoLTEVoWiFi",
+      "subscribers": 1.002,
+      "ownership": [
+        "Telekom Slovenije"
+      ],
+      "mccmnc": "29341",
+      "country": " Slovenia",
+      "MVNO": 0
+    },
+    {
+      "name": "A1(formerly Si.mobil)",
+      "value": 0.79,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM 900/1800 (GPRS, EDGE)900/2100 MHz: UMTS, HSPA, HSPA+, DC-HSPA+ 800/1800/2600 MHz LTE, LTE-A3500 MHz - 5G NR (testing)",
+      "subscribers": 0.79,
+      "ownership": [
+        "A1 Telekom Austria Group"
+      ],
+      "mccmnc": "29340",
+      "country": " Slovenia",
+      "MVNO": 0
+    },
+    {
+      "name": "Telemach(formerly Tušmobil)",
+      "value": 0.551,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM 900/1800 (GPRS, EDGE)900/2100 MHz: UMTS, HSPA, HSPA+ (Roams on Telekom Slovenije (2G/3G) where there is no Telemach coverage)800/1800/2100 MHz LTE, LTE-A",
+      "subscribers": 0.551,
+      "ownership": [
+        "The United Group"
+      ],
+      "mccmnc": "29370",
+      "country": " Slovenia",
+      "MVNO": 0
+    },
+    {
+      "name": "T-2",
+      "value": 0.139,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "2100 MHz: UMTS, HSPA (Roaming on Telekom Slovenije (2G/3G/LTE) network when needed)2100 MHz LTE",
+      "subscribers": 0.139,
+      "ownership": [
+        "Gratel",
+        "Unknown-Slovenia-4"
+      ],
+      "mccmnc": "29364",
+      "country": " Slovenia",
+      "MVNO": 0
+    },
+    {
+      "name": "Movistar",
+      "value": 16.277,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "900/1800 MHz GSM (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSUPA, HSPA+, DC-HSPA+800/1800/2100/2600 MHz LTE, LTE-A",
+      "subscribers": 16.277,
+      "ownership": [
+        "Telefónica"
+      ],
+      "mccmnc": "21407",
+      "country": " Spain",
+      "MVNO": 0
+    },
+    {
+      "name": "Orange  (Formerly Amena)",
+      "value": 13.7,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "900/1800 MHz GSM (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSUPA, HSPA+, DC-HSPA+800/1800/2100/2600 MHz LTE, LTE-AVoLTEVoWiFi",
+      "subscribers": 13.7,
+      "ownership": [
+        "Orange"
+      ],
+      "mccmnc": "21403",
+      "country": " Spain",
+      "MVNO": 0
+    },
+    {
+      "name": "Vodafone  (Formerly Airtel)",
+      "value": 13.575,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "900/1800 MHz GSM (GPRS, EDGE)900/2100 MHz UMTS, HSDPA, HSUPA, HSPA+, DC-HSPA+800/900/1800/2100/2600 MHz LTE, LTE-AVoLTE 3700 MHz 5G NR",
+      "subscribers": 13.575,
+      "ownership": [
+        "Vodafone"
+      ],
+      "mccmnc": "21401",
+      "country": " Spain",
+      "MVNO": 0
+    },
+    {
+      "name": "Yoigo",
+      "value": 7.084,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "1800 MHz GSM (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSUPA, HSPA+1800/2100 MHz LTE (Roams on Orange and Movistar where there is no Yoigo coverage)",
+      "subscribers": 7.084,
+      "ownership": [
+        "Grupo MÁSMÓVIL"
+      ],
+      "mccmnc": "21404",
+      "country": " Spain",
+      "MVNO": 0
+    },
+    {
+      "name": "Telenor  (Formerly Vodafone)",
+      "value": 2.678,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 (GPRS, EDGE)2100 MHz UMTS, HSDPA800/900/1800/2600 MHz LTE, LTE-A",
+      "subscribers": 2.678,
+      "ownership": [
+        "Telenor"
+      ],
+      "mccmnc": "24008",
+      "country": " Sweden",
+      "MVNO": 0
+    },
+    {
+      "name": "Three (Tre)",
+      "value": 2.011,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "900/2100 MHz UMTS, HSDPA800/2600 MHz FD-LTE, 2600 MHz TD-LTE",
+      "subscribers": 2.011,
+      "ownership": [
+        "CK Hutchison Holdings",
+        "Investor AB"
+      ],
+      "mccmnc": "24002",
+      "country": " Sweden",
+      "MVNO": 0
+    },
+    {
+      "name": "Swisscom",
+      "value": 6.377999999999999,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "GSM-900 (GPRS, EDGE) 900 MHz UMTS, HSPA, HSPA+, DC-HSPA+ 800/1800/2100/2600 MHz LTE, LTE-AVoLTEVoWiFi2100/3500 MHz 5G NR",
+      "subscribers": 6.377999999999999,
+      "ownership": [
+        "Partially State-owned",
+        "Swisscom"
+      ],
+      "mccmnc": "22801",
+      "country": " Switzerland",
+      "MVNO": 0
+    },
+    {
+      "name": "Sunrise  (Formerly diAx)",
+      "value": 2.935,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "GSM-900 (GPRS, EDGE) 900/2100 MHz UMTS, HSDPA, HSPA+, DC-HSPA+800/900/1800/2600 MHz LTE, LTE-AVoLTE3500 MHz 5G NR",
+      "subscribers": 2.935,
+      "ownership": [
+        "Listed at the Swiss Stock Exchange SIX Group[109]"
+      ],
+      "mccmnc": "22802",
+      "country": " Switzerland",
+      "MVNO": 0
+    },
+    {
+      "name": "Salt [fr]   (formerly Orange CH)",
+      "value": 2.141,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "GSM-900/1800 (GPRS, EDGE) 900/2100 MHz UMTS, HSPA, HSPA+, DC-HSPA+800/1800/2100/2600 MHz LTE, LTE-AVoWiFi",
+      "subscribers": 2.141,
+      "ownership": [
+        "Iliad/NJJ Capital[111]"
+      ],
+      "mccmnc": "22803",
+      "country": " Switzerland",
+      "MVNO": 0
+    },
+    {
+      "name": "Kyivstar",
+      "value": 26.5,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "900/1800 MHz GSM (GPRS, EDGE)  2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+ 1800/2600 MHz LTE, LTE-A",
+      "subscribers": 26.5,
+      "ownership": [
+        "VEON"
+      ],
+      "mccmnc": "25503 and 25502",
+      "country": " Ukraine",
+      "MVNO": 0
+    },
+    {
+      "name": "Vodafone (Formerly MTS)",
+      "value": 20.7,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 2,
+      "technology": "900/1800 MHz GSM (GPRS, EDGE)2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+1800/2600 MHz LTE, LTE-A",
+      "subscribers": 20.7,
+      "ownership": [
+        "Bakcell"
+      ],
+      "mccmnc": "25501",
+      "country": " Ukraine",
+      "MVNO": 0
+    },
+    {
+      "name": "Lifecell (Formerly Life:))",
+      "value": 7.8,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 3,
+      "technology": "900/1800 MHz GSM (GPRS, EDGE)  2100 MHz UMTS, HSDPA, HSUPA, HSPA, HSPA+, DC-HSPA+, 3C-HSDPA1800/2600 MHz LTE, LTE-A, LTE-A Pro",
+      "subscribers": 7.8,
+      "ownership": [
+        "Turkcell"
+      ],
+      "mccmnc": "25506",
+      "country": " Ukraine",
+      "MVNO": 0
+    },
+    {
+      "name": "Intertelecom",
+      "value": 1.4,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "800 MHz CDMA2000, CDMA2000 EV-DO rel.0, rev. A, rev. B",
+      "subscribers": 1.4,
+      "ownership": [
+        "Odinaco Ltd",
+        "Victor Gushan",
+        "Unknown-Ukraine-4"
+      ],
+      "mccmnc": "25504",
+      "country": " Ukraine",
+      "MVNO": 0
+    },
+    {
+      "name": "TriMob",
+      "value": 0.3,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 5,
+      "technology": "2100 MHz UMTS, HSDPA, HSUPA, HSPA (Free 2G/3G roaming on Vodafone network available)",
+      "subscribers": 0.3,
+      "ownership": [
+        "Ukrtelecom"
+      ],
+      "mccmnc": "25507",
+      "country": " Ukraine",
+      "MVNO": 0
+    },
+    {
+      "name": "PEOPLEnet",
+      "value": 0.853,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 6,
+      "technology": "800 MHz CDMA2000, CDMA2000 EV-DO",
+      "subscribers": 0.853,
+      "ownership": [
+        "Telesystemy Ukrainy"
+      ],
+      "mccmnc": "25521",
+      "country": " Ukraine",
+      "MVNO": 0
+    },
+    {
+      "name": "EE (formerly known as Everything Everywhere) •Includes the previous T-Mobile and Orange networks.",
+      "value": 28.9,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 1,
+      "technology": "*2G GSM (GPRS, EDGE); 1800MHz *3G UMTS (HSDPA, HSPA+); 2100MHz *4G LTE (LTE-A, VoLTE, VoWiFi); - 800 (20) - 1800 (3) - 2100 (1) - 2600 (7) MHz 5G NR - 3500 MHz",
+      "subscribers": 28.9,
+      "ownership": [
+        "BT Group"
+      ],
+      "mccmnc": "23430 and 23433",
+      "country": " United Kingdom",
+      "MVNO": 0
+    },
+    {
+      "name": "Three",
+      "value": 13.339,
+      "category": 1,
+      "isOperator": 1,
+      "rank": 4,
+      "technology": "*3G UMTS (HSDPA, HSPA+); 2100 MHz *4G LTE (LTE-A, TD-LTE, VoLTE, VoWiFi); - 800 (20) - 1500 (32) - 1800 (3) - 2100 (1) - 3500 (42) MHz RCS 5G NR - 3500/ 3700 MHz",
+      "subscribers": 13.339,
+      "ownership": [
+        "CK Hutchison Holdings"
+      ],
+      "mccmnc": "23420",
+      "country": " United Kingdom",
+      "MVNO": 0
+    },
+    {
+      "name": "Albania Telecom Invest",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "ALBtelecom",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "State-owned",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-Armenia-1",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Ucom",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "VEON",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "A1 Telekom Austria Group",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Deutsche Telekom",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "CK Hutchison Holdings",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "AzInTelecom (state-owned company)",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "NEQSOL Holding",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Azerfon LLC",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Lukoil Europe Ltd.",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Nakhtel LLC",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Beltelecom",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Turkcell",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Belarusian Government",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "RUE National Traffic Exchange Center",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-Belarus-4",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Orange S.A.",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-Belgium-2",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Telenet",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Telekom Srbija",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Hrvatski Telekom",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "PPF",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Bulgarian Telecommunications Company EAD",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-Croatia-1",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "The United Group",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Cyprus Telecommunications Authority (Cyta)",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "PrimeTel PLC",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Telia Company",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Investor AB",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Access Industries",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Faroese Telecom",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Kall P/F",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-Finland-3",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Mariehamns Telefon, Ålands Telefonandelslag",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Ukkoverkot",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Altice",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Bouygues Group",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-France-3",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Iliad S.A.",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "ITC",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Silk Road Group",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "GMC Group",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Deutsche Telekom AG",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Telefónica S.A.",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Vodafone Group",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Gibraltar Telecommunications Int. Ltd.",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "OTE",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-Greece-2",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Largo Ltd (SSN Ad-Hoc Committee)",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Batelco",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "JT Global",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Bharti Airtel",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Free Float",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "RCS & RDS",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Siminn hf",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Framtakssjóður Íslands.",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Nova ehf.",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Yellow Mobile B.V.",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "NJJ",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-Ireland-3",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Freefloat (AIM-listed)",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Vivendi",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-Italy-2",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Government of Kosovo",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Telekom Slovenije",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Devolli Group",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Dukagjini LLC",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Republic of Latvia and related",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Providence Equity Partners",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-Latvia-4",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Salt Mobile AG [de]",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "POST Luxembourg",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Proximus Group",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Luxembourg Online",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Dubai Holding",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Public",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Apax France.",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-Moldova-1",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Moldtelecom",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Sheriff",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "NJJ Capital/Xavier Niel",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Société Nationale de Financement",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Public stock",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Telekom Srpske",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Koninklijke KPN N.V.",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Liberty Global",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Magyar Telekom (Subsidiary of Deutsche Telekom)",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-North-Macedonia-2",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-North-Macedonia-3",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-North-Macedonia-4",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Bank of New York and others",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "(Novator, Tollerton)",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Polkomtel (owned by Polkomtel sp. z o.o., Eileme 4 AB (publ) related to Metelem Holding Company Ltd.)",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "NOS",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "RCS&RDS",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Telekom Romania Communications SA",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Sistema",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "free float",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "USM Group",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "MegaFon Finance",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Rostelecom",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "VTB Capital",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Bank Rossiya",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Severstal",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-Russia-5",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-Russia-6",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-Russia-7",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Telefonia Mobile Sammarinese",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Pink International Company",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Procescom",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Atlas Services Belgium s.a.",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "SWAN Mobile, a. s.",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Danubiatel a.s.",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Gratel",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-Slovenia-4",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Telefónica",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Grupo MÁSMÓVIL",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Partially State-owned",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Listed at the Swiss Stock Exchange SIX Group[109]",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Iliad/NJJ Capital[111]",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Odinaco Ltd",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Victor Gushan",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Unknown-Ukraine-4",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Ukrtelecom",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "Telesystemy Ukrainy",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "BT Group",
+      "value": 1,
+      "category": 0
+    }
+  ],
+  "links": [
+    {
+      "source": 72,
+      "target": 0,
+      "proportion": 1.0
+    },
+    {
+      "source": 167,
+      "target": 1,
+      "proportion": 1.0
+    },
+    {
+      "source": 168,
+      "target": 2,
+      "proportion": 1.0
+    },
+    {
+      "source": 169,
+      "target": 3,
+      "proportion": 1.0
+    },
+    {
+      "source": 15,
+      "target": 4,
+      "proportion": 0.8
+    },
+    {
+      "source": 170,
+      "target": 4,
+      "proportion": 0.2
+    },
+    {
+      "source": 171,
+      "target": 5,
+      "proportion": 1.0
+    },
+    {
+      "source": 172,
+      "target": 6,
+      "proportion": 1.0
+    },
+    {
+      "source": 173,
+      "target": 7,
+      "proportion": 1.0
+    },
+    {
+      "source": 174,
+      "target": 8,
+      "proportion": 1.0
+    },
+    {
+      "source": 175,
+      "target": 9,
+      "proportion": 1.0
+    },
+    {
+      "source": 176,
+      "target": 10,
+      "proportion": 1.0
+    },
+    {
+      "source": 177,
+      "target": 11,
+      "proportion": 1.0
+    },
+    {
+      "source": 178,
+      "target": 12,
+      "proportion": 1.0
+    },
+    {
+      "source": 179,
+      "target": 13,
+      "proportion": 0.5
+    },
+    {
+      "source": 169,
+      "target": 13,
+      "proportion": 0.5
+    },
+    {
+      "source": 180,
+      "target": 14,
+      "proportion": 1.0
+    },
+    {
+      "source": 181,
+      "target": 15,
+      "proportion": 0.51
+    },
+    {
+      "source": 15,
+      "target": 15,
+      "proportion": 0.49
+    },
+    {
+      "source": 173,
+      "target": 16,
+      "proportion": 1.0
+    },
+    {
+      "source": 182,
+      "target": 17,
+      "proportion": 0.8
+    },
+    {
+      "source": 183,
+      "target": 17,
+      "proportion": 0.2
+    },
+    {
+      "source": 184,
+      "target": 18,
+      "proportion": 0.51
+    },
+    {
+      "source": 185,
+      "target": 18,
+      "proportion": 0.49
+    },
+    {
+      "source": 19,
+      "target": 19,
+      "proportion": 1.0
+    },
+    {
+      "source": 186,
+      "target": 20,
+      "proportion": 0.54
+    },
+    {
+      "source": 187,
+      "target": 20,
+      "proportion": 0.46
+    },
+    {
+      "source": 188,
+      "target": 21,
+      "proportion": 1.0
+    },
+    {
+      "source": 22,
+      "target": 22,
+      "proportion": 1.0
+    },
+    {
+      "source": 189,
+      "target": 23,
+      "proportion": 1.0
+    },
+    {
+      "source": 190,
+      "target": 24,
+      "proportion": 1.0
+    },
+    {
+      "source": 173,
+      "target": 25,
+      "proportion": 1.0
+    },
+    {
+      "source": 191,
+      "target": 26,
+      "proportion": 1.0
+    },
+    {
+      "source": 192,
+      "target": 27,
+      "proportion": 1.0
+    },
+    {
+      "source": 174,
+      "target": 28,
+      "proportion": 0.51
+    },
+    {
+      "source": 193,
+      "target": 28,
+      "proportion": 0.49
+    },
+    {
+      "source": 173,
+      "target": 29,
+      "proportion": 1.0
+    },
+    {
+      "source": 194,
+      "target": 30,
+      "proportion": 1.0
+    },
+    {
+      "source": 109,
+      "target": 31,
+      "proportion": 1.0
+    },
+    {
+      "source": 195,
+      "target": 32,
+      "proportion": 1.0
+    },
+    {
+      "source": 196,
+      "target": 33,
+      "proportion": 1.0
+    },
+    {
+      "source": 174,
+      "target": 34,
+      "proportion": 1.0
+    },
+    {
+      "source": 191,
+      "target": 35,
+      "proportion": 1.0
+    },
+    {
+      "source": 72,
+      "target": 36,
+      "proportion": 1.0
+    },
+    {
+      "source": 37,
+      "target": 37,
+      "proportion": 1.0
+    },
+    {
+      "source": 120,
+      "target": 38,
+      "proportion": 1.0
+    },
+    {
+      "source": 197,
+      "target": 39,
+      "proportion": 1.0
+    },
+    {
+      "source": 175,
+      "target": 40,
+      "proportion": 0.6
+    },
+    {
+      "source": 198,
+      "target": 40,
+      "proportion": 0.4
+    },
+    {
+      "source": 199,
+      "target": 41,
+      "proportion": 1.0
+    },
+    {
+      "source": 197,
+      "target": 42,
+      "proportion": 1.0
+    },
+    {
+      "source": 48,
+      "target": 43,
+      "proportion": 1.0
+    },
+    {
+      "source": 30,
+      "target": 44,
+      "proportion": 1.0
+    },
+    {
+      "source": 200,
+      "target": 45,
+      "proportion": 1.0
+    },
+    {
+      "source": 201,
+      "target": 46,
+      "proportion": 1.0
+    },
+    {
+      "source": 197,
+      "target": 47,
+      "proportion": 1.0
+    },
+    {
+      "source": 48,
+      "target": 48,
+      "proportion": 1.0
+    },
+    {
+      "source": 120,
+      "target": 49,
+      "proportion": 0.9787
+    },
+    {
+      "source": 202,
+      "target": 49,
+      "proportion": 0.0213
+    },
+    {
+      "source": 203,
+      "target": 50,
+      "proportion": 1.0
+    },
+    {
+      "source": 204,
+      "target": 51,
+      "proportion": 1.0
+    },
+    {
+      "source": 186,
+      "target": 52,
+      "proportion": 1.0
+    },
+    {
+      "source": 205,
+      "target": 53,
+      "proportion": 1.0
+    },
+    {
+      "source": 206,
+      "target": 54,
+      "proportion": 0.895
+    },
+    {
+      "source": 207,
+      "target": 54,
+      "proportion": 0.105
+    },
+    {
+      "source": 208,
+      "target": 55,
+      "proportion": 1.0
+    },
+    {
+      "source": 209,
+      "target": 56,
+      "proportion": 1.0
+    },
+    {
+      "source": 210,
+      "target": 57,
+      "proportion": 1.0
+    },
+    {
+      "source": 172,
+      "target": 58,
+      "proportion": 0.51
+    },
+    {
+      "source": 211,
+      "target": 58,
+      "proportion": 0.49
+    },
+    {
+      "source": 212,
+      "target": 59,
+      "proportion": 1.0
+    },
+    {
+      "source": 213,
+      "target": 60,
+      "proportion": 1.0
+    },
+    {
+      "source": 214,
+      "target": 61,
+      "proportion": 1.0
+    },
+    {
+      "source": 215,
+      "target": 62,
+      "proportion": 1.0
+    },
+    {
+      "source": 216,
+      "target": 63,
+      "proportion": 1.0
+    },
+    {
+      "source": 72,
+      "target": 64,
+      "proportion": 0.998
+    },
+    {
+      "source": 217,
+      "target": 64,
+      "proportion": 0.002
+    },
+    {
+      "source": 218,
+      "target": 65,
+      "proportion": 1.0
+    },
+    {
+      "source": 66,
+      "target": 66,
+      "proportion": 1.0
+    },
+    {
+      "source": 219,
+      "target": 67,
+      "proportion": 1.0
+    },
+    {
+      "source": 220,
+      "target": 68,
+      "proportion": 1.0
+    },
+    {
+      "source": 221,
+      "target": 69,
+      "proportion": 1.0
+    },
+    {
+      "source": 174,
+      "target": 70,
+      "proportion": 0.5921
+    },
+    {
+      "source": 222,
+      "target": 70,
+      "proportion": 0.4079
+    },
+    {
+      "source": 191,
+      "target": 71,
+      "proportion": 1.0
+    },
+    {
+      "source": 72,
+      "target": 72,
+      "proportion": 1.0
+    },
+    {
+      "source": 223,
+      "target": 73,
+      "proportion": 1.0
+    },
+    {
+      "source": 224,
+      "target": 74,
+      "proportion": 1.0
+    },
+    {
+      "source": 225,
+      "target": 72,
+      "proportion": 1.0
+    },
+    {
+      "source": 226,
+      "target": 75,
+      "proportion": 1.0
+    },
+    {
+      "source": 227,
+      "target": 76,
+      "proportion": 1.0
+    },
+    {
+      "source": 175,
+      "target": 77,
+      "proportion": 1.0
+    },
+    {
+      "source": 72,
+      "target": 78,
+      "proportion": 1.0
+    },
+    {
+      "source": 84,
+      "target": 79,
+      "proportion": 0.316
+    },
+    {
+      "source": 228,
+      "target": 79,
+      "proportion": 0.32899999999999996
+    },
+    {
+      "source": 229,
+      "target": 79,
+      "proportion": 0.355
+    },
+    {
+      "source": 230,
+      "target": 80,
+      "proportion": 1.0
+    },
+    {
+      "source": 219,
+      "target": 67,
+      "proportion": 1.0
+    },
+    {
+      "source": 175,
+      "target": 81,
+      "proportion": 1.0
+    },
+    {
+      "source": 231,
+      "target": 82,
+      "proportion": 0.24
+    },
+    {
+      "source": 232,
+      "target": 82,
+      "proportion": 0.76
+    },
+    {
+      "source": 72,
+      "target": 83,
+      "proportion": 1.0
+    },
+    {
+      "source": 84,
+      "target": 84,
+      "proportion": 1.0
+    },
+    {
+      "source": 220,
+      "target": 85,
+      "proportion": 1.0
+    },
+    {
+      "source": 219,
+      "target": 67,
+      "proportion": 1.0
+    },
+    {
+      "source": 221,
+      "target": 69,
+      "proportion": 1.0
+    },
+    {
+      "source": 233,
+      "target": 86,
+      "proportion": 1.0
+    },
+    {
+      "source": 234,
+      "target": 87,
+      "proportion": 1.0
+    },
+    {
+      "source": 235,
+      "target": 88,
+      "proportion": 1.0
+    },
+    {
+      "source": 189,
+      "target": 89,
+      "proportion": 1.0
+    },
+    {
+      "source": 236,
+      "target": 90,
+      "proportion": 1.0
+    },
+    {
+      "source": 237,
+      "target": 91,
+      "proportion": 0.51
+    },
+    {
+      "source": 39,
+      "target": 91,
+      "proportion": 0.49
+    },
+    {
+      "source": 30,
+      "target": 30,
+      "proportion": 1.0
+    },
+    {
+      "source": 238,
+      "target": 92,
+      "proportion": 1.0
+    },
+    {
+      "source": 239,
+      "target": 93,
+      "proportion": 1.0
+    },
+    {
+      "source": 169,
+      "target": 94,
+      "proportion": 1.0
+    },
+    {
+      "source": 240,
+      "target": 95,
+      "proportion": 1.0
+    },
+    {
+      "source": 156,
+      "target": 96,
+      "proportion": 1.0
+    },
+    {
+      "source": 197,
+      "target": 97,
+      "proportion": 1.0
+    },
+    {
+      "source": 238,
+      "target": 92,
+      "proportion": 1.0
+    },
+    {
+      "source": 30,
+      "target": 30,
+      "proportion": 1.0
+    },
+    {
+      "source": 169,
+      "target": 98,
+      "proportion": 1.0
+    },
+    {
+      "source": 241,
+      "target": 99,
+      "proportion": 1.0
+    },
+    {
+      "source": 242,
+      "target": 100,
+      "proportion": 1.0
+    },
+    {
+      "source": 186,
+      "target": 101,
+      "proportion": 1.0
+    },
+    {
+      "source": 243,
+      "target": 102,
+      "proportion": 1.0
+    },
+    {
+      "source": 109,
+      "target": 103,
+      "proportion": 1.0
+    },
+    {
+      "source": 244,
+      "target": 104,
+      "proportion": 0.4
+    },
+    {
+      "source": 245,
+      "target": 104,
+      "proportion": 0.6
+    },
+    {
+      "source": 246,
+      "target": 105,
+      "proportion": 1.0
+    },
+    {
+      "source": 186,
+      "target": 101,
+      "proportion": 0.943
+    },
+    {
+      "source": 247,
+      "target": 101,
+      "proportion": 0.057
+    },
+    {
+      "source": 197,
+      "target": 106,
+      "proportion": 1.0
+    },
+    {
+      "source": 248,
+      "target": 107,
+      "proportion": 1.0
+    },
+    {
+      "source": 249,
+      "target": 108,
+      "proportion": 1.0
+    },
+    {
+      "source": 250,
+      "target": 109,
+      "proportion": 0.55
+    },
+    {
+      "source": 251,
+      "target": 109,
+      "proportion": 0.45
+    },
+    {
+      "source": 191,
+      "target": 110,
+      "proportion": 1.0
+    },
+    {
+      "source": 190,
+      "target": 111,
+      "proportion": 0.7653
+    },
+    {
+      "source": 252,
+      "target": 112,
+      "proportion": 0.2347
+    },
+    {
+      "source": 189,
+      "target": 23,
+      "proportion": 0.51
+    },
+    {
+      "source": 253,
+      "target": 23,
+      "proportion": 0.49
+    },
+    {
+      "source": 254,
+      "target": 113,
+      "proportion": 1.0
+    },
+    {
+      "source": 72,
+      "target": 114,
+      "proportion": 0.5
+    },
+    {
+      "source": 255,
+      "target": 114,
+      "proportion": 0.5
+    },
+    {
+      "source": 174,
+      "target": 115,
+      "proportion": 0.75
+    },
+    {
+      "source": 30,
+      "target": 115,
+      "proportion": 0.25
+    },
+    {
+      "source": 173,
+      "target": 116,
+      "proportion": 1.0
+    },
+    {
+      "source": 256,
+      "target": 117,
+      "proportion": 0.5921
+    },
+    {
+      "source": 257,
+      "target": 117,
+      "proportion": 0.4079
+    },
+    {
+      "source": 258,
+      "target": 118,
+      "proportion": 1.0
+    },
+    {
+      "source": 259,
+      "target": 119,
+      "proportion": 1.0
+    },
+    {
+      "source": 120,
+      "target": 120,
+      "proportion": 1.0
+    },
+    {
+      "source": 197,
+      "target": 121,
+      "proportion": 1.0
+    },
+    {
+      "source": 199,
+      "target": 122,
+      "proportion": 1.0
+    },
+    {
+      "source": 186,
+      "target": 123,
+      "proportion": 0.5067
+    },
+    {
+      "source": 260,
+      "target": 123,
+      "proportion": 0.4933
+    },
+    {
+      "source": 261,
+      "target": 124,
+      "proportion": 1.0
+    },
+    {
+      "source": 262,
+      "target": 125,
+      "proportion": 1.0
+    },
+    {
+      "source": 174,
+      "target": 126,
+      "proportion": 1.0
+    },
+    {
+      "source": 205,
+      "target": 127,
+      "proportion": 1.0
+    },
+    {
+      "source": 72,
+      "target": 128,
+      "proportion": 1.0
+    },
+    {
+      "source": 263,
+      "target": 129,
+      "proportion": 1.0
+    },
+    {
+      "source": 186,
+      "target": 130,
+      "proportion": 1.0
+    },
+    {
+      "source": 72,
+      "target": 131,
+      "proportion": 1.0
+    },
+    {
+      "source": 264,
+      "target": 132,
+      "proportion": 1.0
+    },
+    {
+      "source": 216,
+      "target": 133,
+      "proportion": 0.7
+    },
+    {
+      "source": 265,
+      "target": 133,
+      "proportion": 0.3
+    },
+    {
+      "source": 266,
+      "target": 15,
+      "proportion": 0.5564
+    },
+    {
+      "source": 267,
+      "target": 15,
+      "proportion": 0.4436
+    },
+    {
+      "source": 268,
+      "target": 134,
+      "proportion": 0.7032
+    },
+    {
+      "source": 269,
+      "target": 134,
+      "proportion": 0.2968
+    },
+    {
+      "source": 172,
+      "target": 58,
+      "proportion": 1.0
+    },
+    {
+      "source": 270,
+      "target": 135,
+      "proportion": 0.45
+    },
+    {
+      "source": 271,
+      "target": 135,
+      "proportion": 0.275
+    },
+    {
+      "source": 272,
+      "target": 135,
+      "proportion": 0.22
+    },
+    {
+      "source": 273,
+      "target": 135,
+      "proportion": 0.055
+    },
+    {
+      "source": 274,
+      "target": 136,
+      "proportion": 1.0
+    },
+    {
+      "source": 275,
+      "target": 137,
+      "proportion": 1.0
+    },
+    {
+      "source": 276,
+      "target": 138,
+      "proportion": 1.0
+    },
+    {
+      "source": 277,
+      "target": 139,
+      "proportion": 1.0
+    },
+    {
+      "source": 189,
+      "target": 89,
+      "proportion": 1.0
+    },
+    {
+      "source": 191,
+      "target": 120,
+      "proportion": 1.0
+    },
+    {
+      "source": 173,
+      "target": 140,
+      "proportion": 1.0
+    },
+    {
+      "source": 278,
+      "target": 141,
+      "proportion": 0.55
+    },
+    {
+      "source": 279,
+      "target": 141,
+      "proportion": 0.45
+    },
+    {
+      "source": 280,
+      "target": 142,
+      "proportion": 1.0
+    },
+    {
+      "source": 174,
+      "target": 143,
+      "proportion": 1.0
+    },
+    {
+      "source": 191,
+      "target": 144,
+      "proportion": 1.0
+    },
+    {
+      "source": 281,
+      "target": 145,
+      "proportion": 0.5
+    },
+    {
+      "source": 282,
+      "target": 145,
+      "proportion": 0.5
+    },
+    {
+      "source": 234,
+      "target": 146,
+      "proportion": 1.0
+    },
+    {
+      "source": 173,
+      "target": 147,
+      "proportion": 1.0
+    },
+    {
+      "source": 194,
+      "target": 148,
+      "proportion": 1.0
+    },
+    {
+      "source": 283,
+      "target": 149,
+      "proportion": 0.87
+    },
+    {
+      "source": 284,
+      "target": 149,
+      "proportion": 0.13
+    },
+    {
+      "source": 285,
+      "target": 150,
+      "proportion": 1.0
+    },
+    {
+      "source": 101,
+      "target": 151,
+      "proportion": 1.0
+    },
+    {
+      "source": 72,
+      "target": 152,
+      "proportion": 1.0
+    },
+    {
+      "source": 286,
+      "target": 153,
+      "proportion": 1.0
+    },
+    {
+      "source": 197,
+      "target": 39,
+      "proportion": 1.0
+    },
+    {
+      "source": 30,
+      "target": 30,
+      "proportion": 1.0
+    },
+    {
+      "source": 120,
+      "target": 154,
+      "proportion": 1.0
+    },
+    {
+      "source": 175,
+      "target": 155,
+      "proportion": 0.6
+    },
+    {
+      "source": 198,
+      "target": 155,
+      "proportion": 0.4
+    },
+    {
+      "source": 287,
+      "target": 156,
+      "proportion": 0.51
+    },
+    {
+      "source": 156,
+      "target": 156,
+      "proportion": 0.49
+    },
+    {
+      "source": 288,
+      "target": 157,
+      "proportion": 1.0
+    },
+    {
+      "source": 289,
+      "target": 158,
+      "proportion": 1.0
+    },
+    {
+      "source": 172,
+      "target": 159,
+      "proportion": 1.0
+    },
+    {
+      "source": 11,
+      "target": 160,
+      "proportion": 1.0
+    },
+    {
+      "source": 182,
+      "target": 161,
+      "proportion": 1.0
+    },
+    {
+      "source": 290,
+      "target": 162,
+      "proportion": 0.49
+    },
+    {
+      "source": 291,
+      "target": 162,
+      "proportion": 0.35700000000000004
+    },
+    {
+      "source": 292,
+      "target": 162,
+      "proportion": 0.153
+    },
+    {
+      "source": 293,
+      "target": 163,
+      "proportion": 1.0
+    },
+    {
+      "source": 294,
+      "target": 164,
+      "proportion": 1.0
+    },
+    {
+      "source": 295,
+      "target": 165,
+      "proportion": 1.0
+    },
+    {
+      "source": 285,
+      "target": 144,
+      "proportion": 1.0
+    },
+    {
+      "source": 72,
+      "target": 72,
+      "proportion": 1.0
+    },
+    {
+      "source": 175,
+      "target": 166,
+      "proportion": 1.0
+    }
+  ]
+})

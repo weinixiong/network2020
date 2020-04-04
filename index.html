@@ -30,8 +30,8 @@
                     <li id="nav_device_connect" class="tabs"><a class="tabs_inner">通信连接结构</a></li>
                     <!-- <li ><a href="#">设备运行风险分析</a></li> -->
                 </ul>
-                <div style='height:600px;width:100%'>
-                    <div id='operator' style='display: block'></div>
+                <div style='height:600px;width:calc(100%)'>
+                    <div id='operator_container' style='display: block;width: 100%;height: 100%'></div>
                     <div id="main" style='display: none'></div>
                 </div>
 
@@ -43,7 +43,7 @@
                     <div id='Lchart' class="staview"></div>
                     <div id='operatorchart' class="staview"></div>
                </div>
-                <div class="layer barchart">
+               <!--  <div class="layer barchart">
                     <div class="layerTitle">
                         <i class="arrow" onclick="hideAndShow(this)"></i>进出口差值与GDP比值
                     </div>
@@ -67,7 +67,7 @@
                     <div class=" sencondLayer inputSlider">
                         <div id="BubbleChart" style="width:100%; height:600px;border: 1px solid #ccc;"></div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class='right' id='rightpanel'>
@@ -84,6 +84,7 @@
 <script src="./static/js/drawMap.js"></script>
 <script src="./static/js/BubbleChart.js"></script>
 <script src="./static/js/pie.js"></script>
+<script src="./static/js/owner_ship/ownership_graph_vis.js"></script>
 <script type="text/javascript">
     var pathList = {}
     var GDPList = {}
@@ -138,6 +139,8 @@
 <script src="./static/data/continent.json?callback=Get_continent"></script>
 <script src="./static/js/parallel_export.js"></script>
 <script src="./static/js/selector.js"></script>
+<script src="./static/js/owner_ship/Asia_Pacific_Network_0402_1.json?calllback=owner_ship"></script>
+<script src="./static/js/owner_ship/Asia_Pacific_Network_0402_1.json?calllback=owner_ship"></script>
 <script>
     function hideAndShow(e) {
         // console.log(e)

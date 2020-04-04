@@ -62,7 +62,7 @@ function Draw(result) {
     return series
 };
 function GetSeries(fName,d1,d2){
-    let series = [init_series]
+    let series = []
     series.push(
                 {
                     name: fName,
@@ -229,13 +229,15 @@ function clickCountry(city,isoperator = true){
     else{
         clickISPC(city)
     }
-    let series = [init_series]
+    let series = []
         for(let k in ClickedList){
             if(ClickedList[k]){
                 let s = Draw(countryInf[k].data)
                 series = series.concat(s)
             }
         }
+    if(series.length==0)
+        series = [init_series]
     freshMap({series,max:maxV,min:minV})
 }
 function clickISPC(city){

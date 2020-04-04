@@ -82,66 +82,115 @@ function pie(country,L_labels,L_data,r_label,r_data){
     };
     Lchart.setOption(option)
     option = {
-    backgroundColor: 'white',
-
-    title: {
-        text: 'Customized Pie',
-        left: 'center',
-        top: 20,
-        textStyle: {
-            color: '#000'
-        }
-    },
-
-    tooltip: {
-        trigger: 'item',
-        formatter: '{a} <br/>{b} : {c} ({d}%)'
-    },
-
-    visualMap: {
-        show: false,
-        min: 80,
-        max: 600,
-        inRange: {
-            colorLightness: [0, 1]
-        }
-    },
-    series: [
-        {
-            name: '访问来源',
-            type: 'pie',
-            radius: '55%',
-            center: ['50%', '50%'],
-            data: [
-                {value: 335, name: '直接访问'},
-                {value: 310, name: '邮件营销'},
-                {value: 274, name: '联盟广告'},
-                {value: 235, name: '视频广告'},
-                {value: 400, name: '搜索引擎'}
-            ].sort(function (a, b) { return a.value - b.value; }),
-            roseType: 'radius',
-            label: {
-                color: 'gray'
-            },
-            labelLine: {
-                lineStyle: {
-                    color: 'gray'
+        title: {
+            text: '运营商ISPC占比',
+            left: 'center'
+        },
+        tooltip: {
+            trigger: 'item',
+            formatter: '{a} <br/>{b} : {c} ({d}%)'
+        },
+        itemStyle: {
+                    color: '#c23531'
                 },
-                smooth: 0.2,
-                length: 10,
-                length2: 20
-            },
-            itemStyle: {
-                color: '#c23531'
-            },
-
-            animationType: 'scale',
-            animationEasing: 'elasticOut',
-            animationDelay: function (idx) {
-                return Math.random() * 200;
+        visualMap: {
+            show: false,
+            min: 0,
+            max: 30,
+            inRange: {
+                colorLightness: [0.2,0.5]
             }
-        }
-    ]
+        },
+        series: [
+            {
+                name: '运营商',
+                type: 'pie',
+                radius: '55%',
+                // center: ['40%', '50%'],
+                data: [
+                {value: 30, name: '中国联通'},
+                {value: 29, name: '中国电信'},
+                {value: 16, name: '中国移动'},
+                {value:2,name:'MCN'}
+            ].sort(function (a, b) { return a.value - b.value; }),
+                emphasis: {
+                    itemStyle: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                },
+                 labelLine: {
+                    lineStyle: {
+                        color: 'gray'
+                    },
+                    smooth: 0.2,
+                    length: 5,
+                    length2: 10
+                },
+            }
+        ]
 };
+//     option = {
+//         backgroundColor: 'white',
+
+//         title: {
+//             text: 'Customized Pie',
+//             left: 'center',
+//             top: 20,
+//             textStyle: {
+//                 color: '#000'
+//             }
+//         },
+
+//         tooltip: {
+//             trigger: 'item',
+//             formatter: '{a} <br/>{b} : {c} ({d}%)'
+//         },
+
+//         visualMap: {
+//             show: false,
+//             min: 0,
+//             max: 60,
+//             inRange: {
+//                 colorLightness: [0, 1]
+//             }
+//         },
+//         series: [
+//             {
+//                 name: '访问来源',
+//                 type: 'pie',
+//                 radius: '55%',
+//                 center: ['50%', '50%'],
+//                 data: [
+//                     {value: 30, name: '中国联通'},
+//                     {value: 29, name: '中国电信'},
+//                     {value: 16, name: '中国移动'},
+//                     {value:2,name:'北京船舶通信导航公司'}
+//                 ].sort(function (a, b) { return a.value - b.value; }),
+//                 roseType: 'radius',
+//                 label: {
+//                     color: 'gray'
+//                 },
+//                 labelLine: {
+//                     lineStyle: {
+//                         color: 'gray'
+//                     },
+//                     smooth: 0.2,
+//                     length: 10,
+//                     length2: 20
+//                 },
+//                 itemStyle: {
+//                     color: '#c23531'
+//                 },
+
+//                 animationType: 'scale',
+//                 animationEasing: 'elasticOut',
+//                 animationDelay: function (idx) {
+//                     return Math.random() * 200;
+//                 }
+//             }
+//         ]
+// };
     operatorchart.setOption(option)
 }
