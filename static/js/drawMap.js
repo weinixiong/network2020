@@ -196,10 +196,10 @@ function FreshLim(Name,IsDel){
 }
 Mapchart.on('click', function (params) {
     var ispc = params.name;//默认飞线原点
-    freshRightpanel(ISPCList[ispc])
+    freshdeviceInf(ISPCList[ispc])
     clickCountry(ispc,false);
 });
-function freshRightpanel(ispc){
+function freshdeviceInf(ispc){
     let rightpanel = document.getElementById('ispcInfList')
     let innerhtml = ''
     let transfor = {
