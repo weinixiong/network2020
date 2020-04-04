@@ -217,7 +217,8 @@ function freshRightpanel(ispc){
     innerhtml = '<ul>'+innerhtml+"</ul>"
     rightpanel.innerHTML = innerhtml
 }
-var lastoperator = ''
+var lastoperator = {}//operator:'',country:''
+var show_count = 0//显示的运营商个数
 function clickCountry(city,isoperator = true){
     console.log('clicked',city)
     let lists = {}
@@ -228,34 +229,46 @@ function clickCountry(city,isoperator = true){
                 clickISPC(key)
             }
         }
-        if(lastoperator!=operator){
-            lastoperator=operator
-            for(let key in ISPCList){
-                if(operator==ISPCList[key].operator){
-                    lists[key] = ISPCList[key]
-                }
-            }
+        if(lastoperator.hasOwnProperty(city.country) && lastoperator[city.country].hasOwnProperty(city.operator) && lastoperator[city.country][city.operator]){
+            lastoperator[city.country][city.operator] = false
+            show_count--;
         }
-       else
-        lastoperator = ''
+       else{
+            show_count++;
+            if(!lastoperator.hasOwnProperty(city.country)){
+                lastoperator[city.country] = {}
+            }  
+            lastoperator[city.country][city.operator]=city
+       }
+        
     }
     else{
         clickISPC(city)
     }
     let series = []
-    if(Object.keys(lists).length!=0){
-        series.concat(getinit_series(lists))
-    }
-    series = series.concat(getinit_series(lists))
-    for(let k in ClickedList){
+    if(show_count!=0){
+        for(let country in lastoperator){
+            for(let ope in lastoperator[country]){
+                if(lastoperator[country][ope]){
+                    for(let key in ISPCList){
+                    if(ope==ISPCList[key].operator){
+                        lists[key] = ISPCList[key]
+                    }
+                }
+                }
+            }
+        }
+        series = series.concat(getinit_series(lists))
+        for(let k in ClickedList){
         if(ClickedList[k]){
             let s = Draw(countryInf[k].data)
             series = series.concat(s)
         }
     }
-
-    if(series.length==0)
+    }
+    else{
         series = [init_series]
+    }
     freshMap({series,max:maxV,min:minV})
 }
 function clickISPC(city){
