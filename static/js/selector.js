@@ -1,16 +1,16 @@
 //初始化多选框
 function selcet_ini(select, data) {
     //添加选项
-    for (let c of data) {
-        $(select).append('<option>' + c.toString() + "</option>")
-    }
-    //添加国家-运营商选项
-    // for (let c in data) {
-    //     $(select).append('<optgroup label='+c.toString()+' id='+c.toString()+'></optgroup>')
-    //     for(let operator of data[c]){
-    //         $('#'+c).append('<option value='+c.toString()+'-'+operator.toString()+'>' + operator.toString() + "</option>")
-    //     }
+    // for (let c of data) {
+    //     $(select).append('<option>' + c.toString() + "</option>")
     // }
+    //添加国家-运营商选项
+    for (let c in data) {
+        $(select).append('<optgroup label='+c.toString()+' id='+c.toString()+' class="optgroup"></optgroup>')
+        for(let operator of data[c]){
+            $('#'+c).append('<option value='+c.toString()+'-'+operator.toString()+' class="option">' + operator.toString() + "</option>")
+        }
+    }
 }
 
 //select value列表获取
@@ -25,7 +25,7 @@ function chose_get_text(select) {
 }
 
 //多选select 数据初始化
-selcet_ini("#countries", COUNTRY);
+selcet_ini("#countries", MCC_MNC);
 
 $('#countries').multipleSelect({
     addTitle: true, //鼠标点悬停在下拉框时是否显示被选中的值
@@ -38,7 +38,9 @@ $('#countries').multipleSelect({
     filter: true,
     maxHeightUnit: 'row',
     maxHeight: 24,
-    isOpen: true
+    isOpen: true,
+    width:300,
+    dropWidth: 300
 });
 
 //两个列表的差集
@@ -54,13 +56,14 @@ $(function () {
     var mysel = $("#countries");
     mysel.change(function () {
         var newvalue = mysel.val(); //当前选中值列表
-        // let chart0 = echarts.getInstanceByDom(document.getElementById('barchart'))
-        console.log("on change")
+        let chart0 = echarts.getInstanceByDom(document.getElementById('barchart'))
+        // console.log("on change")
 
         var clicked = diff(newvalue, selected);
 
         for(let c of clicked){
-            clickCountry(c)//联动选运营商
+            let [countryName,operatorName] = c.split('-')
+            clickCountry(countryName,true)//联动选运营商
             //update select
             if (selected.indexOf(c) < 0) {
                 selected.push(c)
@@ -69,7 +72,7 @@ $(function () {
                 selected.splice(selected.indexOf(c), 1)
             }
         }
-        console.log(selected,clicked)
+        // console.log(selected,clicked)
         renderLchart(selected[selected.length-1])
     });
 });
