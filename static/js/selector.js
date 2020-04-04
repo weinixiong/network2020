@@ -52,6 +52,25 @@ function diff(lt1, lt2) {
     return diff
 }
 
+function freshRightpanel(node){
+    let rightpanel = document.getElementById('operatorInfList')
+    let innerhtml = ''
+    let transfor = {
+        "name":'运营商名称',
+        "rank": "本国排名",
+        "technology": "通信技术",
+        "subscribers": "用户数（百万）",
+        "country": "所属国家",
+        "ownership":"股权拥有者"
+    }
+    for(let key in node){
+        if(transfor.hasOwnProperty(key) && node[key]!='')
+            innerhtml +=`<li>${transfor[key]}: ${node[key]}</li>`
+    }
+    innerhtml = '<ul>'+innerhtml+"</ul>"
+    rightpanel.innerHTML = innerhtml
+}
+
 // mysel.multipleSelect('check'/'uncheck', "China-联通")//选中或者取消选中
 // 选中后可得到选中的value为'国家名-运营商名'
 $(function () {
@@ -66,6 +85,7 @@ $(function () {
         for(let c of clicked){
             let [country,operator] = c.split('-')
             clickCountry({country,operator})//联动选运营商
+
             //update select
             if (selected.indexOf(c) < 0) {
                 selected.push(c)
@@ -73,13 +93,16 @@ $(function () {
             else {
                 selected.splice(selected.indexOf(c), 1)
             }
+            let dataIndex = GRAPH.nodes.findIndex((n)=>n["name"].toLowerCase() === operator.toLowerCase()&&n["country"].toLowerCase() === country.toLowerCase());
+            let node = GRAPH.nodes[dataIndex]
+            freshRightpanel(node)
             forcegraph.dispatchAction({
                 type: 'focusNodeAdjacency',//focusNodeAdjacency
                 // 使用 seriesId 或 seriesIndex 或 seriesName 来定位 series.
                 seriesIndex: 0,
                 // 使用 dataIndex 来定位节点。
                 // GRAPH.nodes里面国家名字和运营商名字匹配的index号
-                dataIndex: GRAPH.nodes.findIndex((n)=>n["name"].toLowerCase() === operator.toLowerCase()&&n["country"].toLowerCase() === country.toLowerCase()),
+                dataIndex,
             })
         }
         
