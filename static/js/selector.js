@@ -56,7 +56,7 @@ function freshRightpanel(node){
     let rightpanel = document.getElementById('operatorInfList')
     let innerhtml = ''
     let transfor = {
-        "name":'运营商s名称',
+        "name":'运营商名称',
         "rank": "本国排名",
         "technology": "通信技术",
         "subscribers": "用户数（百万）",
