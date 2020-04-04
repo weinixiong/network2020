@@ -270,7 +270,8 @@ var MCC_MNC =
     ],
     "China": [
         "China Mobile",
-        "China Unicom"
+        "China Unicom",
+        "China Telecom"
     ],
     "Colombia": [
         "Colombia Telecomunicaciones SA ESP",

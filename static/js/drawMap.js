@@ -52,7 +52,7 @@ var convertData2 = function (data) {
 },...
 */
 function Draw(result) {
-
+    // console.log('result',result,geoCoordMap[result.city])
     let fName = result.city,
         path = result.path,
         d2 = convertData2(path),
@@ -224,7 +224,7 @@ function clickCountry(city,isoperator = true){
     if(isoperator){
         let operator = city.operator
         for(let key in pathList){
-            if(operator==pathList[key].operator){
+            if(operator==pathList[key].operator &&(geoCoordMap.hasOwnProperty(key))){
                 clickISPC(key)
             }
         }
