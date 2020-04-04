@@ -62,8 +62,8 @@ $(function () {
         var clicked = diff(newvalue, selected);
 
         for(let c of clicked){
-            let [countryName,operatorName] = c.split('-')
-            clickCountry(countryName,true)//联动选运营商
+            let [country,operator] = c.split('-')
+            clickCountry({country,operator})//联动选运营商
             //update select
             if (selected.indexOf(c) < 0) {
                 selected.push(c)
