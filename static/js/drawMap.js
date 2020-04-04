@@ -220,9 +220,10 @@ function freshRightpanel(ispc){
 function clickCountry(city,isoperator = true){
     console.log('clicked',city)
     if(isoperator){
+        let operator = city.operator
         for(let key in pathList){
-            if(city==pathList[key].operator){
-                clickISPC(city)
+            if(operator==pathList[key].operator){
+                clickISPC(key)
             }
         }
     }
@@ -314,7 +315,7 @@ function initMap(data){
                             period: 4, brushType: 'stroke', scale: 2
                         }
                 }
-    console.log(init_series)
+    // console.log(init_series)
     if(data!=null)
     {
         if(data.hasOwnProperty('series'))

@@ -56,7 +56,7 @@ $(function () {
     var mysel = $("#countries");
     mysel.change(function () {
         var newvalue = mysel.val(); //当前选中值列表
-        let chart0 = echarts.getInstanceByDom(document.getElementById('barchart'))
+        // let chart0 = echarts.getInstanceByDom(document.getElementById('barchart'))
         // console.log("on change")
 
         var clicked = diff(newvalue, selected);
