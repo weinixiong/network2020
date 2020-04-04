@@ -58,7 +58,7 @@ $(function () {
     var mysel = $("#countries");
     mysel.change(function () {
         var newvalue = mysel.val(); //当前选中值列表
-        // let chart0 = echarts.getInstanceByDom(document.getElementById('barchart'))
+        let forcegraph = echarts.getInstanceByDom(document.getElementById('operator_container'))
         // console.log("on change")
 
         var clicked = diff(newvalue, selected);
@@ -73,7 +73,16 @@ $(function () {
             else {
                 selected.splice(selected.indexOf(c), 1)
             }
+            forcegraph.dispatchAction({
+                type: 'focusNodeAdjacency',//focusNodeAdjacency
+                // 使用 seriesId 或 seriesIndex 或 seriesName 来定位 series.
+                seriesIndex: 0,
+                // 使用 dataIndex 来定位节点。
+                // GRAPH.nodes里面国家名字和运营商名字匹配的index号
+                dataIndex: GRAPH.nodes.findIndex((n)=>n["name"].toLowerCase() === operator.toLowerCase()&&n["country"].toLowerCase() === country.toLowerCase()),
+            })
         }
+        
         // console.log(selected,clicked)
         renderLchart(selected[selected.length-1])
     });
