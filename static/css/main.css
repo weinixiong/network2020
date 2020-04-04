@@ -11,6 +11,8 @@ body{
 	font-size: 16px;
 	height: 30px;
 	width:100%;
+	line-height: 30px;
+    font-weight: 600;
 }
 .main-panel{
 	height: calc(100% - 30px);
@@ -125,6 +127,8 @@ display: flex
     height: 30px;
     width: 100%;
     margin: 10px 0 10px 0;
+    line-height: 30px;
+    font-weight: 600;
 }
 #ispcInfList{
 	width: 100%;
