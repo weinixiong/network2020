@@ -331,7 +331,7 @@ function initMap(data){
     }
    let option = {
     title: {
-        text: '各国进/出口关系'
+        text: '信令点分布'
     },
         backgroundColor:"#E6EDF3",
         tooltip: {
