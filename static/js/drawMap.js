@@ -1,7 +1,7 @@
 // 基于准备好的dom，初始化echarts实例
 var Mapchart = echarts.init(document.getElementById('main'));
 var stardSize = 50
-//24个省市经度纬度
+//各个运营商的数据
 var countryInf = {}//{countryName:{value:'',data:''}},
     maxV = 0,//全局的最大最小值
     minV = 0,
@@ -360,46 +360,6 @@ function initMap(data){
                 }
             }
         },
-        // tooltip: {
-        //     trigger: 'item',
-        //     formatter: function (params) {
-        //         if (params.value) {
-        //             return params.name + '<br/>' + (params.value[2]/10000).toFixed(0)+'万';
-        //         } else {
-        //             return params.name;
-        //         }
-        //     }
-        // },
-        // geo: {
-        //     map: 'world',
-        //     zlevel: 10,
-        //     layoutCenter: ['50%', '50%'],
-        //     roam: true,
-        //     layoutSize: "100%",
-        //     zoom: 1.8,
-        //     label: {
-        //         normal: {
-        //             show: false,//地图上的省份名称是否显示
-        //             textStyle:{
-        //                 fontSize:12,
-        //                 color: '#43D0D6'
-        //             }
-        //         },
-        //         emphasis: {
-        //             show: true
-        //         }
-        //     },
-        //     itemStyle: {
-        //         normal: {
-        //             color: '#F3F1EB',
-        //             borderWidth: 1.1,
-        //             // borderColor: '#516a89'
-        //         },
-        //         emphasis: {
-        //             areaColor: 'rgba(51, 69, 89, .5)'
-        //         }
-        //     }
-        // },
         series:[
             init_series
         ]
@@ -418,9 +378,6 @@ function getinit_series(data){
                         normal: {
                             show: false
                         },
-                        // emphasis: {
-                        //     show: false
-                        // }
                     },
                     itemStyle: {
                         emphasis: {
@@ -428,7 +385,7 @@ function getinit_series(data){
                             borderWidth: 1
                         },
                         normal: {
-                            color: 'rgba(255,0,0,0.5)'//157,197,200,1)'
+                            color: 'rgba(255,0,0,0.5)'
                         }
                     },
                     rippleEffect: {
