@@ -1,3 +1,4 @@
+var selected = [];
 //初始化多选框
 function selcet_ini(select, data) {
     //添加选项
