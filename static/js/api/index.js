@@ -17,10 +17,9 @@ function ajax(url) {
 }
 
 // 请求数据
-// let GRAPH, MCC_MNC
+// let GRAPH, MCC_MNC,l_label,l_data,r_label,r_data,ispc_coord_data,connect_data
 ajax("")
-    .then(function (result) { 
-        // GRAPH = result.GRAPH
-        // MCC_MNC = result.MCC_MNC
+    .then(function (result) {
+        // { GRAPH, MCC_MNC, l_label, l_data, r_label, r_data, ispc_coord_data, connect_data } = result
     })
     .catch(function (err) { throw new Error(err) });
