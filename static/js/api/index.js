@@ -17,9 +17,9 @@ function ajax(url) {
 }
 
 // 请求数据
-// let GRAPH, MCC_MNC,l_label,l_data,r_label,r_data,ispc_coord_data,connect_data
+// let GRAPH, MCC_MNC,l_label,l_data,r_label,r_data,ispc_coord_data,connect_data,country_coord_data
 ajax("")
     .then(function (result) {
-        // { GRAPH, MCC_MNC, l_label, l_data, r_label, r_data, ispc_coord_data, connect_data } = result
+        // { GRAPH, MCC_MNC, l_label, l_data, r_label, r_data, ispc_coord_data, connect_data, country_coord_data } = result
     })
     .catch(function (err) { throw new Error(err) });
