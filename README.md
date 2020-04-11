@@ -29,3 +29,9 @@ python -m http.server
 ## 其他
 
 如有什么疑问，欢迎联系周杰辉和任一方:-D
+
+## 后端的使用
+ ```shell
+ cd backend 
+ nodemon app.js 
+ ```
