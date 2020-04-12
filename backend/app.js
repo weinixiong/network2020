@@ -18,7 +18,13 @@ const port = 3000;
 // 设置跨域
 app.use(async (ctx, next) => {
   ctx.set("Access-Control-Allow-Origin", "*");
-  await next();
+  ctx.set('Access-Control-Allow-Headers', 'Content-Type, Content-Length, Authorization, Accept, X-Requested-With , yourHeaderFeild');
+  ctx.set('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
+  if (ctx.method == 'OPTIONS') {
+    ctx.body = 200; 
+  } else {
+    await next();
+  }
 });
 // 配置中间件
 app.use(bodyParser());

@@ -1,17 +1,4 @@
-
-// list.forEach(id=>{
-// 	let el = document.getElementById(id)
-// 	el.onclick = (e)=>{
-
-// 	}
-// })
-// var el = document.getElementById('device_connect')
-// el.onclick = (e)=>{
-// 	console.log(e)
-// 	el.style.class='active'
-// 	document.getElementById('main').style.display = 'block'
-// 	document.getElementById('operator').style.display = 'block'
-// }
+var initMap = true;
 window.onload = ()=>{
 	let nav_tabs = document.getElementById('nav_tabs')
 	var list = {'nav_operator':'operator_container','nav_device_connect':'main'}
@@ -33,6 +20,11 @@ window.onload = ()=>{
 		if(id=='nav_device_connect'){
 			document.getElementById('ispcInf').style.display='block'
 			document.getElementById('operatorInf').style.display='none'
+			if(initMap){
+				ispc_coord();
+    			connect();
+				initMap = false;
+			}
 			// document.getElementById('operator_container').style.display='none'
 		}
 		else{
